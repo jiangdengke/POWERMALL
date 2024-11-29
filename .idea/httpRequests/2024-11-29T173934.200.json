@@ -1,0 +1,59 @@
+{
+  "code": 200,
+  "msg": "请求成功",
+  "data": {
+    "total": 25,
+    "records": [
+      {
+        "id": 1,
+        "parentId": 0,
+        "name": "服装",
+        "level": 1,
+        "icon": "https://cdn-we-retail.ym.tencent.com/tsr/classify/img-1.png",
+        "weight": 1.0,
+        "createTime": "2023-06-09T02:52:14.000+00:00",
+        "updateTime": "2023-06-13T20:49:00.000+00:00"
+      },
+      {
+        "id": 2,
+        "parentId": 1,
+        "name": "女装",
+        "level": 2,
+        "icon": "https://cdn-we-retail.ym.tencent.com/miniapp/category/category-default.png",
+        "weight": 1.1,
+        "createTime": "2023-06-08T21:52:23.000+00:00",
+        "updateTime": "2023-06-08T22:48:35.000+00:00"
+      },
+      {
+        "id": 3,
+        "parentId": 2,
+        "name": "卫衣",
+        "level": 3,
+        "icon": "https://cdn-we-retail.ym.tencent.com/tsr/classify/img-1.png",
+        "weight": 1.11,
+        "createTime": "2023-06-09T02:52:14.000+00:00",
+        "updateTime": "2023-06-08T22:47:25.000+00:00"
+      },
+      {
+        "id": 4,
+        "parentId": 2,
+        "name": "毛呢外套",
+        "level": 3,
+        "icon": "https://cdn-we-retail.ym.tencent.com/tsr/classify/img-2.png",
+        "weight": 1.12,
+        "createTime": "2023-06-09T02:52:14.000+00:00",
+        "updateTime": "2023-06-08T22:47:40.000+00:00"
+      },
+      {
+        "id": 5,
+        "parentId": 2,
+        "name": "雪纺衫",
+        "level": 3,
+        "icon": "https://cdn-we-retail.ym.tencent.com/tsr/classify/img-3.png",
+        "weight": 1.13,
+        "createTime": "2023-06-09T02:52:14.000+00:00",
+        "updateTime": "2023-06-08T22:47:42.000+00:00"
+      }
+    ]
+  }
+}

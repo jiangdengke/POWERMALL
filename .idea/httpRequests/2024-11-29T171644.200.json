@@ -1,0 +1,6 @@
+{
+  "code": 500,
+  "msg": "Required request parameter 'pageQuery' for method parameter type PageQuery is not present",
+  "data": null,
+  "error": true
+}
