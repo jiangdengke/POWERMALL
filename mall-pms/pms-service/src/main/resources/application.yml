@@ -1,7 +1,0 @@
-spring:
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://119.12.173.167:3306/kkshop?useSSL=false
-    username: root
-    password: bieshanwoku
