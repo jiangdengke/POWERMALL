@@ -18,6 +18,7 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(BizException.class)
     public Result processHandler(BizException e){
+        e.printStackTrace();
         return Result.error(e.getCode(),e.getMessage());
     }
     /**
@@ -25,6 +26,7 @@ public class GlobalExceptionHandler {
      */
     @ExceptionHandler(Throwable.class)
     public Result processHandler(Throwable e){
+        e.printStackTrace();
         return Result.error(HttpStatus.HTTP_INTERNAL_ERROR, e.getMessage());
     }
 }

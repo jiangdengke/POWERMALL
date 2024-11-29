@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="1、公共模块搭建。2、增加统一响应和统一异常处理">
-      <change afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/test/java/com/jiangdk/pms/service/CategoryServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-common/common-mybatis/src/main/java/com/jiangdk/common/mybatis/config/MybatisConfig.java" afterDir="false" />
+    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="分页查询开发">
+      <change afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/category-tree.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/admin/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppCategoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/PMSApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/PMSApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/test/java/com/jiangdk/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/common-mybatis/src/main/java/com/jiangdk/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-common/common-web/src/main/java/com/jiangdk/common/web/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/common-web/src/main/java/com/jiangdk/common/web/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-common/common-web/target/classes/com/jiangdk/common/web/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/common-web/target/classes/com/jiangdk/common/web/exception/GlobalExceptionHandler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +43,9 @@
     "accountId": "18b24cae-de67-4e6d-b189-d9d25b10409e"
   }
 }]]></component>
+  <component name="HttpClientSelectedEnvironments">
+    <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -60,6 +59,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP 请求.generated-requests | #3.executor": "Run",
+    "HTTP 请求.generated-requests | #5.executor": "Run",
     "JUnit.CategoryServiceTest.page.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -74,7 +75,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jdk/Desktop/power-mall/mall-pms/pms-service/src/main/java",
+    "last_opened_file_path": "C:/Users/jdk/Desktop/power-mall/power-common/common-mybatis/src/main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,7 +84,7 @@
     "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "com.ccnode.codegenerator.I.b",
+    "settings.editor.selected.configurable": "com.itangcent.idea.plugin.configurable.AccountConfigurable.apifox",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -97,6 +98,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-mybatis\src\main" />
       <recent name="C:\Users\jdk\Desktop\power-mall\mall-pms\pms-service\src\main\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -113,7 +115,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CategoryServiceTest.page">
+  <component name="RunManager" selected="Spring Boot.PMSApplication">
     <configuration name="CategoryServiceTest.page" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pms-service" />
       <extension name="coverage">
@@ -143,10 +145,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.CategoryServiceTest.page" />
+      <item itemvalue="Spring Boot.PMSApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CategoryServiceTest.page" />
         <item itemvalue="Spring Boot.PMSApplication" />
+        <item itemvalue="JUnit.CategoryServiceTest.page" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732851068638</updated>
       <workItem from="1732851070023" duration="5790000" />
-      <workItem from="1732858247274" duration="6075000" />
+      <workItem from="1732858247274" duration="13837000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
@@ -177,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732859044517</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="分页查询开发">
+      <option name="closed" value="true" />
+      <created>1732870904293</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732870904293</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +199,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1、公共模块搭建。2、增加统一响应和统一异常处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、公共模块搭建。2、增加统一响应和统一异常处理" />
+    <MESSAGE value="分页查询开发" />
+    <option name="LAST_COMMIT_MESSAGE" value="分页查询开发" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
