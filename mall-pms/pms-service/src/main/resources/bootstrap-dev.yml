@@ -2,7 +2,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://128.1.132.86:3306/power_mall?useSSL=false
+    url: jdbc:mysql://128.1.132.86:3306/power_mall?useSSL=false&serverTimezone=Asia/Shanghai
     username: root
     password: bieshanwoku
   cloud:

@@ -5,15 +5,11 @@ import com.jiangdk.common.mybatis.page.PageQuery;
 import com.jiangdk.common.mybatis.page.PageResult;
 import com.jiangdk.common.result.Result;
 import com.jiangdk.pms.pojo.entity.Category;
-import com.jiangdk.pms.service.CategoryService;
+import com.jiangdk.pms.service.impl.CategoryServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.validation.constraints.NotNull;
 
 /**
  * 管理端/测试
@@ -23,7 +19,7 @@ import javax.validation.constraints.NotNull;
 public class TestController {
 
     @Autowired
-    private CategoryService categoryService;
+    private CategoryServiceImpl categoryServiceImpl;
     @GetMapping
     public Result test(){
         int i = 100/0;
@@ -33,7 +29,7 @@ public class TestController {
     public PageResult page(
              PageQuery pageQuery
     ){
-        Page<Category> page = categoryService.page(Page.of(pageQuery.getCurrent(), pageQuery.getSize()));
+        Page<Category> page = categoryServiceImpl.page(Page.of(pageQuery.getCurrent(), pageQuery.getSize()));
         return PageResult.success(page);
     }
 }

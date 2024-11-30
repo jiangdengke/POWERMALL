@@ -2,7 +2,7 @@ package com.jiangdk.pms.controller.app;
 
 import cn.hutool.core.lang.tree.Tree;
 import com.jiangdk.common.result.Result;
-import com.jiangdk.pms.service.CategoryService;
+import com.jiangdk.pms.service.impl.CategoryServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,13 +17,13 @@ import java.util.List;
 @RequestMapping("/api/pms")
 public class AppCategoryController {
     @Autowired
-    private CategoryService categoryService;
+    private CategoryServiceImpl categoryServiceImpl;
     /**
      * 商品分类列表
      * @return
      */
     @GetMapping
     public Result<List<Tree<Long>>> tree() {
-        return Result.success(categoryService.tree());
+        return Result.success(categoryServiceImpl.tree());
     }
 }
