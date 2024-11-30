@@ -4,29 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="设计开发商品分类树，编写商品分类列表接口">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/form/CategoryForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/CategoryServiceImpl.java" afterDir="false" />
+    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="商品分类接口开发完成">
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/admin/SpuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/form/SkuForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/form/SpuForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/query/SpuPageQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/vo/SkuVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/vo/SpuVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/test/java/com/jiangdk/pms/service/impl/SpuServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6fd402ab-20bb-48b9-8158-7e52ac8f7727.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6fd402ab-20bb-48b9-8158-7e52ac8f7727.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/admin/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/admin/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/test/java/com/jiangdk/pms/service/CategoryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/test/java/com/jiangdk/pms/service/CategoryServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/admin/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/admin/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/app/AppCategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/app/AppCategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/common-web/src/main/java/com/jiangdk/common/web/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/common-web/src/main/java/com/jiangdk/common/web/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/common-web/target/classes/com/jiangdk/common/web/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/common-web/target/classes/com/jiangdk/common/web/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/bootstrap-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/PMSApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/TestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/admin/CategoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/app/AppCategoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/mapper/CategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/pojo/entity/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/CategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/mapper/CategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/test-classes/com/jiangdk/pms/service/CategoryServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,6 +65,9 @@
   <component name="HttpClientSelectedEnvironments">
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
   </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -65,42 +79,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;HTTP 请求.generated-requests | #3.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP 请求.generated-requests | #5.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CategoryServiceTest.page.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.PMSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jdk/Desktop/power-mall/power-common/common-mybatis/src/main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP 请求.generated-requests | #3.executor": "Run",
+    "HTTP 请求.generated-requests | #5.executor": "Run",
+    "JUnit.CategoryServiceTest.page.executor": "Run",
+    "JUnit.SpuServiceImplTest.getSpuById.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.PMSApplication.executor": "JRebel Debug",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jdk/Desktop/power-mall/mall-pms/pms-service/src/main/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "com.ccnode.codegenerator.I.b",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module"
+    ],
+    "DatabaseDriversLRU": [
+      "mysql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言": [
+      "MySQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -113,6 +134,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.jiangdk.pms.service.impl" />
       <recent name="com.jiangdk.pms.service" />
     </key>
   </component>
@@ -140,6 +162,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpuServiceImplTest.getSpuById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pms-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiangdk.pms.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jiangdk.pms.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.jiangdk.pms.service.impl.SpuServiceImplTest" />
+      <option name="METHOD_NAME" value="getSpuById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PMSApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="pms-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.pms.PMSApplication" />
@@ -154,12 +192,14 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.SpuServiceImplTest.getSpuById" />
       <item itemvalue="JUnit.CategoryServiceImplTest.page" />
       <item itemvalue="Spring Boot.PMSApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.PMSApplication" />
+        <item itemvalue="JUnit.SpuServiceImplTest.getSpuById" />
         <item itemvalue="JUnit.CategoryServiceImplTest.page" />
       </list>
     </recent_temporary>
@@ -182,7 +222,8 @@
       <updated>1732851068638</updated>
       <workItem from="1732851070023" duration="5790000" />
       <workItem from="1732858247274" duration="20747000" />
-      <workItem from="1732942715133" duration="408000" />
+      <workItem from="1732942715133" duration="1692000" />
+      <workItem from="1732944960010" duration="15849000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
@@ -224,7 +265,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732877427545</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="商品分类接口开发完成">
+      <option name="closed" value="true" />
+      <created>1732943164061</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732943164061</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +283,15 @@
     <MESSAGE value="1、公共模块搭建。2、增加统一响应和统一异常处理" />
     <MESSAGE value="分页查询开发" />
     <MESSAGE value="设计开发商品分类树，编写商品分类列表接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="设计开发商品分类树，编写商品分类列表接口" />
+    <MESSAGE value="商品分类接口开发完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品分类接口开发完成" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.jiangdk.pms.pojo.entity.Spu" memberName="imgList" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

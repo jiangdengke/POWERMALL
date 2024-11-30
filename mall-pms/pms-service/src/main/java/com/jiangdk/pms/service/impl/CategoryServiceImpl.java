@@ -7,10 +7,15 @@ import cn.hutool.core.lang.tree.TreeUtil;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.http.HttpStatus;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.jiangdk.common.exception.BizException;
+import com.jiangdk.pms.pojo.entity.Spu;
 import com.jiangdk.pms.pojo.form.CategoryForm;
 import com.jiangdk.pms.service.CategoryService;
+import com.jiangdk.pms.service.SkuService;
+import com.jiangdk.pms.service.SpuService;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,6 +24,8 @@ import com.jiangdk.pms.mapper.CategoryMapper;
 import com.jiangdk.pms.pojo.entity.Category;
 @Service
 public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> implements CategoryService {
+    @Autowired
+    private SpuService spuService;
     /**
      * 获取商品分类树
      */
@@ -78,7 +85,13 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
         if (exists){
             throw new BizException(HttpStatus.HTTP_BAD_REQUEST,"该分类下有子分类不能删除");
         }
-        // TODO 判断该分类下是否有商品
+        // 判断该分类下是否有商品
+        QueryWrapper<Spu> spuQueryWrapper = new QueryWrapper<>();
+        spuQueryWrapper.eq("category_id",categoryId);
+        List<Spu> list = spuService.list(spuQueryWrapper);
+        if (!list.isEmpty()){
+            throw new BizException(HttpStatus.HTTP_BAD_REQUEST,"该分类下有商品");
+        }
         this.removeById(categoryId);
     }
 
