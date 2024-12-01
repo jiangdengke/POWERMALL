@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jiangdk.pms.mapper.SkuMapper">
+  <resultMap id="BaseResultMap" type="com.jiangdk.pms.pojo.entity.Sku">
+    <!--@mbg.generated-->
+    <!--@Table pms_sku-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="spu_id" jdbcType="BIGINT" property="spuId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="price" jdbcType="INTEGER" property="price" />
+    <result column="stock" jdbcType="INTEGER" property="stock" />
+    <result column="spec_value_list" jdbcType="VARCHAR" property="specValueList" typeHandler="com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler"/>
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, spu_id, `name`, price, stock, spec_value_list, `status`, create_time, update_time
+  </sql>
+</mapper>
