@@ -9,6 +9,7 @@ import cn.hutool.http.HttpStatus;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.jiangdk.common.exception.BizException;
+import com.jiangdk.oss.feign.MinioFeignClient;
 import com.jiangdk.pms.pojo.entity.Spu;
 import com.jiangdk.pms.pojo.form.CategoryForm;
 import com.jiangdk.pms.service.CategoryService;
@@ -26,6 +27,8 @@ import com.jiangdk.pms.pojo.entity.Category;
 public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> implements CategoryService {
     @Autowired
     private SpuService spuService;
+    @Autowired
+    private MinioFeignClient minioFeignClient;
     /**
      * 获取商品分类树
      */
@@ -80,6 +83,10 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
      */
     @Override
     public void deleteCategoryById(Long categoryId) {
+        Category category = this.getById(categoryId);
+        if (category == null){
+            throw new BizException(HttpStatus.HTTP_NOT_FOUND,"商品分类不存在或已删除");
+        }
         // 判断该分类是否有子分类
         boolean exists = this.baseMapper.exists(new LambdaQueryWrapper<Category>().eq(Category::getParentId, categoryId));
         if (exists){
@@ -93,6 +100,8 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
             throw new BizException(HttpStatus.HTTP_BAD_REQUEST,"该分类下有商品");
         }
         this.removeById(categoryId);
+        // 删除商品分类的图标
+        minioFeignClient.removeFile("mall",category.getIcon().substring(category.getIcon().lastIndexOf("/")+1));
     }
 
     /**

@@ -12,6 +12,7 @@
   <modules>
     <module>power-common</module>
     <module>mall-pms</module>
+    <module>power-oss</module>
   </modules>
 
   <properties>
@@ -27,6 +28,7 @@
       <druid.version>1.2.6</druid.version>
       <mybatis-plus.version>3.5.2</mybatis-plus.version>
       <hutool.version>5.8.10</hutool.version>
+      <minio.version>8.0.3</minio.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -76,6 +78,12 @@
         <groupId>com.baomidou</groupId>
         <artifactId>mybatis-plus-boot-starter</artifactId>
         <version>${mybatis-plus.version}</version>
+      </dependency>
+      <!-- 对象存储 minio -->
+      <dependency>
+        <groupId>io.minio</groupId>
+        <artifactId>minio</artifactId>
+        <version>${minio.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

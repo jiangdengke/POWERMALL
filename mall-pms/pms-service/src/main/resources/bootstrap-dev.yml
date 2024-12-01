@@ -10,10 +10,10 @@ spring:
       # 注册中心和配置中心地址
       server-addr: http://128.1.132.86:8848
       discovery:
-        namespace: dev
+        namespace: cd4facc0-2daf-499e-9dd2-8d2ab747803b
         group: MALL_GROUP
       config:
-        namespace: dev
+        namespace: cd4facc0-2daf-499e-9dd2-8d2ab747803b
         file-extension: yml
         group: MALL_GROUP
 mybatis-plus:

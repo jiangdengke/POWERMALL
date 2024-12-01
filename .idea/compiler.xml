@@ -9,9 +9,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="common-mybatis" />
         <module name="common-web" />
+        <module name="oss-service" />
         <module name="common-core" />
         <module name="pms-service" />
+        <module name="oss-api" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="oss-appi" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
