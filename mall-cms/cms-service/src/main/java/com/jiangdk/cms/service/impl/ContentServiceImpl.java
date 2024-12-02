@@ -77,6 +77,7 @@ public class ContentServiceImpl extends ServiceImpl<ContentMapper, Content> impl
             throw new BizException(HttpStatus.HTTP_NOT_FOUND,"内容不存在或已删除");
         }
         this.removeById(content);
+        // todo 如果内容管理的有图片，删除对应的图片
     }
 
     /**

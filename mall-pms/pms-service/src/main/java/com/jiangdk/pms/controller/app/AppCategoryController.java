@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * 应用端/商品
+ * 应用端/商品分类
  */
 @RestController
 @RequestMapping("/api/pms")
@@ -26,4 +26,5 @@ public class AppCategoryController {
     public Result<List<Tree<Long>>> tree() {
         return Result.success(categoryServiceImpl.tree());
     }
+
 }
