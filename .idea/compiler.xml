@@ -8,11 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common-mybatis" />
+        <module name="power-gateway" />
+        <module name="pms-service" />
+        <module name="oss-api" />
         <module name="common-web" />
         <module name="oss-service" />
         <module name="common-core" />
-        <module name="pms-service" />
-        <module name="oss-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

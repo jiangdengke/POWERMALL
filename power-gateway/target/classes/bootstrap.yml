@@ -1,6 +1,6 @@
 
 spring:
   application:
-    name: oss-service
+    name: gateway-service
   profiles:
     active: dev
