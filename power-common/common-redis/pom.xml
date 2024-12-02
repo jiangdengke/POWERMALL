@@ -3,32 +3,31 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.jiangdk</groupId>
-        <artifactId>power-mall</artifactId>
+        <artifactId>power-common</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>power-common</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>common-redis</artifactId>
+    <packaging>jar</packaging>
 
-    <name>power-common</name>
+    <name>common-redis</name>
     <url>http://maven.apache.org</url>
-    <modules>
-        <module>common-core</module>
-        <module>common-mybatis</module>
-        <module>common-web</module>
-        <module>common-redis</module>
-    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
+        <!-- Spring Data Redis 的启动器 -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <!-- 连接池依赖 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
         </dependency>
     </dependencies>
 </project>

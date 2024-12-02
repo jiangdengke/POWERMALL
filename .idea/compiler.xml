@@ -14,10 +14,12 @@
         <module name="common-web" />
         <module name="oss-service" />
         <module name="cms-service" />
+        <module name="common-redis" />
         <module name="common-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="common-rediss" target="1.8" />
       <module name="oss-appi" target="1.8" />
     </bytecodeTargetLevel>
   </component>

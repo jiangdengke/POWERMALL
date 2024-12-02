@@ -9,6 +9,8 @@ import com.jiangdk.cms.pojo.form.ContentForm;
 import com.jiangdk.cms.pojo.query.ContentPageQuery;
 import com.jiangdk.common.exception.BizException;
 import org.springframework.beans.BeanUtils;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.jiangdk.cms.pojo.entity.Content;
@@ -42,6 +44,7 @@ public class ContentServiceImpl extends ServiceImpl<ContentMapper, Content> impl
      * @param contentForm
      */
     @Override
+    @CacheEvict(cacheNames = "contentGroup",key = "#content.groupCode")
     public void addContent(ContentForm contentForm) {
         Content content = new Content();
         BeanUtils.copyProperties(contentForm,content);
@@ -54,6 +57,7 @@ public class ContentServiceImpl extends ServiceImpl<ContentMapper, Content> impl
      * @param contentForm
      */
     @Override
+    @CacheEvict(cacheNames = "contentGroup",key = "#content.groupCode")
     public void updateContentById(ContentForm contentForm) {
         // 查询要更新的数据是否存在
         Content content = this.getById(contentForm.getId());
@@ -71,6 +75,7 @@ public class ContentServiceImpl extends ServiceImpl<ContentMapper, Content> impl
      * @param contentId
      */
     @Override
+    @CacheEvict(cacheNames = "contentGroup",key = "#content.groupCode")
     public void deleteContentById(Long contentId) {
         Content content = this.getById(contentId);
         if (content == null){
@@ -87,6 +92,7 @@ public class ContentServiceImpl extends ServiceImpl<ContentMapper, Content> impl
      * @return
      */
     @Override
+    @Cacheable(cacheNames = "contentGroup",key = "#groupCode")
     public List<Content> getContentByGroupCode(String groupCode) {
 
         return this.list(new LambdaQueryWrapper<Content>()

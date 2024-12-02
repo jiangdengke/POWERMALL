@@ -4,20 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="完成内容微服务接口的开发">
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppSpuController.java" afterDir="false" />
+    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="对接微信小程序前端-更改后端路径">
+      <change afterPath="$PROJECT_DIR$/power-common/common-redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-redis/src/main/java/com/jiangdk/common/redis/config/RedisCacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-redis/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-redis/src/test/java/com/jiangdk/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/service/impl/ContentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/service/impl/ContentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/bootstrap-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/com/jiangdk/cms/service/impl/ContentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/com/jiangdk/cms/service/impl/ContentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/cms/mapper/CmsContentMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/cms/pojo/entity/CmsContent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/mapper/CmsContentMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/cms/mapper/CmsContentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/cms/pojo/entity/CmsContent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/TestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/mapper/CmsContentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +99,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jdk/Desktop/power-mall/mall-cms/cms-service/src/main/java/com/jiangdk/cms",
+    "last_opened_file_path": "C:/Users/jdk/Desktop/power-mall/power-common/common-redis/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -126,6 +132,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-redis\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\mall-cms\cms-service\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\power-oss\oss-service\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-mybatis\src\main" />
@@ -228,8 +235,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.PMSApplication" />
-        <item itemvalue="Spring Boot.CMSApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.CMSApplication" />
         <item itemvalue="Spring Boot.OSSApplication" />
         <item itemvalue="JUnit.MinioTest.test04" />
       </list>
@@ -259,7 +266,7 @@
       <workItem from="1733062182737" duration="434000" />
       <workItem from="1733062636812" duration="48000" />
       <workItem from="1733062724477" duration="1405000" />
-      <workItem from="1733111943451" duration="12890000" />
+      <workItem from="1733111943451" duration="16323000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
@@ -349,7 +356,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733126575096</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="对接微信小程序前端-更改后端路径">
+      <option name="closed" value="true" />
+      <created>1733133232155</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1733133232155</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +390,8 @@
     <MESSAGE value="完成oss-service接口开发，并向外提供oss-api。完成pms-service通过feign对oss服务进行调用" />
     <MESSAGE value="搭建微服务网关" />
     <MESSAGE value="完成内容微服务接口的开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成内容微服务接口的开发" />
+    <MESSAGE value="对接微信小程序前端-更改后端路径" />
+    <option name="LAST_COMMIT_MESSAGE" value="对接微信小程序前端-更改后端路径" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

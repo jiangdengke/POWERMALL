@@ -15,6 +15,8 @@ import com.jiangdk.pms.service.CategoryService;
 import com.jiangdk.pms.service.SkuService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -43,6 +45,7 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper, Spu> implements SpuSe
      * @return
      */
     @Override
+    @Cacheable(cacheNames = "goods",key = "#spuId")
     public SpuVO getSpuById(Long spuId) {
         return this.baseMapper.selectSpuById(spuId);
     }
@@ -94,6 +97,7 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper, Spu> implements SpuSe
      */
     @Override
     @Transactional
+    @CacheEvict(cacheNames = "goods",key = "#spuForm.id") // 把对应id的缓存删掉
     public void updateSpuById(SpuForm spuForm) {
         // 判断商品是否存在
         Spu spu = this.getById(spuForm.getId());
@@ -126,6 +130,7 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper, Spu> implements SpuSe
      */
     @Override
     @Transactional
+    @CacheEvict(cacheNames = "goods",key = "#spuId")
     public void deleteSpuById(Long spuId) {
         Spu spu = this.getById(spuId);
         if (spu == null) {

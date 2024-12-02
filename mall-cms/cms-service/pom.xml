@@ -18,6 +18,12 @@
     </properties>
 
     <dependencies>
+        <!--  redis 缓存  -->
+        <dependency>
+            <groupId>com.jiangdk</groupId>
+            <artifactId>common-redis</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!-- 加载 bootstrap 配置文件 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
