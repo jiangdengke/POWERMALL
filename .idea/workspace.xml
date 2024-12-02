@@ -4,26 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="对接微信小程序前端-更改后端路径">
-      <change afterPath="$PROJECT_DIR$/power-common/common-redis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-common/common-redis/src/main/java/com/jiangdk/common/redis/config/RedisCacheConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-common/common-redis/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-common/common-redis/src/test/java/com/jiangdk/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="对内容和商品通过SpringCache增加缓存。">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/service/impl/ContentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/service/impl/ContentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/com/jiangdk/cms/service/impl/ContentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/com/jiangdk/cms/service/impl/ContentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/CategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/SpuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/SpuServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,7 +250,7 @@
       <workItem from="1733062182737" duration="434000" />
       <workItem from="1733062636812" duration="48000" />
       <workItem from="1733062724477" duration="1405000" />
-      <workItem from="1733111943451" duration="16323000" />
+      <workItem from="1733111943451" duration="18309000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
@@ -364,7 +348,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733133232155</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="对内容和商品通过SpringCache增加缓存。">
+      <option name="closed" value="true" />
+      <created>1733142173771</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1733142173771</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +383,8 @@
     <MESSAGE value="搭建微服务网关" />
     <MESSAGE value="完成内容微服务接口的开发" />
     <MESSAGE value="对接微信小程序前端-更改后端路径" />
-    <option name="LAST_COMMIT_MESSAGE" value="对接微信小程序前端-更改后端路径" />
+    <MESSAGE value="对内容和商品通过SpringCache增加缓存。" />
+    <option name="LAST_COMMIT_MESSAGE" value="对内容和商品通过SpringCache增加缓存。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
