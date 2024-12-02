@@ -13,6 +13,7 @@
         <module name="oss-api" />
         <module name="common-web" />
         <module name="oss-service" />
+        <module name="cms-service" />
         <module name="common-core" />
       </profile>
     </annotationProcessing>

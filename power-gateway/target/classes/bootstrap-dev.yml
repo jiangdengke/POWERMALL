@@ -13,6 +13,10 @@ spring:
           uri: lb://pms-service
           predicates:
             - Path=/api-admin/pms/**,/api/pms/**
+        - id: cms-service
+          uri: lb://cms-service
+          predicates:
+            - Path=/api-admin/cms/**,/api/cms/**
         - id: oss-service
           uri: lb://oss-service
           predicates:

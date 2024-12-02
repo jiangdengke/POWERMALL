@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/mall-cms/cms-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-cms/cms-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-cms/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mall-cms/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-pms/pms-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-pms/pms-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall-pms/src/main/java" charset="UTF-8" />

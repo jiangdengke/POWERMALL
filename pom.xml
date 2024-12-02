@@ -14,6 +14,7 @@
     <module>mall-pms</module>
     <module>power-oss</module>
       <module>power-gateway</module>
+      <module>mall-cms</module>
   </modules>
 
   <properties>

@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: cms-service
+  profiles:
+    active: dev
