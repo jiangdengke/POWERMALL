@@ -5,9 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="对内容和商品通过SpringCache增加缓存。">
+      <change afterPath="$PROJECT_DIR$/mall-search/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/search-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/SearchApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/controller/GoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/document/GoodsDoc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/pojo/page/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/pojo/query/GoodsQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/repository/GoodsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/service/GoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/test/java/com/jiangdk/search/service/impl/GoodsServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/SpuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/SpuServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/target/classes/bootstrap-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -62,6 +81,7 @@
     "HTTP 请求.generated-requests | #3.executor": "Run",
     "HTTP 请求.generated-requests | #5.executor": "Run",
     "JUnit.CategoryServiceTest.page.executor": "Run",
+    "JUnit.GoodsServiceImplTest.save.executor": "Run",
     "JUnit.MinioTest.test.executor": "Run",
     "JUnit.MinioTest.test02.executor": "Run",
     "JUnit.MinioTest.test03.executor": "JRebel Debug",
@@ -78,6 +98,7 @@
     "Spring Boot.GatewayApplication.executor": "JRebel Executor",
     "Spring Boot.OSSApplication.executor": "JRebel Executor",
     "Spring Boot.PMSApplication.executor": "JRebel Executor",
+    "Spring Boot.SearchApplication.executor": "JRebel Debug",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
@@ -89,7 +110,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "项目",
+    "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
@@ -126,6 +147,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.jiangdk.search.service.impl" />
       <recent name="com.jiangdk.pms.service.impl" />
       <recent name="com.jiangdk.pms.service" />
     </key>
@@ -140,18 +162,18 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CMSApplication">
-    <configuration name="MinioTest.test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="oss-service" />
+  <component name="RunManager" selected="JUnit.GoodsServiceImplTest.save">
+    <configuration name="GoodsServiceImplTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="search-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jiangdk.oss.*" />
+          <option name="PATTERN" value="com.jiangdk.search.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jiangdk.oss" />
-      <option name="MAIN_CLASS_NAME" value="com.jiangdk.oss.MinioTest" />
-      <option name="METHOD_NAME" value="test04" />
+      <option name="PACKAGE_NAME" value="com.jiangdk.search.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.jiangdk.search.service.impl.GoodsServiceImplTest" />
+      <option name="METHOD_NAME" value="save" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -183,19 +205,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OSSApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="oss-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.oss.OSSApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jiangdk.oss.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PMSApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="pms-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.pms.PMSApplication" />
@@ -209,20 +218,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="search-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.search.SearchApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiangdk.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.MinioTest.test04" />
+      <item itemvalue="JUnit.GoodsServiceImplTest.save" />
+      <item itemvalue="Spring Boot.SearchApplication" />
       <item itemvalue="Spring Boot.CMSApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
-      <item itemvalue="Spring Boot.OSSApplication" />
       <item itemvalue="Spring Boot.PMSApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PMSApplication" />
+        <item itemvalue="Spring Boot.SearchApplication" />
+        <item itemvalue="JUnit.GoodsServiceImplTest.save" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.PMSApplication" />
         <item itemvalue="Spring Boot.CMSApplication" />
-        <item itemvalue="Spring Boot.OSSApplication" />
-        <item itemvalue="JUnit.MinioTest.test04" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +272,9 @@
       <workItem from="1733062182737" duration="434000" />
       <workItem from="1733062636812" duration="48000" />
       <workItem from="1733062724477" duration="1405000" />
-      <workItem from="1733111943451" duration="18309000" />
+      <workItem from="1733111943451" duration="18376000" />
+      <workItem from="1733222282202" duration="1010000" />
+      <workItem from="1733223314908" duration="5447000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
@@ -356,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733142173771</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="对内容和商品通过SpringCache增加缓存。">
+      <option name="closed" value="true" />
+      <created>1733147455921</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1733147455921</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,6 +425,26 @@
           <url>file://$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/CategoryServiceImpl.java</url>
           <line>103</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/service/impl/GoodsServiceImpl.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/service/impl/GoodsServiceImpl.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/service/impl/GoodsServiceImpl.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/service/impl/GoodsServiceImpl.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

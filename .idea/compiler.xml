@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="common-mybatis" />
         <module name="power-gateway" />
+        <module name="search-service" />
         <module name="pms-service" />
         <module name="oss-api" />
         <module name="common-web" />

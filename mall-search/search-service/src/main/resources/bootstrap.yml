@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: search-service # 微服务名称
+  profiles:
+    active: dev
