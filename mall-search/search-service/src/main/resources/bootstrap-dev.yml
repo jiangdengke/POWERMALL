@@ -2,6 +2,18 @@ server:
   port: 8003
 
 spring:
+  rabbitmq:
+    host: 128.1.132.86
+    virtual-host: /
+    port: 5672
+    username: mjga
+    password: mjga
+#    listener:
+#      simple:
+#        acknowledge-mode: manual
+#        retry:
+#          enabled: true # 开启失败重试
+#          max-attempts: 3 # 重试的次数
   elasticsearch:
     uris:
       - http://128.1.132.86:9200 # 搜索引擎服务地址

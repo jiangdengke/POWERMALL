@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/oss-service.iml" filepath="$PROJECT_DIR$/oss-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/pms-service.iml" filepath="$PROJECT_DIR$/pms-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/search-service.iml" filepath="$PROJECT_DIR$/search-service.iml" />
     </modules>
   </component>
 </project>

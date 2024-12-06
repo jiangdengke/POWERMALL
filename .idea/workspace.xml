@@ -4,29 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="对内容和商品通过SpringCache增加缓存。">
-      <change afterPath="$PROJECT_DIR$/mall-search/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-search/search-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/SearchApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/controller/GoodsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/document/GoodsDoc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/pojo/page/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/pojo/query/GoodsQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/repository/GoodsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/service/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/service/impl/GoodsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/test/java/com/jiangdk/search/service/impl/GoodsServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
+    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="搭建搜索微服务，完成多字段商品搜索功能">
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-api/src/main/java/com/jiangdk/pms/dto/GoodsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/config/RabbitTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/listener/GoodsMQListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/resources/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-rabbitmq/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-rabbitmq/src/main/java/com/jiangdk/common/rabbitmq/config/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-rabbitmq/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-rabbitmq/src/test/java/com/jiangdk/AppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/target/classes/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/SpuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/SpuServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-search/search-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/search-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-search/search-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -64,6 +64,7 @@
   </component>
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
+    <option name="hasSeenReactiveStreamsDisablingDialog" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -96,15 +97,15 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.CMSApplication.executor": "JRebel Executor",
     "Spring Boot.GatewayApplication.executor": "JRebel Executor",
-    "Spring Boot.OSSApplication.executor": "JRebel Executor",
-    "Spring Boot.PMSApplication.executor": "JRebel Executor",
+    "Spring Boot.OSSApplication.executor": "Run",
+    "Spring Boot.PMSApplication.executor": "JRebel Debug",
     "Spring Boot.SearchApplication.executor": "JRebel Debug",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jdk/Desktop/power-mall/power-common/common-redis/src/main/resources",
+    "last_opened_file_path": "C:/Users/jdk/Desktop/code/backendCode/dbfirst-mysql",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -131,17 +132,18 @@
 }]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
+    <option name="stackFrameCustomizationEnabled" value="false" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-rabbitmq\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-redis\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\mall-cms\cms-service\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\power-oss\oss-service\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-mybatis\src\main" />
-      <recent name="C:\Users\jdk\Desktop\power-mall\mall-pms\pms-service\src\main\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -162,7 +164,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GoodsServiceImplTest.save">
+  <component name="RunManager" selected="Spring Boot.OSSApplication">
     <configuration name="GoodsServiceImplTest.save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="search-service" />
       <extension name="coverage">
@@ -179,12 +181,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CMSApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cms-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.cms.CMSApplication" />
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="power-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.gateway.GatewayApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jiangdk.cms.*" />
+          <option name="PATTERN" value="com.jiangdk.gateway.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -192,12 +194,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="power-gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.gateway.GatewayApplication" />
+    <configuration name="OSSApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="oss-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.oss.OSSApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jiangdk.gateway.*" />
+          <option name="PATTERN" value="com.jiangdk.oss.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -233,18 +235,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.GoodsServiceImplTest.save" />
+      <item itemvalue="Spring Boot.OSSApplication" />
       <item itemvalue="Spring Boot.SearchApplication" />
-      <item itemvalue="Spring Boot.CMSApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.PMSApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SearchApplication" />
-        <item itemvalue="JUnit.GoodsServiceImplTest.save" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.OSSApplication" />
         <item itemvalue="Spring Boot.PMSApplication" />
-        <item itemvalue="Spring Boot.CMSApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="JUnit.GoodsServiceImplTest.save" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +276,10 @@
       <workItem from="1733062724477" duration="1405000" />
       <workItem from="1733111943451" duration="18376000" />
       <workItem from="1733222282202" duration="1010000" />
-      <workItem from="1733223314908" duration="5447000" />
+      <workItem from="1733223314908" duration="6241000" />
+      <workItem from="1733296680889" duration="1113000" />
+      <workItem from="1733360095810" duration="1639000" />
+      <workItem from="1733475458849" duration="13501000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
@@ -388,7 +393,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733147455921</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="搭建搜索微服务，完成多字段商品搜索功能">
+      <option name="closed" value="true" />
+      <created>1733230987340</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1733230987340</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +429,8 @@
     <MESSAGE value="完成内容微服务接口的开发" />
     <MESSAGE value="对接微信小程序前端-更改后端路径" />
     <MESSAGE value="对内容和商品通过SpringCache增加缓存。" />
-    <option name="LAST_COMMIT_MESSAGE" value="对内容和商品通过SpringCache增加缓存。" />
+    <MESSAGE value="搭建搜索微服务，完成多字段商品搜索功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="搭建搜索微服务，完成多字段商品搜索功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -437,14 +451,69 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/service/impl/GoodsServiceImpl.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java</url>
+          <line>162</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java</url>
+          <line>164</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java</url>
+          <line>166</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/power-oss/oss-service/src/main/java/com/jiangdk/oss/service/impl/MinioServiceImpl.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/service/impl/GoodsServiceImpl.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="8" />
+          <line>72</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/service/impl/GoodsServiceImpl.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/listener/GoodsMQListener.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/listener/GoodsMQListener.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

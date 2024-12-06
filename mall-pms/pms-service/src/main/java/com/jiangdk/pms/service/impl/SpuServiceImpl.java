@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jiangdk.common.exception.BizException;
 import com.jiangdk.oss.feign.MinioFeignClient;
+import com.jiangdk.pms.dto.GoodsDTO;
 import com.jiangdk.pms.pojo.entity.Category;
 import com.jiangdk.pms.pojo.entity.Sku;
 import com.jiangdk.pms.pojo.form.SpuForm;
@@ -13,6 +14,8 @@ import com.jiangdk.pms.pojo.query.SpuPageQuery;
 import com.jiangdk.pms.pojo.vo.SpuVO;
 import com.jiangdk.pms.service.CategoryService;
 import com.jiangdk.pms.service.SkuService;
+import org.springframework.amqp.rabbit.connection.CorrelationData;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
@@ -33,10 +36,12 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper, Spu> implements SpuSe
     @Autowired
     private SkuService skuService;
     @Autowired
-    @Lazy
+    @Lazy // 避免循环依赖
     private CategoryService categoryService;
     @Autowired
     private MinioFeignClient minioFeignClient;
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
 
     /**
      * 根据spuId获取商品详情
@@ -87,6 +92,11 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper, Spu> implements SpuSe
         }).collect(Collectors.toList());
         // 批量保存商品的sku
         skuService.saveBatch(skuList);
+        // 将商品信息发送到mq
+        GoodsDTO goodsDTO = new GoodsDTO();
+        BeanUtils.copyProperties(spu,goodsDTO);
+        rabbitTemplate.convertAndSend("pms.goods","pms.goods.save",goodsDTO,
+                new CorrelationData(String.valueOf(spu.getId())));
     }
 
     /**
@@ -121,6 +131,11 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper, Spu> implements SpuSe
         }).collect(Collectors.toList());
         // 批量更新或新增
         skuService.saveOrUpdateBatch(skuList);
+        // 将商品信息发送到mq
+        GoodsDTO goodsDTO = new GoodsDTO();
+        BeanUtils.copyProperties(spu,goodsDTO);
+        rabbitTemplate.convertAndSend("pms.goods","pms.goods.update",goodsDTO,
+                new CorrelationData(String.valueOf(spu.getId())));
     }
 
     /**
@@ -148,5 +163,8 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper, Spu> implements SpuSe
         filenames.add(filename);
         // 批量删除
         minioFeignClient.removeFile("mall",filenames.toArray(new String[filenames.size()]));
+        // 将商品id发送到mq
+        rabbitTemplate.convertAndSend("pms.goods","pms.goods.del",spuId,
+                new CorrelationData(String.valueOf(spu.getId())));
     }
 }

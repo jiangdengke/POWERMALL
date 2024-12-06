@@ -17,6 +17,21 @@ spring:
   cache:
     # 指定使用的缓存产品
     type: redis
+
+  rabbitmq:
+    host: 128.1.132.86
+    virtual-host: /
+    port: 5672
+    username: mjga
+    password: mjga
+    # 开启消息确认异步回调（消息是否成功投递到了交换机）
+    publisher-confirm-type: correlated
+    # 消息发送失败的回调（从交换机路由到队列失败的时候调用）
+    publisher-returns: true
+    template:
+      # 定义消息路由失败时的策略。true：则调用ReturnCallback; false：则直接丢弃消息
+      mandatory: true
+
   cloud:
     nacos:
       # 注册中心和配置中心地址

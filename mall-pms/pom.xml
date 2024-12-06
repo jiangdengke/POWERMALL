@@ -14,6 +14,7 @@
     <url>http://maven.apache.org</url>
     <modules>
         <module>pms-service</module>
+        <module>pms-api</module>
     </modules>
 
 </project>
