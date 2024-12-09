@@ -39,7 +39,7 @@ public class Order {
      * 1-待付款;2-待发货;3-已发货;4-已完成;;5-已取消;
      */
     @TableField(value = "`status`")
-    private Byte status;
+    private Integer status;
 
     /**
      * 订单备注
@@ -166,7 +166,7 @@ public class Order {
      *
      * @return status - 1-待付款;2-待发货;3-已发货;4-已完成;;5-已取消;
      */
-    public Byte getStatus() {
+    public Integer getStatus() {
         return status;
     }
 
@@ -175,7 +175,7 @@ public class Order {
      *
      * @param status 1-待付款;2-待发货;3-已发货;4-已完成;;5-已取消;
      */
-    public void setStatus(Byte status) {
+    public void setStatus(Integer status) {
         this.status = status;
     }
 

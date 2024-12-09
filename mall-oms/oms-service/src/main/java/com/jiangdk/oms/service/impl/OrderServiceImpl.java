@@ -5,6 +5,9 @@ import cn.hutool.core.collection.ListUtil;
 import cn.hutool.http.HttpStatus;
 import com.jiangdk.common.exception.BizException;
 import com.jiangdk.common.result.Result;
+import com.jiangdk.oms.mapper.OrderItemMapper;
+import com.jiangdk.oms.pojo.entity.OrderItem;
+import com.jiangdk.oms.pojo.form.OrderForm;
 import com.jiangdk.oms.pojo.vo.CartItemVO;
 import com.jiangdk.oms.pojo.vo.OrderItemVO;
 import com.jiangdk.oms.pojo.vo.OrderVO;
@@ -19,6 +22,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.jiangdk.oms.pojo.entity.Order;
 import com.jiangdk.oms.mapper.OrderMapper;
 import com.jiangdk.oms.service.OrderService;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -32,6 +36,8 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     private SkuFeignClient skuFeignClient;
     @Autowired
     private RedisTemplate redisTemplate;
+    @Autowired
+    private OrderItemMapper orderItemMapper;
     private String key() {
         Long userId = 1L;
         return "cart:" + userId;
@@ -106,5 +112,57 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         // 设置订单明细
         orderVO.setOrderItems(orderItemVOList);
         return orderVO;
+    }
+
+    /**
+     * 提交订单
+     *
+     * @param orderForm
+     * @return
+     */
+    @Override
+    @Transactional
+    public void orderSubmit(OrderForm orderForm) {
+        Long orderId = 1001L;
+        Order order = new Order();
+        BeanUtils.copyProperties(orderForm,order);
+        order.setId(orderId);// 订单编号
+        order.setUserId(1L);// 下单用户
+        order.setStatus(1); // 待付款
+        // 收集多个订单详情表
+        List<OrderItem> orderItems = new ArrayList<>();
+        orderForm.getOrderItems().forEach(orderItemForm -> {
+            Result<SkuDTO> result = skuFeignClient.getSkuById(orderItemForm.getSkuId());
+            if (result.isError()){
+                throw new BizException(HttpStatus.HTTP_NOT_FOUND,"购买的商品不存在或已下架");
+            }
+            SkuDTO skuDTO = result.getData();
+            // 校验商品价格是否发生变化
+            if (!orderItemForm.getPrice().equals(skuDTO.getPrice()) ){
+                throw new BizException(HttpStatus.HTTP_BAD_REQUEST,"购买的商品价格【"+skuDTO.getSpuName()+skuDTO.getSkuName()+"】发生变化,请重新下单");
+
+            }
+            OrderItem orderItem = new OrderItem();
+            BeanUtils.copyProperties(skuDTO,orderItem);
+            orderItem.setOrderId(orderId);
+            orderItem.setCount(orderItemForm.getCount());
+            orderItems.add(orderItem);
+        });
+        // 计算商品总金额
+        Integer totalAmount = orderItems.stream()
+                .map(orderItem -> orderItem.getPrice() * orderItem.getCount())
+                .reduce(Integer::sum).get();
+        if (!orderForm.getTotalAmount().equals(totalAmount)){
+            throw new BizException(HttpStatus.HTTP_BAD_REQUEST,"商品总价格不正确,请重新下单");
+        }
+        // 计算商品的应付款金额
+        Integer payMount = totalAmount - 0; // 如果有优惠啥的可以在这里面减去
+        if (!orderForm.getPayAmount().equals(payMount)){
+            throw new BizException(HttpStatus.HTTP_BAD_REQUEST,"应付款金额不正确,请重新下单");
+        }
+        // 入库订单表
+        this.save(order);
+        // 入库订单明细表
+        orderItems.forEach(orderItem -> orderItemMapper.insert(orderItem));
     }
 }

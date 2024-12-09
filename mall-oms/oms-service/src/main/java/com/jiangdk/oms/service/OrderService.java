@@ -2,6 +2,7 @@ package com.jiangdk.oms.service;
 
 import com.jiangdk.oms.pojo.entity.Order;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.jiangdk.oms.pojo.form.OrderForm;
 import com.jiangdk.oms.pojo.vo.OrderVO;
 
 public interface OrderService extends IService<Order>{
@@ -20,4 +21,10 @@ public interface OrderService extends IService<Order>{
      * @return
      */
     OrderVO orderConfirm();
+    /**
+     * 提交订单
+     * @param orderForm
+     * @return
+     */
+    void orderSubmit(OrderForm orderForm);
 }

@@ -1,12 +1,14 @@
 package com.jiangdk.oms.controller.app;
 
 import com.jiangdk.common.result.Result;
+import com.jiangdk.oms.pojo.form.OrderForm;
 import com.jiangdk.oms.pojo.vo.OrderVO;
 import com.jiangdk.oms.service.OrderService;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -41,5 +43,17 @@ public class AppOrderController {
     @GetMapping("/confirmCart")
     public Result<OrderVO> confirmOrder() {
         return Result.success(orderService.orderConfirm());
+    }
+    /**
+     * 提交订单
+     *
+     * @return
+     */
+    @GetMapping("/submit")
+    public Result submitOrder(
+            @RequestBody @Validated OrderForm orderForm
+            ) {
+        orderService.orderSubmit(orderForm);
+        return Result.success();
     }
 }
