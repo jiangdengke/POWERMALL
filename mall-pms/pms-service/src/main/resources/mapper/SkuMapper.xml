@@ -18,4 +18,22 @@
     <!--@mbg.generated-->
     id, spu_id, `name`, price, stock, spec_value_list, `status`, create_time, update_time
   </sql>
+
+  <select id="selectCartItemByIds" resultType="com.jiangdk.pms.pojo.vo.CartItemVO">
+    select
+      t1.id spu_id,
+      t2.id sku_id,
+      t1.img,
+      t1.name spu_name,
+      t2.name sku_name,
+      t2.price,
+      t2.stock,
+      t2.status
+    from pms_spu t1
+           left join pms_sku t2 on t1.id = t2.spu_id
+    where t2.id
+    <foreach collection="list" open="IN (" close=")" separator="," item="skuId">
+      #{skuId}
+    </foreach>
+  </select>
 </mapper>
