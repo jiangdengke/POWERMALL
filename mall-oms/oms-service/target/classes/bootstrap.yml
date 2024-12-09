@@ -1,0 +1,6 @@
+
+spring:
+  application:
+    name: oms-service
+  profiles:
+    active: dev
