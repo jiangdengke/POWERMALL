@@ -36,4 +36,21 @@
       #{skuId}
     </foreach>
   </select>
+
+  <select id="selectSkuById" resultType="com.jiangdk.pms.dto.SkuDTO">
+    SELECT
+    sku.id sku_id,
+    sku.spu_id,
+    sku.name sku_name,
+    spu.name spu_name,
+    spu.img,
+    sku.price,
+    sku.stock
+    FROM
+    pms_sku sku,
+    pms_spu spu
+    WHERE
+    sku.spu_id = spu.id
+    AND sku.id = #{skuId}
+  </select>
 </mapper>

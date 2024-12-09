@@ -7,17 +7,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="common-mybatis" />
         <module name="common-rabbitmq" />
+        <module name="oss-api" />
+        <module name="pms-api" />
+        <module name="oss-service" />
+        <module name="common-redis" />
+        <module name="common-mybatis" />
         <module name="power-gateway" />
         <module name="search-service" />
         <module name="pms-service" />
-        <module name="oss-api" />
-        <module name="pms-api" />
+        <module name="oms-service" />
         <module name="common-web" />
-        <module name="oss-service" />
         <module name="cms-service" />
-        <module name="common-redis" />
         <module name="common-core" />
       </profile>
     </annotationProcessing>

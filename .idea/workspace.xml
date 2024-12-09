@@ -4,21 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="搭建搜索微服务，完成多字段商品搜索功能">
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppCartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/form/CartItemForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/vo/CartItemVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/test/java/com/jiangdk/pms/mapper/SkuMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/test/java/com/jiangdk/pms/service/impl/CartServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-common/common-redis/src/main/java/com/jiangdk/common/redis/config/RedisConfig.java" afterDir="false" />
+    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="完成购物车相关接口开发，但仍存在一些瑕疵，需要接入user模块后联调">
+      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/OMSApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/controller/app/AppOrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/pojo/vo/CartItemVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/pojo/vo/OrderItemVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/pojo/vo/OrderVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/test/java/com/jiangdk/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-oms/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-api/src/main/java/com/jiangdk/pms/dto/SkuDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-api/src/main/java/com/jiangdk/pms/feign/SkuFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppSkuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6fd402ab-20bb-48b9-8158-7e52ac8f7727.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6fd402ab-20bb-48b9-8158-7e52ac8f7727.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppCartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/mapper/SkuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/mapper/SkuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/SkuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/SkuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SkuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SkuServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/mapper/SkuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/mapper/SkuMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/mapper/SkuMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/mapper/SkuMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/SkuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/SkuService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/SkuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/SkuServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/mapper/SkuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/mapper/SkuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/common-redis/src/main/resources/META-INF/spring.factories" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/common-redis/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/target/classes/bootstrap-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,9 +112,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.CMSApplication.executor": "JRebel Executor",
-    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "JRebel Executor",
+    "Spring Boot.OMSApplication.executor": "Debug",
     "Spring Boot.OSSApplication.executor": "Run",
-    "Spring Boot.PMSApplication.executor": "JRebel Debug",
+    "Spring Boot.PMSApplication.executor": "Debug",
     "Spring Boot.SearchApplication.executor": "JRebel Debug",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -113,7 +132,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "settings.editor.selected.configurable": "com.ccnode.codegenerator.I.b",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -137,11 +156,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jdk\Desktop\power-mall\mall-oms\oms-service\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-rabbitmq\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-redis\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\mall-cms\cms-service\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\power-oss\oss-service\src\main\resources" />
-      <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-mybatis\src\main" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -163,7 +182,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PMSApplication">
+  <component name="RunManager" selected="Spring Boot.OMSApplication">
     <configuration name="CartServiceImplTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pms-service" />
       <extension name="coverage">
@@ -196,28 +215,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SkuMapperTest.testDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pms-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jiangdk.pms.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jiangdk.pms.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.jiangdk.pms.mapper.SkuMapperTest" />
-      <option name="METHOD_NAME" value="testDemo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="power-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.gateway.GatewayApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.jiangdk.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OMSApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="oms-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.oms.OMSApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jiangdk.oms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -239,19 +255,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SkuMapperTest.testDemo" />
       <item itemvalue="JUnit.CartServiceImplTest.add" />
       <item itemvalue="JUnit.CartServiceImplTest.getAll" />
+      <item itemvalue="Spring Boot.OMSApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.PMSApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.OMSApplication" />
         <item itemvalue="Spring Boot.PMSApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="JUnit.CartServiceImplTest.getAll" />
         <item itemvalue="JUnit.CartServiceImplTest.add" />
-        <item itemvalue="JUnit.SkuMapperTest.testDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -300,7 +316,8 @@
       <workItem from="1733654300481" duration="452000" />
       <workItem from="1733654796490" duration="218000" />
       <workItem from="1733655033176" duration="7727000" />
-      <workItem from="1733719556256" duration="3807000" />
+      <workItem from="1733719556256" duration="9705000" />
+      <workItem from="1733735508559" duration="7810000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
@@ -422,7 +439,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733230987340</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="完成购物车相关接口开发，但仍存在一些瑕疵，需要接入user模块后联调">
+      <option name="closed" value="true" />
+      <created>1733726495099</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1733726495099</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +476,8 @@
     <MESSAGE value="对接微信小程序前端-更改后端路径" />
     <MESSAGE value="对内容和商品通过SpringCache增加缓存。" />
     <MESSAGE value="搭建搜索微服务，完成多字段商品搜索功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="搭建搜索微服务，完成多字段商品搜索功能" />
+    <MESSAGE value="完成购物车相关接口开发，但仍存在一些瑕疵，需要接入user模块后联调" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成购物车相关接口开发，但仍存在一些瑕疵，需要接入user模块后联调" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -515,6 +541,26 @@
           <url>file://$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/listener/GoodsMQListener.java</url>
           <line>47</line>
           <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

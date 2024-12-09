@@ -1,6 +1,7 @@
 package com.jiangdk.pms.controller.app;
 
 import com.jiangdk.common.result.Result;
+import com.jiangdk.pms.pojo.vo.CartItemVO;
 import com.jiangdk.pms.service.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -24,7 +25,7 @@ public class AppCartController {
      * @return
      */
     @GetMapping
-    public Result list() {
+    public Result<List<CartItemVO>> list() {
         return Result.success(cartService.getAll());
     }
 

@@ -16,6 +16,7 @@
     <module>power-gateway</module>
     <module>mall-cms</module>
     <module>mall-search</module>
+      <module>mall-oms</module>
   </modules>
 
   <properties>

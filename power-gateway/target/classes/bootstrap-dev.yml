@@ -17,6 +17,10 @@ spring:
           uri: lb://cms-service
           predicates:
             - Path=/api-admin/cms/**,/api/cms/**
+        - id: oms-service
+          uri: lb://oms-service
+          predicates:
+            - Path=/api-admin/oms/**,/api/oms/**
         - id: search-service
           uri: lb://search-service
           predicates:
