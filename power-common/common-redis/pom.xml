@@ -18,6 +18,10 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+        </dependency>
         <!-- Spring Data Redis 的启动器 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

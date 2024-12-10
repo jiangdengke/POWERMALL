@@ -2,8 +2,11 @@ package com.jiangdk.pms.feign;
 
 import com.jiangdk.common.result.Result;
 import com.jiangdk.pms.dto.SkuDTO;
+import com.jiangdk.pms.dto.StockDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
@@ -20,4 +23,15 @@ public interface SkuFeignClient {
      */
     @GetMapping("/api/pms/sku/info")
     Result<SkuDTO> getSkuById(@RequestParam("skuId") Long skuId);
+    /**
+     * 下单扣减库存
+     */
+    @PutMapping("/api/pms/sku/lockStock")
+    Result lockStock(@RequestBody StockDTO stockDTO);
+
+    /**
+     * 订单取消释放库存
+     */
+    @PutMapping("/api/pms/sku/unlockStock")
+    Result unlockStock(@RequestParam("orderSn") String orderSn);
 }

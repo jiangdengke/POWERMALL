@@ -53,4 +53,8 @@
     sku.spu_id = spu.id
     AND sku.id = #{skuId}
   </select>
+
+  <update id="lockStock">
+    update pms_sku set stock = stock - #{count} where id = #{skuId}
+  </update>
 </mapper>
