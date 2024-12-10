@@ -22,5 +22,19 @@ public interface SkuMapper extends BaseMapper<Sku> {
      * @return
      */
     SkuDTO selectSkuById(Long skuId);
+
+    /**
+     * 扣减商品库存
+     * @param skuId
+     * @param count
+     * @return
+     */
     int lockStock(@Param("skuId") Long skuId,@Param("count") Integer count);
+    /**
+     * 返还商品库存
+     * @param skuId
+     * @param count
+     * @return
+     */
+    int unLockStock(@Param("skuId") Long skuId,@Param("count") Integer count);
 }

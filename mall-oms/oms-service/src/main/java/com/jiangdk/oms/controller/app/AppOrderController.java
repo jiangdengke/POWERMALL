@@ -46,7 +46,7 @@ public class AppOrderController {
      *
      * @return
      */
-    @GetMapping("/submit")
+    @PostMapping("/submit")
     public Result submitOrder(
             @RequestBody @Validated OrderForm orderForm
             ) {

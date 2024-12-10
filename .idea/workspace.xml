@@ -4,20 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="取消订单接口开发">
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-api/src/main/java/com/jiangdk/pms/dto/StockDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/test/java/com/jiangdk/pms/redis/RedisLockTest.java" afterDir="false" />
+    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="下单减库存业务开发，通过redisson解决超卖问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/controller/app/AppOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/controller/app/AppOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/controller/app/AppOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/controller/app/AppOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-api/src/main/java/com/jiangdk/pms/feign/SkuFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-api/src/main/java/com/jiangdk/pms/feign/SkuFeignClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppSkuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppSkuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/mapper/SkuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/mapper/SkuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/SkuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/SkuService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SkuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SkuServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/mapper/SkuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/mapper/SkuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/common-redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/common-redis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/common-redis/src/main/java/com/jiangdk/common/redis/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/common-redis/src/main/java/com/jiangdk/common/redis/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/app/AppSkuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/app/AppSkuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/mapper/SkuMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/mapper/SkuMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/SkuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/SkuServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/mapper/SkuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/mapper/SkuMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,10 +248,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RedisLockTest.test" />
         <item itemvalue="Spring Boot.PMSApplication" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.OMSApplication" />
+        <item itemvalue="JUnit.RedisLockTest.test" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="应用程序.IdGenerator" />
       </list>
     </recent_temporary>
@@ -306,7 +307,7 @@
       <workItem from="1733805676210" duration="1524000" />
       <workItem from="1733808064385" duration="814000" />
       <workItem from="1733808952330" duration="3853000" />
-      <workItem from="1733812833901" duration="16613000" />
+      <workItem from="1733812833901" duration="19850000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
@@ -484,7 +485,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733820974594</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="下单减库存业务开发，通过redisson解决超卖问题">
+      <option name="closed" value="true" />
+      <created>1733836864580</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1733836864580</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +540,8 @@
     <MESSAGE value="使用雪花id保证订单id的唯一性，配合redis实现防止订单重复提交" />
     <MESSAGE value="使用延迟队列插件完成超时订单自动取消" />
     <MESSAGE value="取消订单接口开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="取消订单接口开发" />
+    <MESSAGE value="下单减库存业务开发，通过redisson解决超卖问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="下单减库存业务开发，通过redisson解决超卖问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -598,17 +608,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
-          <line>163</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
-          <line>71</line>
+          <line>72</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
-          <line>79</line>
+          <line>80</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>

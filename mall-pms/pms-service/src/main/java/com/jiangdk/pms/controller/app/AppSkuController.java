@@ -45,6 +45,8 @@ public class AppSkuController {
      */
     @PutMapping("/unlockStock")
     public Result unlockStock(String orderSn) {
+        skuService.unlockStock(orderSn);
         return Result.success();
     }
+
 }

@@ -8,18 +8,23 @@ import com.jiangdk.pms.dto.StockDTO;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.jiangdk.pms.mapper.SkuMapper;
 import com.jiangdk.pms.pojo.entity.Sku;
 import com.jiangdk.pms.service.SkuService;
 
+import java.time.Duration;
+import java.util.List;
+
 @Service
 public class SkuServiceImpl extends ServiceImpl<SkuMapper, Sku> implements SkuService {
 
     @Autowired
     private RedissonClient redissonClient;
-
+    @Autowired
+    private RedisTemplate redisTemplate;
     @Override
     public SkuDTO getSkuById(Long skuId) {
         SkuDTO skuDTO = this.baseMapper.selectSkuById(skuId);
@@ -69,14 +74,25 @@ public class SkuServiceImpl extends ServiceImpl<SkuMapper, Sku> implements SkuSe
                 lock.unlock();
             }
         });
+        // 将下单信息缓存到redis，供取消订单释放库存使用
+        redisTemplate.opsForValue().set("order:"+stockDTO.getOrderSn(),
+                stockDTO.getLockedSkus(), Duration.ofMinutes(35));
     }
 
     /**
      * 取消订单释放库存
      *
-     * @param orderSn
+     * @param orderSn 订单编号
      */
     @Override
     public void unlockStock(String orderSn) {
+        // 从redis获取商品购买信息
+        List<StockDTO.LockedSku> lockedSkus = (List<StockDTO.LockedSku>) redisTemplate.opsForValue().get("order:" + orderSn);
+        // 返还库存
+        lockedSkus.forEach(lockedSku -> {
+            this.baseMapper.unLockStock(lockedSku.getSkuId(),lockedSku.getCount());
+        });
+        // 从redis删除对应缓存
+        redisTemplate.delete("order:"+orderSn);
     }
 }

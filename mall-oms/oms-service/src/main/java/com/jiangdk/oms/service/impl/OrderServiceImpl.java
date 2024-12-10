@@ -13,6 +13,7 @@ import com.jiangdk.oms.pojo.vo.CartItemVO;
 import com.jiangdk.oms.pojo.vo.OrderItemVO;
 import com.jiangdk.oms.pojo.vo.OrderVO;
 import com.jiangdk.pms.dto.SkuDTO;
+import com.jiangdk.pms.dto.StockDTO;
 import com.jiangdk.pms.feign.SkuFeignClient;
 import org.springframework.amqp.AmqpException;
 import org.springframework.amqp.core.Message;
@@ -172,6 +173,20 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
             orderItem.setCount(orderItemForm.getCount());
             orderItems.add(orderItem);
         });
+        // 扣库存
+        StockDTO stockDTO = new StockDTO();
+        stockDTO.setOrderSn(orderSn);
+        List<StockDTO.LockedSku> collect = orderForm.getOrderItems().stream().map(orderItemForm -> {
+            StockDTO.LockedSku lockedSku = new StockDTO.LockedSku();
+            lockedSku.setSkuId(orderItemForm.getSkuId());
+            lockedSku.setCount(orderItemForm.getCount());
+            return lockedSku;
+        }).collect(Collectors.toList());
+        stockDTO.setLockedSkus(collect);
+        Result result = skuFeignClient.lockStock(stockDTO);
+        if (result.isError()){
+            throw new BizException(result.getCode(),result.getMsg());
+        }
         // 计算商品总金额
         Integer totalAmount = orderItems.stream()
                 .map(orderItem -> orderItem.getPrice() * orderItem.getCount())
@@ -192,7 +207,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         rabbitTemplate.convertAndSend("oms.order", "order.cancel", orderId, new MessagePostProcessor() {
             @Override
             public Message postProcessMessage(Message message) throws AmqpException {
-                message.getMessageProperties().setDelay(30 * 60 * 1000); // 1分钟有效期
+                message.getMessageProperties().setDelay(30 * 60 * 1000); // 30分钟有效期
                 return message;
             }
         },new CorrelationData(orderSn));
@@ -211,7 +226,8 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         if (order != null && order.getStatus() == 1){
             order.setStatus(5);
             this.updateById(order);
-            // todo 释放库存的占用
+            //  释放库存的占用
+            skuFeignClient.unlockStock(order.getOrderSn());
         }
     }
 }
