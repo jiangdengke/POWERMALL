@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="订单微服务搭建，并通过feign远程调用商品微服务，进行订单数据的填充，完成从商品详情页面下单和从购物车下单两种订单生成情况">
-      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/pojo/form/OrderForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/pojo/form/OrderItemForm.java" afterDir="false" />
+    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="提交订单接口开发">
+      <change afterPath="$PROJECT_DIR$/power-common/common-core/src/main/java/com/jiangdk/common/util/IdGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/controller/app/AppOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/controller/app/AppOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/pojo/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/pojo/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/controller/app/AppOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/controller/app/AppOrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/pojo/entity/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/pojo/entity/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oss-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/oss-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pms-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pms-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/search-service.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,10 +85,11 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.CMSApplication.executor": "JRebel Executor",
     "Spring Boot.GatewayApplication.executor": "Debug",
-    "Spring Boot.OMSApplication.executor": "Run",
+    "Spring Boot.OMSApplication.executor": "Debug",
     "Spring Boot.OSSApplication.executor": "Run",
     "Spring Boot.PMSApplication.executor": "Debug",
     "Spring Boot.SearchApplication.executor": "JRebel Debug",
@@ -112,7 +109,8 @@
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "com.ccnode.codegenerator.I.b",
-    "vue.rearranger.settings.migration": "true"
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.IdGenerator.executor": "Run"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
@@ -161,19 +159,16 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OMSApplication">
-    <configuration name="CartServiceImplTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pms-service" />
+  <component name="RunManager" selected="应用程序.IdGenerator">
+    <configuration name="IdGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jiangdk.common.util.IdGenerator" />
+      <module name="common-core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jiangdk.pms.service.impl.*" />
+          <option name="PATTERN" value="com.jiangdk.common.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jiangdk.pms.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.jiangdk.pms.service.impl.CartServiceImplTest" />
-      <option name="METHOD_NAME" value="add" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -234,27 +229,27 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CartServiceImplTest.add" />
       <item itemvalue="JUnit.CartServiceImplTest.getAll" />
       <item itemvalue="Spring Boot.OMSApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.PMSApplication" />
+      <item itemvalue="应用程序.IdGenerator" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.OMSApplication" />
         <item itemvalue="Spring Boot.PMSApplication" />
+        <item itemvalue="Spring Boot.OMSApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="应用程序.IdGenerator" />
         <item itemvalue="JUnit.CartServiceImplTest.getAll" />
-        <item itemvalue="JUnit.CartServiceImplTest.add" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
       </set>
     </attachedChunks>
   </component>
@@ -297,7 +292,10 @@
       <workItem from="1733655033176" duration="7727000" />
       <workItem from="1733719556256" duration="9705000" />
       <workItem from="1733735508559" duration="8156000" />
-      <workItem from="1733750484651" duration="6128000" />
+      <workItem from="1733750484651" duration="6198000" />
+      <workItem from="1733805676210" duration="1524000" />
+      <workItem from="1733808064385" duration="814000" />
+      <workItem from="1733808952330" duration="3406000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
@@ -443,7 +441,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733750527722</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="提交订单接口开发">
+      <option name="closed" value="true" />
+      <created>1733758257151</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1733758257151</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +460,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -474,7 +492,8 @@
     <MESSAGE value="搭建搜索微服务，完成多字段商品搜索功能" />
     <MESSAGE value="完成购物车相关接口开发，但仍存在一些瑕疵，需要接入user模块后联调" />
     <MESSAGE value="订单微服务搭建，并通过feign远程调用商品微服务，进行订单数据的填充，完成从商品详情页面下单和从购物车下单两种订单生成情况" />
-    <option name="LAST_COMMIT_MESSAGE" value="订单微服务搭建，并通过feign远程调用商品微服务，进行订单数据的填充，完成从商品详情页面下单和从购物车下单两种订单生成情况" />
+    <MESSAGE value="提交订单接口开发" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交订单接口开发" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -541,38 +560,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
-          <line>129</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
-          <line>140</line>
+          <line>156</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
-          <line>151</line>
-          <option name="timeStamp" value="39" />
+          <line>64</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -5,6 +5,7 @@ import cn.hutool.core.collection.ListUtil;
 import cn.hutool.http.HttpStatus;
 import com.jiangdk.common.exception.BizException;
 import com.jiangdk.common.result.Result;
+import com.jiangdk.common.util.IdGenerator;
 import com.jiangdk.oms.mapper.OrderItemMapper;
 import com.jiangdk.oms.pojo.entity.OrderItem;
 import com.jiangdk.oms.pojo.form.OrderForm;
@@ -24,6 +25,7 @@ import com.jiangdk.oms.mapper.OrderMapper;
 import com.jiangdk.oms.service.OrderService;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -53,8 +55,9 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     @Override
     public OrderVO orderConfirm(Long skuId, Integer count) {
         OrderVO orderVO = new OrderVO();
-        // todo 设置订单编号
-        orderVO.setOrderSn("123");
+        String orderSn = IdGenerator.snowflakeIdStr();
+        // 设置订单编号
+        orderVO.setOrderSn(orderSn);
         OrderItemVO orderItemVO = new OrderItemVO();
         orderItemVO.setCount(count);
         // 远程调用商品微服务，获取商品最新的信息
@@ -66,6 +69,8 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         BeanUtils.copyProperties(skuDTO,orderItemVO);
         // 设置订单明细
         orderVO.setOrderItems(ListUtil.of(orderItemVO));
+        // 存储订单token
+        redisTemplate.opsForValue().set("order:token:"+orderSn,orderSn, Duration.ofMinutes(1));
         return orderVO;
     }
 
@@ -80,8 +85,9 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         // 获取购物车中选中的商品
         // 购物车的数据在redis中，可以直接从redis中拿
         OrderVO orderVO = new OrderVO();
-        // todo 设置订单编号
-        orderVO.setOrderSn("123");
+        // 设置订单编号
+        String orderSn = IdGenerator.snowflakeIdStr();
+        orderVO.setOrderSn(orderSn);
         // 订单明细
         List<OrderItemVO> orderItemVOList = new ArrayList<>();
         Set<String> goodsKeys = redisTemplate.opsForZSet().range(key(), 0, -1);
@@ -111,6 +117,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         }
         // 设置订单明细
         orderVO.setOrderItems(orderItemVOList);
+        redisTemplate.opsForValue().set("order:token:"+orderSn,orderSn, Duration.ofMinutes(1));
         return orderVO;
     }
 
@@ -123,10 +130,19 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     @Override
     @Transactional
     public void orderSubmit(OrderForm orderForm) {
-        Long orderId = 1001L;
+        // 防止订单重复提交和
+        String orderSn = orderForm.getOrderSn();
+        String token = (String) redisTemplate.opsForValue().get("order:token:" + orderSn);
+        // 如果订单编号存在。
+        if (token == null){
+            throw new BizException(HttpStatus.HTTP_BAD_REQUEST,"订单无效，请重新下单");
+        }
+        // 处理完这个订单，就把订单编号从redis中删除，失效掉这个订单
+        redisTemplate.delete("order:token:"+orderSn);
+        Long orderId = IdGenerator.snowflakeId();
         Order order = new Order();
         BeanUtils.copyProperties(orderForm,order);
-        order.setId(orderId);// 订单编号
+        order.setId(orderId);// 订单id
         order.setUserId(1L);// 下单用户
         order.setStatus(1); // 待付款
         // 收集多个订单详情表
@@ -144,6 +160,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
             }
             OrderItem orderItem = new OrderItem();
             BeanUtils.copyProperties(skuDTO,orderItem);
+            orderItem.setId(IdGenerator.snowflakeId());
             orderItem.setOrderId(orderId);
             orderItem.setCount(orderItemForm.getCount());
             orderItems.add(orderItem);
@@ -164,5 +181,6 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         this.save(order);
         // 入库订单明细表
         orderItems.forEach(orderItem -> orderItemMapper.insert(orderItem));
+
     }
 }
