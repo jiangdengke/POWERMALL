@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="提交订单接口开发">
-      <change afterPath="$PROJECT_DIR$/power-common/common-core/src/main/java/com/jiangdk/common/util/IdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="使用雪花id保证订单id的唯一性，配合redis实现防止订单重复提交">
+      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/config/RabbitTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/listener/OrderMQListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oss-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/oss-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pms-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pms-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/search-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/OrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +91,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.CMSApplication.executor": "JRebel Executor",
-    "Spring Boot.GatewayApplication.executor": "Debug",
+    "Spring Boot.GatewayApplication.executor": "Run",
     "Spring Boot.OMSApplication.executor": "Debug",
     "Spring Boot.OSSApplication.executor": "Run",
     "Spring Boot.PMSApplication.executor": "Debug",
@@ -148,6 +151,9 @@
       <recent name="com.jiangdk.search.service.impl" />
       <recent name="com.jiangdk.pms.service" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jiangdk.oms.config" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -159,7 +165,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.IdGenerator">
+  <component name="RunManager" selected="Spring Boot.OMSApplication">
     <configuration name="IdGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jiangdk.common.util.IdGenerator" />
       <module name="common-core" />
@@ -237,9 +243,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.PMSApplication" />
         <item itemvalue="Spring Boot.OMSApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.PMSApplication" />
         <item itemvalue="应用程序.IdGenerator" />
         <item itemvalue="JUnit.CartServiceImplTest.getAll" />
       </list>
@@ -295,7 +301,8 @@
       <workItem from="1733750484651" duration="6198000" />
       <workItem from="1733805676210" duration="1524000" />
       <workItem from="1733808064385" duration="814000" />
-      <workItem from="1733808952330" duration="3406000" />
+      <workItem from="1733808952330" duration="3853000" />
+      <workItem from="1733812833901" duration="3714000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
@@ -449,7 +456,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733758257151</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="使用雪花id保证订单id的唯一性，配合redis实现防止订单重复提交">
+      <option name="closed" value="true" />
+      <created>1733812723608</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1733812723608</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +508,8 @@
     <MESSAGE value="完成购物车相关接口开发，但仍存在一些瑕疵，需要接入user模块后联调" />
     <MESSAGE value="订单微服务搭建，并通过feign远程调用商品微服务，进行订单数据的填充，完成从商品详情页面下单和从购物车下单两种订单生成情况" />
     <MESSAGE value="提交订单接口开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交订单接口开发" />
+    <MESSAGE value="使用雪花id保证订单id的唯一性，配合redis实现防止订单重复提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用雪花id保证订单id的唯一性，配合redis实现防止订单重复提交" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -560,13 +576,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
-          <line>156</line>
+          <line>163</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
-          <line>64</line>
+          <line>71</line>
           <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

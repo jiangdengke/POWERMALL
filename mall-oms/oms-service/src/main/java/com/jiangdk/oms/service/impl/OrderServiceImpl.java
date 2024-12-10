@@ -14,6 +14,11 @@ import com.jiangdk.oms.pojo.vo.OrderItemVO;
 import com.jiangdk.oms.pojo.vo.OrderVO;
 import com.jiangdk.pms.dto.SkuDTO;
 import com.jiangdk.pms.feign.SkuFeignClient;
+import org.springframework.amqp.AmqpException;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessagePostProcessor;
+import org.springframework.amqp.rabbit.connection.CorrelationData;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -40,6 +45,8 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     private RedisTemplate redisTemplate;
     @Autowired
     private OrderItemMapper orderItemMapper;
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
     private String key() {
         Long userId = 1L;
         return "cart:" + userId;
@@ -181,6 +188,30 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         this.save(order);
         // 入库订单明细表
         orderItems.forEach(orderItem -> orderItemMapper.insert(orderItem));
+        // 发送订单id到消息队列
+        rabbitTemplate.convertAndSend("oms.order", "order.cancel", orderId, new MessagePostProcessor() {
+            @Override
+            public Message postProcessMessage(Message message) throws AmqpException {
+                message.getMessageProperties().setDelay(30 * 60 * 1000); // 1分钟有效期
+                return message;
+            }
+        },new CorrelationData(orderSn));
+    }
 
+    /**
+     * 取消订单
+     *
+     * @param orderId
+     */
+    @Override
+    public void orderCancel(Long orderId) {
+        // 查到订单
+        Order order = this.getById(orderId);
+        // 订单存在，并且是待付款状态
+        if (order != null && order.getStatus() == 1){
+            order.setStatus(5);
+            this.updateById(order);
+            // todo 释放库存的占用
+        }
     }
 }
