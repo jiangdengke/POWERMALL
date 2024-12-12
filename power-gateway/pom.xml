@@ -18,6 +18,33 @@
     </properties>
 
     <dependencies>
+        <!-- 测试模块 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.jiangdk</groupId>
+            <artifactId>ums-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--Sa-Token 权限认证 （reactor响应式集成）-->
+        <dependency>
+            <groupId>cn.dev33</groupId>
+            <artifactId>sa-token-reactor-spring-boot-starter</artifactId>
+        </dependency>
+        <!--认证公共模块-->
+        <dependency>
+            <groupId>com.jiangdk</groupId>
+            <artifactId>common-auth</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                        <groupId>cn.dev33</groupId>
+                        <artifactId>sa-token-spring-boot-starter</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
         <!-- gateway 的启动器 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

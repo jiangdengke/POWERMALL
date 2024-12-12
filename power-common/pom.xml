@@ -18,6 +18,7 @@
         <module>common-web</module>
         <module>common-redis</module>
         <module>common-rabbitmq</module>
+        <module>common-auth</module>
     </modules>
 
     <properties>

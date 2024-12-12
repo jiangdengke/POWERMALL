@@ -1,0 +1,45 @@
+package com.jiangdk.gateway.config;
+
+import cn.dev33.satoken.exception.NotLoginException;
+import cn.dev33.satoken.exception.NotPermissionException;
+import cn.dev33.satoken.exception.NotRoleException;
+import cn.dev33.satoken.reactor.filter.SaReactorFilter;
+import cn.dev33.satoken.router.SaRouter;
+import cn.dev33.satoken.stp.StpUtil;
+import cn.dev33.satoken.util.SaResult;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+/**
+ * [Sa-Token 权限认证] 配置类 
+ * @author click33
+ */
+@Configuration
+public class SaTokenConfigure {
+    // 注册 Sa-Token全局过滤器 
+    @Bean
+    public SaReactorFilter getSaReactorFilter() {
+        return new SaReactorFilter()
+            // 拦截地址 
+             .addInclude("/**").addExclude("/api/cms/**","/api/search/**","/api/pms/category","/api/pms/goods/{spuId}")
+            // 鉴权方法
+            .setAuth(obj -> {
+                // 登录校验
+                SaRouter.match("/api/**")
+                        .notMatch("/api/auth/login","/api/auth/isLogin")
+                        .check(r->StpUtil.checkLogin());
+            })
+            // 异常处理方法：每次setAuth函数出现异常时进入 
+            .setError(e -> {
+                if (e instanceof NotLoginException){
+                    return SaResult.error("token无效或过期").setCode(401);
+                } else if (e instanceof NotRoleException) {
+                    return SaResult.error("你没有访问该资源的权限").setCode(403);
+                } else if (e instanceof NotPermissionException) {
+                    return SaResult.error("你没有访问该资源的权限").setCode(403);
+                }else {
+                    return SaResult.error(e.getMessage());
+                }
+            });
+    }
+}

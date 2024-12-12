@@ -1,6 +1,13 @@
 server:
   port: 8888
 spring:
+  redis:
+    host: 128.1.132.86
+    port: 6379
+    password: bieshanwoku
+    lettuce:
+      pool:
+        enabled: true
   cloud:
     nacos:
       discovery:

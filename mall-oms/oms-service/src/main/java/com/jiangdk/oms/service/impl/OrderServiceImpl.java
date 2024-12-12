@@ -1,5 +1,6 @@
 package com.jiangdk.oms.service.impl;
 
+import cn.dev33.satoken.stp.StpUtil;
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.collection.ListUtil;
 import cn.hutool.http.HttpStatus;
@@ -49,7 +50,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     @Autowired
     private RabbitTemplate rabbitTemplate;
     private String key() {
-        Long userId = 1L;
+        Long userId = StpUtil.getLoginIdAsLong();
         return "cart:" + userId;
     }
     /**
@@ -151,7 +152,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         Order order = new Order();
         BeanUtils.copyProperties(orderForm,order);
         order.setId(orderId);// 订单id
-        order.setUserId(1L);// 下单用户
+        order.setUserId(StpUtil.getLoginIdAsLong());
         order.setStatus(1); // 待付款
         // 收集多个订单详情表
         List<OrderItem> orderItems = new ArrayList<>();

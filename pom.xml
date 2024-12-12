@@ -17,6 +17,7 @@
         <module>mall-cms</module>
         <module>mall-search</module>
         <module>mall-oms</module>
+        <module>mall-ums</module>
     </modules>
 
     <properties>
@@ -34,6 +35,7 @@
         <hutool.version>5.8.10</hutool.version>
         <minio.version>8.0.3</minio.version>
         <redisson.version>3.18.0</redisson.version>
+        <satoken.version>1.35.0.RC</satoken.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -90,10 +92,28 @@
                 <artifactId>minio</artifactId>
                 <version>${minio.version}</version>
             </dependency>
+            <!--redisson分布式锁-->
             <dependency>
                 <groupId>org.redisson</groupId>
                 <artifactId>redisson</artifactId>
                 <version>${redisson.version}</version>
+            </dependency>
+            <!--Sa-Token 权限认证（SpringMVC）-->
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-spring-boot-starter</artifactId>
+                <version>${satoken.version}</version>
+            </dependency>
+            <!--Sa-Token 权限认证 （reactor响应式集成）-->
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-reactor-spring-boot-starter</artifactId>
+                <version>${satoken.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.dev33</groupId>
+                <artifactId>sa-token-redis-jackson</artifactId>
+                <version>${satoken.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

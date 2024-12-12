@@ -1,5 +1,6 @@
 package com.jiangdk.pms.service.impl;
 
+import cn.dev33.satoken.stp.StpUtil;
 import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.http.HttpStatus;
 import com.jiangdk.common.exception.BizException;
@@ -32,7 +33,7 @@ public class CartServiceImpl implements CartService {
     private SpuMapper spuMapper;
     // 购物车的key，这里先写死
     private String key() {
-        Long userId = 1L;
+        Long userId = StpUtil.getLoginIdAsLong();
         return "cart:" + userId;
     }
     /**
