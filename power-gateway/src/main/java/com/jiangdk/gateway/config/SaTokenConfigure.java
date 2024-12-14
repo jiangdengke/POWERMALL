@@ -26,7 +26,7 @@ public class SaTokenConfigure {
             .setAuth(obj -> {
                 // 登录校验
                 SaRouter.match("/api/**")
-                        .notMatch("/api/auth/login","/api/auth/isLogin")
+                        .notMatch("/api/ums/loginByUsername")
                         .check(r->StpUtil.checkLogin());
             })
             // 异常处理方法：每次setAuth函数出现异常时进入 

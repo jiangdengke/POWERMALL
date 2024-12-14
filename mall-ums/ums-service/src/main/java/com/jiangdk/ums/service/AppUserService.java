@@ -3,6 +3,7 @@ package com.jiangdk.ums.service;
 import com.jiangdk.ums.dto.AppUserDTO;
 import com.jiangdk.ums.pojo.entity.AppUser;
 import com.baomidou.mybatisplus.extension.service.IService;
+
 public interface AppUserService extends IService<AppUser>{
 
     /**
@@ -11,6 +12,6 @@ public interface AppUserService extends IService<AppUser>{
      * @param password
      * @return
      */
-    AppUserDTO loginByUsername(String username,String password);
+    AppUser loginByUsername(String username, String password);
 
 }
