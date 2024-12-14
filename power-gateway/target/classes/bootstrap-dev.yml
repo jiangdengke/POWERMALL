@@ -28,6 +28,10 @@ spring:
           uri: lb://oms-service
           predicates:
             - Path=/api-admin/oms/**,/api/oms/**
+        - id: ums-service
+          uri: lb://ums-service
+          predicates:
+            - Path=/api-admin/ums/**,/api/ums/**
         - id: search-service
           uri: lb://search-service
           predicates:

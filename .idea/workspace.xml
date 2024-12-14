@@ -4,29 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="用户模块搭建，接入sa-token认证，并通过远程调用在网关调用用户模块的认证">
-      <change afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/GateConfig.java" afterDir="false" />
+    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="refactor(ums): 重构用户登录模块&#10;&#10;- 移除 AppLoginController 和 AppUserFeignClient&#10;- 更新 AppUserService 接口和实现类，使用 AppUser替代 AppUserDTO&#10;- 添加 GateConfig 配置类&#10;- 更新 LoginController，增加用户登录和登出功能">
+      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/admin/AdminUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-auth/src/main/java/com/jiangdk/common/auth/util/StpAdminUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-api/src/main/java/com/jiangdk/ums/feign/AppUserFeignClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-api/target/classes/com/jiangdk/ums/feign/AppUserFeignClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/UMSApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/UMSApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/app/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/app/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/AppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/AppUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/impl/AppUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/UMSApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/UMSApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/controller/app/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/controller/app/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/service/AppUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/service/AppUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/service/impl/AppUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/service/impl/AppUserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/bootstrap-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/controller/app/AppLoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/GatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/GatewayApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/controller/app/AppLoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/target/classes/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/config/SaTokenConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/config/SaTokenConfigure.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,70 +67,71 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;HTTP 请求.generated-requests | #3.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP 请求.generated-requests | #5.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.add.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.checked.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.getAll.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.updateCount.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CategoryServiceTest.page.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GoodsServiceImplTest.save.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MinioTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MinioTest.test02.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MinioTest.test03.executor&quot;: &quot;JRebel Debug&quot;,
-    &quot;JUnit.MinioTest.test04.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PasswordDemoTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RedisLockTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SkuMapperTest.testDemo.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SpuServiceImplTest.getSpuById.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.CMSApplication.executor&quot;: &quot;JRebel Executor&quot;,
-    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.OMSApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.OSSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PMSApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.SearchApplication.executor&quot;: &quot;JRebel Debug&quot;,
-    &quot;Spring Boot.UMSApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jdk/Desktop/power-mall/mall-ums/ums-service/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.ccnode.codegenerator.I.b&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.IdGenerator.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP 请求.generated-requests | #3.executor": "Run",
+    "HTTP 请求.generated-requests | #5.executor": "Run",
+    "JUnit.CartServiceImplTest.add.executor": "Run",
+    "JUnit.CartServiceImplTest.checked.executor": "Run",
+    "JUnit.CartServiceImplTest.getAll.executor": "Run",
+    "JUnit.CartServiceImplTest.updateCount.executor": "Run",
+    "JUnit.CategoryServiceTest.page.executor": "Run",
+    "JUnit.GoodsServiceImplTest.save.executor": "Run",
+    "JUnit.MinioTest.test.executor": "Run",
+    "JUnit.MinioTest.test02.executor": "Run",
+    "JUnit.MinioTest.test03.executor": "JRebel Debug",
+    "JUnit.MinioTest.test04.executor": "Run",
+    "JUnit.PasswordDemoTest.test.executor": "Run",
+    "JUnit.RedisLockTest.test.executor": "Run",
+    "JUnit.SkuMapperTest.testDemo.executor": "Run",
+    "JUnit.SpuServiceImplTest.getSpuById.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CMSApplication.executor": "JRebel Executor",
+    "Spring Boot.GatewayApplication.executor": "Debug",
+    "Spring Boot.OMSApplication.executor": "Debug",
+    "Spring Boot.OSSApplication.executor": "Run",
+    "Spring Boot.PMSApplication.executor": "Debug",
+    "Spring Boot.SearchApplication.executor": "JRebel Debug",
+    "Spring Boot.SysApplication.executor": "Debug",
+    "Spring Boot.UMSApplication.executor": "Debug",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jdk/Desktop/power-mall/power-system/sys-service/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "com.ccnode.codegenerator.I.b",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.IdGenerator.executor": "Run"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;module&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module"
     ],
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+    "DatabaseDriversLRU": [
+      "mysql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言&quot;: [
-      &quot;MySQL&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言": [
+      "MySQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
     <option name="stackFrameCustomizationEnabled" value="false" />
@@ -151,11 +141,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jdk\Desktop\power-mall\power-system\sys-service\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\mall-ums\ums-service\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-auth\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\mall-oms\oms-service\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-rabbitmq\src\main\resources" />
-      <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-redis\src\main\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -167,6 +157,8 @@
       <recent name="com.jiangdk.pms.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jiangdk.ums.controller.admin" />
+      <recent name="com.jiangdk.sys" />
       <recent name="com.jiangdk.ums.pojo.vo" />
       <recent name="com.jiangdk.oms.config" />
     </key>
@@ -181,23 +173,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
-    <configuration name="PasswordDemoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="power-gateway" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jiangdk.gateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jiangdk.gateway" />
-      <option name="MAIN_CLASS_NAME" value="com.jiangdk.gateway.PasswordDemoTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.UMSApplication">
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="power-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.gateway.GatewayApplication" />
@@ -251,7 +227,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.PasswordDemoTest.test" />
       <item itemvalue="Spring Boot.UMSApplication" />
       <item itemvalue="Spring Boot.OMSApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
@@ -259,11 +234,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UMSApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.UMSApplication" />
         <item itemvalue="Spring Boot.PMSApplication" />
         <item itemvalue="Spring Boot.OMSApplication" />
-        <item itemvalue="JUnit.PasswordDemoTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +299,7 @@
       <workItem from="1733924552200" duration="2927000" />
       <workItem from="1733985676414" duration="15453000" />
       <workItem from="1734158236363" duration="513000" />
-      <workItem from="1734158761303" duration="5287000" />
+      <workItem from="1734158761303" duration="8722000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
@@ -527,7 +501,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734009065908</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="refactor(ums): 重构用户登录模块&#10;&#10;- 移除 AppLoginController 和 AppUserFeignClient&#10;- 更新 AppUserService 接口和实现类，使用 AppUser替代 AppUserDTO&#10;- 添加 GateConfig 配置类&#10;- 更新 LoginController，增加用户登录和登出功能">
+      <option name="closed" value="true" />
+      <created>1734180053058</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1734180053058</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -577,7 +559,9 @@
     <MESSAGE value="下单减库存业务开发，通过redisson解决超卖问题" />
     <MESSAGE value="feat(oms): 下单减库存业务开发，通过redisson解决超卖问题&#10;&#10;- 修改订单提交接口，使用POST请求方式&#10;- 实现扣减库存和释放库存的逻辑&#10;- 在SkuMapper中添加扣减和释放库存的方法- 更新SkuServiceImpl，支持库存操作&#10;- 优化取消订单接口，处理库存释放" />
     <MESSAGE value="用户模块搭建，接入sa-token认证，并通过远程调用在网关调用用户模块的认证" />
-    <option name="LAST_COMMIT_MESSAGE" value="用户模块搭建，接入sa-token认证，并通过远程调用在网关调用用户模块的认证" />
+    <MESSAGE value="refactor(ums): 重构用户登录模块&#10;&#10;- 移除 AppLoginController 和 AppUserFeignClient&#10;- 更新 AppUserService 接口和实现类，使用 AppUser替代 AppUserDTO&#10;- 添加 GateConfig 配置类&#10;- 更新 GatewayApplication，移除 EnableFeignClients 注解&#10;- 更新 LoginController，增加用户登录和登出功能&#10;- 更新 SaTokenConfigure，调整登录校验路径&#10;- 更新 UMSApplication，添加 EnableFeignClients 注解" />
+    <MESSAGE value="refactor(ums): 重构用户登录模块&#10;&#10;- 移除 AppLoginController 和 AppUserFeignClient&#10;- 更新 AppUserService 接口和实现类，使用 AppUser替代 AppUserDTO&#10;- 添加 GateConfig 配置类&#10;- 更新 LoginController，增加用户登录和登出功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(ums): 重构用户登录模块&#10;&#10;- 移除 AppLoginController 和 AppUserFeignClient&#10;- 更新 AppUserService 接口和实现类，使用 AppUser替代 AppUserDTO&#10;- 添加 GateConfig 配置类&#10;- 更新 LoginController，增加用户登录和登出功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -661,6 +645,11 @@
           <url>file://$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/impl/AppUserServiceImpl.java</url>
           <line>25</line>
           <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/admin/AdminUserController.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

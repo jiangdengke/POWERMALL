@@ -12,6 +12,8 @@
       <set>
         <option value="$PROJECT_DIR$/power-common/common-rediss/pom.xml" />
         <option value="$PROJECT_DIR$/power-oss/oss-appi/pom.xml" />
+        <option value="$PROJECT_DIR$/power-system/pom.xml" />
+        <option value="$PROJECT_DIR$/power-system/sys-service/pom.xml" />
       </set>
     </option>
   </component>

@@ -28,6 +28,8 @@
     <bytecodeTargetLevel>
       <module name="common-rediss" target="1.8" />
       <module name="oss-appi" target="1.8" />
+      <module name="power-system" target="1.8" />
+      <module name="sys-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

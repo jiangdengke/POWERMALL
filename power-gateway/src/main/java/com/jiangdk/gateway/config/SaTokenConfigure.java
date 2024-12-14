@@ -7,6 +7,7 @@ import cn.dev33.satoken.reactor.filter.SaReactorFilter;
 import cn.dev33.satoken.router.SaRouter;
 import cn.dev33.satoken.stp.StpUtil;
 import cn.dev33.satoken.util.SaResult;
+import com.jiangdk.common.auth.util.StpAdminUtil;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -24,10 +25,14 @@ public class SaTokenConfigure {
              .addInclude("/**").addExclude("/api/cms/**","/api/search/**","/api/pms/category","/api/pms/goods/{spuId}")
             // 鉴权方法
             .setAuth(obj -> {
-                // 登录校验
+                // 应用端认证规则
                 SaRouter.match("/api/**")
                         .notMatch("/api/ums/loginByUsername")
                         .check(r->StpUtil.checkLogin());
+                // 管理端认证规则
+                SaRouter.match("/api-admin/**")
+                        .notMatch("/api-admin/ums/login")
+                        .check(r-> StpAdminUtil.checkLogin());
             })
             // 异常处理方法：每次setAuth函数出现异常时进入 
             .setError(e -> {
