@@ -14,4 +14,17 @@ public interface AppUserService extends IService<AppUser>{
      */
     AppUser loginByUsername(String username, String password);
 
+    /**
+     * 发送验证码
+     * @param mobile
+     */
+    void sendCode(String mobile);
+
+    /**
+     * 手机验证码登录
+     * @param mobile
+     * @param code
+     * @return
+     */
+    AppUser loginByMobile(String mobile,String code);
 }

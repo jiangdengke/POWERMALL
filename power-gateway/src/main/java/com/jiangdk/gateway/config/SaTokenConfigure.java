@@ -28,6 +28,9 @@ public class SaTokenConfigure {
                 // 应用端认证规则
                 SaRouter.match("/api/**")
                         .notMatch("/api/ums/loginByUsername")
+                        .notMatch("/api/ums/loginCode")
+                        .notMatch("/api/ums/loginByMobile")
+
                         .check(r->StpUtil.checkLogin());
                 // 管理端认证规则
                 SaRouter.match("/api-admin/**")

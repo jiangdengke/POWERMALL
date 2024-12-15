@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/mall-cms/cms-service/cms-service.iml" filepath="$PROJECT_DIR$/mall-cms/cms-service/cms-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-oms/oms-service/oms-service.iml" filepath="$PROJECT_DIR$/mall-oms/oms-service/oms-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/oss-service.iml" filepath="$PROJECT_DIR$/oss-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/pms-service.iml" filepath="$PROJECT_DIR$/pms-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/power-gateway/power-gateway.iml" filepath="$PROJECT_DIR$/power-gateway/power-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/search-service.iml" filepath="$PROJECT_DIR$/search-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ums-service.iml" filepath="$PROJECT_DIR$/ums-service.iml" />
     </modules>
   </component>
 </project>

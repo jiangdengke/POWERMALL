@@ -9,10 +9,7 @@ import com.jiangdk.ums.dto.AppUserDTO;
 import com.jiangdk.ums.pojo.entity.AppUser;
 import com.jiangdk.ums.service.AppUserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * 应用端/用户
@@ -28,19 +25,30 @@ public class LoginController {
      * @param code 验证码
      * @return
      */
-    @GetMapping("/loginByMobile")
+    @PostMapping("/loginByMobile")
     Result<SaTokenInfo> loginByMobile(@RequestParam("mobile") String mobile,
                                       @RequestParam("code") String code){
+        AppUser appUser = appUserService.loginByMobile(mobile, code);
         return Result.success();
     }
 
+    /**
+     * 获取验证码
+     * @param mobile
+     * @return
+     */
+    @GetMapping("/loginCode")
+    public Result sendCode(String mobile){
+        appUserService.sendCode(mobile);
+        return Result.success();
+    }
     /**
      * 用户名和密码登录
      * @param username 用户名
      * @param password 密码
      * @return
      */
-    @GetMapping("/loginByUsername")
+    @PostMapping("/loginByUsername")
     Result<SaTokenInfo> loginByUsername(@RequestParam("username") String username,
                                        @RequestParam("password") String password){
         AppUser appUser = appUserService.loginByUsername(username, password);
@@ -52,7 +60,7 @@ public class LoginController {
      * 用户退出
      * @return
      */
-    @RequestMapping("/logout")
+    @DeleteMapping("/logout")
     public SaResult logout(){
         StpUtil.logout();
         return SaResult.ok("退出系统成功");
