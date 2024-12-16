@@ -23,6 +23,7 @@
         <module name="common-web" />
         <module name="cms-service" />
         <module name="common-core" />
+        <module name="common-sms" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

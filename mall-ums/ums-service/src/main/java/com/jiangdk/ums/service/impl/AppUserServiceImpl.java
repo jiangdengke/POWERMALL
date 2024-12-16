@@ -6,8 +6,10 @@ import cn.hutool.http.HttpStatus;
 import com.alibaba.nacos.api.naming.pojo.healthcheck.impl.Http;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.jiangdk.common.exception.BizException;
+import com.jiangdk.common.sms.util.AliyunSMSUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
@@ -23,6 +25,12 @@ import java.time.Duration;
 public class AppUserServiceImpl extends ServiceImpl<AppUserMapper, AppUser> implements AppUserService{
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
+    @Autowired
+    private AliyunSMSUtil aliyunSMSUtil;
+    @Value("${aliyun.sms.verification.signName}")
+    private String signName;
+    @Value("${aliyun.sms.verification.templateCode}")
+    private String templateCode;
     /**
      * 用户名密码登录
      *
@@ -50,9 +58,10 @@ public class AppUserServiceImpl extends ServiceImpl<AppUserMapper, AppUser> impl
         // 生成随机验证码
         String code = RandomUtil.randomNumbers(6);
         log.info("手机号：{}   对应的验证码：{}", mobile, code);
-        // todo 将验证码发送到用户手机
+        // 将验证码发送到用户手机
+        aliyunSMSUtil.sendVerificationCode(mobile,code,signName,templateCode);
         // 存储验证码到redis
-        stringRedisTemplate.opsForValue().set("login:appUser:"+mobile,code, Duration.ofMinutes(1));
+        stringRedisTemplate.opsForValue().set("login:appUser:"+mobile,code, Duration.ofMinutes(5));
     }
 
     /**

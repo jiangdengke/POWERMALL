@@ -26,9 +26,12 @@ public class LoginController {
      * @return
      */
     @PostMapping("/loginByMobile")
-    Result<SaTokenInfo> loginByMobile(@RequestParam("mobile") String mobile,
-                                      @RequestParam("code") String code){
+    Result<SaTokenInfo> loginByMobile(
+            @RequestParam("mobile") String mobile,
+            @RequestParam("code") String code){
         AppUser appUser = appUserService.loginByMobile(mobile, code);
+        // 登录系统
+        StpUtil.login(appUser.getId());
         return Result.success();
     }
 
@@ -49,8 +52,10 @@ public class LoginController {
      * @return
      */
     @PostMapping("/loginByUsername")
-    Result<SaTokenInfo> loginByUsername(@RequestParam("username") String username,
-                                       @RequestParam("password") String password){
+    Result<SaTokenInfo> loginByUsername(
+            @RequestParam("username") String username,
+            @RequestParam("password") String password
+    ){
         AppUser appUser = appUserService.loginByUsername(username, password);
         // 登录系统
         StpUtil.login(appUser.getId());

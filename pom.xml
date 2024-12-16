@@ -36,6 +36,8 @@
         <minio.version>8.0.3</minio.version>
         <redisson.version>3.18.0</redisson.version>
         <satoken.version>1.35.0.RC</satoken.version>
+        <aliyun-java-sdk-core.version>4.5.30</aliyun-java-sdk-core.version>
+        <aliyun-java-sdk-dysmsapi.version>2.2.1</aliyun-java-sdk-dysmsapi.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -114,6 +116,17 @@
                 <groupId>cn.dev33</groupId>
                 <artifactId>sa-token-redis-jackson</artifactId>
                 <version>${satoken.version}</version>
+            </dependency>
+            <!-- 阿里云短信服务 -->
+            <dependency>
+                <groupId>com.aliyun</groupId>
+                <artifactId>aliyun-java-sdk-core</artifactId>
+                <version>${aliyun-java-sdk-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.aliyun</groupId>
+                <artifactId>aliyun-java-sdk-dysmsapi</artifactId>
+                <version>${aliyun-java-sdk-dysmsapi.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

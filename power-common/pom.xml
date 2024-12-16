@@ -19,6 +19,7 @@
         <module>common-redis</module>
         <module>common-rabbitmq</module>
         <module>common-auth</module>
+        <module>common-sms</module>
     </modules>
 
     <properties>
