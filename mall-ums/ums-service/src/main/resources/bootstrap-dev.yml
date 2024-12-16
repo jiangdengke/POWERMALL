@@ -1,0 +1,44 @@
+server:
+  port: 8007
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://128.1.132.86:3306/power_mall?useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: bieshanwoku
+  redis:
+    host: 128.1.132.86
+    port: 6379
+    password: bieshanwoku
+    lettuce:
+      pool:
+        enabled: true
+  cache:
+    # 指定使用的缓存产品
+    type: redis
+  cloud:
+    nacos:
+      # 注册中心和配置中心地址
+      server-addr: http://128.1.132.86:8848
+      discovery:
+        namespace: cd4facc0-2daf-499e-9dd2-8d2ab747803b
+        group: MALL_GROUP
+      config:
+        namespace: cd4facc0-2daf-499e-9dd2-8d2ab747803b
+        file-extension: yml
+        group: MALL_GROUP
+mybatis-plus:
+  configuration:
+    # 驼峰下划线转换
+    map-underscore-to-camel-case: true
+    # 打印SQL
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+aliyun:
+  sms:
+    accessKeyId:
+    secret:
+    regionId: cn-qingdao
+    verification:
+      signName: 阿里云短信测试
+      templateCode: SMS_154950909

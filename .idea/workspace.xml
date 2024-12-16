@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="完成手机验证码登录">
-      <change afterPath="$PROJECT_DIR$/power-common/common-sms/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-common/common-sms/src/main/java/com/jiangdk/common/sms/config/AliyunSMSConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-common/common-sms/src/main/java/com/jiangdk/common/sms/util/AliyunSMSUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-common/common-sms/src/main/resources/META-INF/spring.factories" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-common/common-sms/src/test/java/com/jiangdk/common/sms/SMSTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/app/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/app/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/impl/AppUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/controller/app/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/controller/app/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,72 +58,72 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;HTTP 请求.generated-requests | #3.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP 请求.generated-requests | #5.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.add.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.checked.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.getAll.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.updateCount.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CategoryServiceTest.page.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GoodsServiceImplTest.save.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MinioTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MinioTest.test02.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MinioTest.test03.executor&quot;: &quot;JRebel Debug&quot;,
-    &quot;JUnit.MinioTest.test04.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PasswordDemoTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RedisLockTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SkuMapperTest.testDemo.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SpuServiceImplTest.getSpuById.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.CMSApplication.executor&quot;: &quot;JRebel Executor&quot;,
-    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OMSApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.OSSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PMSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SearchApplication.executor&quot;: &quot;JRebel Debug&quot;,
-    &quot;Spring Boot.SysApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.UMSApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jdk/Desktop/power-mall/power-common/common-sms/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.IdGenerator.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.SMSTest.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP 请求.generated-requests | #3.executor": "Run",
+    "HTTP 请求.generated-requests | #5.executor": "Run",
+    "JUnit.CartServiceImplTest.add.executor": "Run",
+    "JUnit.CartServiceImplTest.checked.executor": "Run",
+    "JUnit.CartServiceImplTest.getAll.executor": "Run",
+    "JUnit.CartServiceImplTest.updateCount.executor": "Run",
+    "JUnit.CategoryServiceTest.page.executor": "Run",
+    "JUnit.GoodsServiceImplTest.save.executor": "Run",
+    "JUnit.MinioTest.test.executor": "Run",
+    "JUnit.MinioTest.test02.executor": "Run",
+    "JUnit.MinioTest.test03.executor": "JRebel Debug",
+    "JUnit.MinioTest.test04.executor": "Run",
+    "JUnit.PasswordDemoTest.test.executor": "Run",
+    "JUnit.RedisLockTest.test.executor": "Run",
+    "JUnit.SkuMapperTest.testDemo.executor": "Run",
+    "JUnit.SpuServiceImplTest.getSpuById.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CMSApplication.executor": "JRebel Executor",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.OMSApplication.executor": "Debug",
+    "Spring Boot.OSSApplication.executor": "Run",
+    "Spring Boot.PMSApplication.executor": "Run",
+    "Spring Boot.SearchApplication.executor": "JRebel Debug",
+    "Spring Boot.SysApplication.executor": "Debug",
+    "Spring Boot.UMSApplication.executor": "Debug",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jdk/Desktop/power-mall/mall-ums/ums-service/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.IdGenerator.executor": "Run",
+    "应用程序.SMSTest.executor": "Run"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;module&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module"
     ],
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+    "DatabaseDriversLRU": [
+      "mysql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言&quot;: [
-      &quot;MySQL&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言": [
+      "MySQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
     <option name="stackFrameCustomizationEnabled" value="false" />
@@ -148,9 +133,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jdk\Desktop\power-mall\mall-ums\ums-service\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-sms\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\power-system\sys-service\src\main\resources" />
-      <recent name="C:\Users\jdk\Desktop\power-mall\mall-ums\ums-service\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-auth\src\main\resources" />
       <recent name="C:\Users\jdk\Desktop\power-mall\mall-oms\oms-service\src\main\resources" />
     </key>
@@ -255,9 +240,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.UMSApplication" />
         <item itemvalue="Spring Boot.PMSApplication" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="应用程序.SMSTest" />
         <item itemvalue="Spring Boot.OMSApplication" />
       </list>
