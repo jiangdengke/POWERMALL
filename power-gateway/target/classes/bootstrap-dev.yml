@@ -2,7 +2,7 @@ server:
   port: 8888
 spring:
   redis:
-    host: 128.1.132.86
+    host: ip
     port: 6379
     password: bieshanwoku
     lettuce:
@@ -11,7 +11,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: http://128.1.132.86:8848
+        server-addr: http://ip:8848
         namespace: cd4facc0-2daf-499e-9dd2-8d2ab747803b
         group: MALL_GROUP
     gateway:

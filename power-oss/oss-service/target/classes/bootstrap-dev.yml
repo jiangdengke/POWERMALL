@@ -4,7 +4,7 @@ spring:
   cloud:
     nacos:
       # 注册中心和配置中心地址
-      server-addr: http://128.1.132.86:8848
+      server-addr: http://ip:8848
       discovery:
         namespace: cd4facc0-2daf-499e-9dd2-8d2ab747803b
         group: MALL_GROUP
@@ -15,7 +15,7 @@ spring:
 # Minio配置
 minio:
   # minio配置的地址，端口9000
-  endpoint: http://128.1.132.86:9000
+  endpoint: http://ip:9000
   # 账号
   accessKey: minioadmin
   # 密码
