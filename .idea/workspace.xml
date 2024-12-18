@@ -4,13 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="完成手机验证码登录">
-      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="接入支付宝支付。新增使用docker-compose上线项目">
+      <change afterPath="$PROJECT_DIR$/docker/cms-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/copy.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/oms-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/oss-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/pms-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/power-gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/search-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/ums-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/PayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/PayServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/test/java/com/jiangdk/oms/FZPayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/test/java/com/jiangdk/oms/PayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-pay/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-pay/src/main/java/com/jiangdk/common/pay/AliPayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/power-common/common-pay/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/cms-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/cms-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/oms-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/oms-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/controller/app/AppOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/controller/app/AppOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/test/java/com/jiangdk/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/controller/app/AppOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/controller/app/AppOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/test-classes/com/jiangdk/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-search/search-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/search-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-search/search-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oss-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/oss-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pms-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pms-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-common/common-sms/target/test-classes/com/jiangdk/common/sms/SMSTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/power-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/power-gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-oss/oss-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power-oss/oss-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-oss/oss-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-oss/oss-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-oss/oss-service/src/test/java/com/jiangdk/oss/MinioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-oss/oss-service/src/test/java/com/jiangdk/oss/MinioTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/search-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ums-service.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
@@ -18,9 +70,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -47,6 +101,9 @@
     <option name="jrebelEnabledAutocompile" value="true" />
     <option name="hasSeenReactiveStreamsDisablingDialog" value="true" />
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -60,6 +117,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Batch.copy.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
     "HTTP 请求.generated-requests | #3.executor": "Run",
     "HTTP 请求.generated-requests | #5.executor": "Run",
     "JUnit.CartServiceImplTest.add.executor": "Run",
@@ -67,16 +126,20 @@
     "JUnit.CartServiceImplTest.getAll.executor": "Run",
     "JUnit.CartServiceImplTest.updateCount.executor": "Run",
     "JUnit.CategoryServiceTest.page.executor": "Run",
+    "JUnit.FZPayTest.test.executor": "Run",
     "JUnit.GoodsServiceImplTest.save.executor": "Run",
     "JUnit.MinioTest.test.executor": "Run",
     "JUnit.MinioTest.test02.executor": "Run",
     "JUnit.MinioTest.test03.executor": "JRebel Debug",
     "JUnit.MinioTest.test04.executor": "Run",
     "JUnit.PasswordDemoTest.test.executor": "Run",
+    "JUnit.PayTest.test.executor": "Run",
     "JUnit.RedisLockTest.test.executor": "Run",
     "JUnit.SkuMapperTest.testDemo.executor": "Run",
     "JUnit.SpuServiceImplTest.getSpuById.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.power-mall [clean].executor": "Run",
+    "Maven.power-mall [package].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -97,7 +160,7 @@
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jdk/Desktop/power-mall/mall-ums/ums-service/src/main/resources",
+    "last_opened_file_path": "C:/Users/jdk/Desktop/code/power-mall/power-mall-backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -107,8 +170,9 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "editor.preferences.import",
     "vue.rearranger.settings.migration": "true",
+    "应用程序.AlipayTradePagePay.executor": "Run",
     "应用程序.IdGenerator.executor": "Run",
     "应用程序.SMSTest.executor": "Run"
   },
@@ -132,12 +196,15 @@
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jiangdk.oms.service.impl" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jdk\Desktop\power-mall\mall-ums\ums-service\src\main\resources" />
-      <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-sms\src\main\resources" />
-      <recent name="C:\Users\jdk\Desktop\power-mall\power-system\sys-service\src\main\resources" />
-      <recent name="C:\Users\jdk\Desktop\power-mall\power-common\common-auth\src\main\resources" />
-      <recent name="C:\Users\jdk\Desktop\power-mall\mall-oms\oms-service\src\main\resources" />
+      <recent name="C:\Users\jdk\Desktop\power-mall\docker\ums-service" />
+      <recent name="C:\Users\jdk\Desktop\power-mall\docker\search-service" />
+      <recent name="C:\Users\jdk\Desktop\power-mall\docker\power-oss" />
+      <recent name="C:\Users\jdk\Desktop\power-mall\docker\pms-service" />
+      <recent name="C:\Users\jdk\Desktop\power-mall\docker\oms-service" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -149,6 +216,7 @@
       <recent name="com.jiangdk.pms.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jiangdk.oms" />
       <recent name="com.jiangdk.ums.controller.admin" />
       <recent name="com.jiangdk.sys" />
       <recent name="com.jiangdk.ums.pojo.vo" />
@@ -165,16 +233,34 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="应用程序.SMSTest">
-    <configuration name="SMSTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jiangdk.common.sms.SMSTest" />
-      <module name="common-sms" />
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+    <configuration name="AlipayTradePagePay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jiangdk.oms.AlipayTradePagePay" />
+      <module name="oms-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jiangdk.common.sms.*" />
+          <option name="PATTERN" value="com.jiangdk.oms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="copy" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <module name="power-mall" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../power-mall/docker" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="copy.cmd" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CMSApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cms-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.cms.CMSApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -205,6 +291,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OSSApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="oss-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.oss.OSSApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PMSApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="pms-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.pms.PMSApplication" />
@@ -218,33 +311,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UMSApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="search-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.search.SearchApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UMSApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ums-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jiangdk.ums.UMSApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jiangdk.ums.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.GatewayApplication" />
-      <item itemvalue="Spring Boot.OMSApplication" />
-      <item itemvalue="Spring Boot.PMSApplication" />
+      <item itemvalue="Batch.copy" />
+      <item itemvalue="Spring Boot.CMSApplication" />
+      <item itemvalue="Spring Boot.OSSApplication" />
+      <item itemvalue="Spring Boot.SearchApplication" />
       <item itemvalue="Spring Boot.UMSApplication" />
-      <item itemvalue="应用程序.SMSTest" />
+      <item itemvalue="Spring Boot.OMSApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.PMSApplication" />
+      <item itemvalue="应用程序.AlipayTradePagePay" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.GatewayApplication" />
-        <item itemvalue="Spring Boot.UMSApplication" />
-        <item itemvalue="Spring Boot.PMSApplication" />
-        <item itemvalue="应用程序.SMSTest" />
+        <item itemvalue="Batch.copy" />
         <item itemvalue="Spring Boot.OMSApplication" />
+        <item itemvalue="应用程序.AlipayTradePagePay" />
+        <item itemvalue="Spring Boot.PMSApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -316,6 +414,8 @@
       <workItem from="1734264889428" duration="71000" />
       <workItem from="1734274766328" duration="50000" />
       <workItem from="1734326025659" duration="5451000" />
+      <workItem from="1734402072633" duration="28164000" />
+      <workItem from="1734497106214" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
@@ -541,7 +641,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734264941427</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="增加ums模块的bootstrap.yml">
+      <option name="closed" value="true" />
+      <created>1734334705844</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1734334705844</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -571,7 +679,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1、公共模块搭建。2、增加统一响应和统一异常处理" />
     <MESSAGE value="分页查询开发" />
     <MESSAGE value="设计开发商品分类树，编写商品分类列表接口" />
     <MESSAGE value="商品分类接口开发完成" />
@@ -595,7 +702,9 @@
     <MESSAGE value="refactor(ums): 重构用户登录模块&#10;&#10;- 移除 AppLoginController 和 AppUserFeignClient&#10;- 更新 AppUserService 接口和实现类，使用 AppUser替代 AppUserDTO&#10;- 添加 GateConfig 配置类&#10;- 更新 LoginController，增加用户登录和登出功能" />
     <MESSAGE value="完成管理员登录退出" />
     <MESSAGE value="完成手机验证码登录" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成手机验证码登录" />
+    <MESSAGE value="增加ums模块的bootstrap.yml" />
+    <MESSAGE value="接入支付宝支付。新增使用docker-compose上线项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="接入支付宝支付。新增使用docker-compose上线项目" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -679,6 +788,21 @@
           <url>file://$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/admin/AdminUserController.java</url>
           <line>22</line>
           <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/PayServiceImpl.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/controller/app/AppOrderController.java</url>
+          <line>152</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/PayServiceImpl.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

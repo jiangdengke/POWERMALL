@@ -108,7 +108,7 @@ public class MinioTest {
     @Test
     @SneakyThrows
     void test04(){
-        String url = "http://128.1.132.86:9000/mall/73d37620bf5148b583c4454bb36c4875";
+        String url = "http://ip:9000/mall/73d37620bf5148b583c4454bb36c4875";
         System.out.println(url.substring(url.lastIndexOf("/")+1));
         String bucket = url.substring(0,url.lastIndexOf("/"));
         bucket = bucket.substring(bucket.lastIndexOf("/")+1);

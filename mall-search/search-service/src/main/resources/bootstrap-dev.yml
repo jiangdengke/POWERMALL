@@ -3,7 +3,7 @@ server:
 
 spring:
   rabbitmq:
-    host: 128.1.132.86
+    host: ip
     virtual-host: /
     port: 5672
     username: mjga
@@ -16,11 +16,11 @@ spring:
 #          max-attempts: 3 # 重试的次数
   elasticsearch:
     uris:
-      - http://128.1.132.86:9200 # 搜索引擎服务地址
+      - http://ip:9200 # 搜索引擎服务地址
   cloud:
     nacos:
       # 注册中心和配置中心地址
-      server-addr: http://128.1.132.86:8848
+      server-addr: http://ip:8848
       # 服务注册和发现
       discovery:
         namespace: cd4facc0-2daf-499e-9dd2-8d2ab747803b

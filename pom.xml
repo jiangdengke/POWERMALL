@@ -38,6 +38,7 @@
         <satoken.version>1.35.0.RC</satoken.version>
         <aliyun-java-sdk-core.version>4.5.30</aliyun-java-sdk-core.version>
         <aliyun-java-sdk-dysmsapi.version>2.2.1</aliyun-java-sdk-dysmsapi.version>
+        <alipay-sdk-java.version>4.35.0.ALL</alipay-sdk-java.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -127,6 +128,12 @@
                 <groupId>com.aliyun</groupId>
                 <artifactId>aliyun-java-sdk-dysmsapi</artifactId>
                 <version>${aliyun-java-sdk-dysmsapi.version}</version>
+            </dependency>
+            <!-- 支付宝支付 -->
+            <dependency>
+                <groupId>com.alipay.sdk</groupId>
+                <artifactId>alipay-sdk-java</artifactId>
+                <version>${alipay-sdk-java.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

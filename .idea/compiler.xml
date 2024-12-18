@@ -14,6 +14,7 @@
         <module name="oss-service" />
         <module name="ums-api" />
         <module name="common-redis" />
+        <module name="common-pay" />
         <module name="common-mybatis" />
         <module name="power-gateway" />
         <module name="search-service" />

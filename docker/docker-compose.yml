@@ -1,0 +1,51 @@
+version: "3.7"
+services:
+  gateway:
+    container_name: power-gateway
+    hostname: power-gateway
+    restart: always
+    build: ./power-gateway
+    ports:
+      - "8888:8888"
+  cms:
+    container_name: cms-service
+    hostname: cms-service
+    restart: always
+    build: ./cms-service
+    ports:
+      - "8002:8002"
+  oms:
+    container_name: oms-service
+    hostname: oms-service
+    restart: always
+    build: ./oms-service
+    ports:
+      - "8004:8004"
+  oss:
+    container_name: oss-service
+    hostname: oss-service
+    restart: always
+    build: ./oss-service
+    ports:
+      - "10086:10086"
+  pms:
+    container_name: pms-service
+    hostname: pms-service
+    restart: always
+    build: ./pms-service
+    ports:
+      - "8001:8001"
+  search:
+    container_name: search-service
+    hostname: search-service
+    restart: always
+    build: ./search-service
+    ports:
+      - "8003:8003"
+  ums:
+    container_name: ums-service
+    hostname: ums-service
+    restart: always
+    build: ./ums-service
+    ports:
+      - "8005:8005"
