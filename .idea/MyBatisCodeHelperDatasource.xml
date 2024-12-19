@@ -170,6 +170,19 @@
                 </TableGenerateConfig>
               </value>
             </entry>
+            <entry key="power_mall:ums_admin_user">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="AdminUser" />
+                  <option name="moduleName" value="ums-service" />
+                  <option name="mybatisplusIdType" value="AUTO" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
             <entry key="power_mall:ums_app_user">
               <value>
                 <TableGenerateConfig>

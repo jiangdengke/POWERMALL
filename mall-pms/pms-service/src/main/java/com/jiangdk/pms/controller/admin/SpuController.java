@@ -11,8 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 /**
  * 管理端/商品
  */
@@ -71,14 +69,14 @@ public class SpuController {
     }
     /**
      * 商品【删除】
-     * @param spuId
+     * @param id
      * @return
      */
-    @DeleteMapping("/{spuId}")
+    @DeleteMapping("/{id}")
     public Result updateSpuById(
-            @PathVariable Long spuId
+            @PathVariable("id") Long id
     ){
-        spuService.deleteSpuById(spuId);
+        spuService.deleteSpuById(id);
         return Result.success();
     }
 

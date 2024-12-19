@@ -2,7 +2,10 @@ package com.jiangdk.pms.pojo.vo;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.List;
@@ -12,7 +15,10 @@ import java.util.List;
  * @date: 2024/11/30 13:55
  * @description:
  */
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class SpuVO implements Serializable {
     // 主键
     private Long id;
@@ -42,10 +48,18 @@ public class SpuVO implements Serializable {
     private List<SkuVO> skuList;
     // 总库存数量
     private Integer totalStock;
+
     // 计算商品库存总数量
     public Integer getTotalStock() {
+        // 1. 检查 skuList 是否为空
+        if (skuList == null || skuList.isEmpty()) {
+            return 0;
+        }
+
+        // 2. 使用 Optional 安全处理
         return skuList.stream()
-                .map(sku->sku.getStock())
-                .reduce(Integer::sum).get();
+                .map(SkuVO::getStock)           // 获取库存数量
+                .filter(stock -> stock != null)  // 过滤掉 null 值
+                .reduce(0, Integer::sum);        // 使用初始值 0 进行求和
     }
 }

@@ -43,6 +43,8 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper, Spu> implements SpuSe
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
+
+
     /**
      * 根据spuId获取商品详情
      *
@@ -54,6 +56,11 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper, Spu> implements SpuSe
     public SpuVO getSpuById(Long spuId) {
         return this.baseMapper.selectSpuById(spuId);
     }
+
+    /**
+     * 商品分页查询「管理端」
+     *
+     */
 
     /**
      * 商品分页查询

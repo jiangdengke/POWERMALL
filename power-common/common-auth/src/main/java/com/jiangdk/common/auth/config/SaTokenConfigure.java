@@ -16,7 +16,7 @@ public class SaTokenConfigure {
     @Primary // 如果有多个bean，优先用这个
     public SaTokenConfig saTokenConfig() {
         SaTokenConfig config = new SaTokenConfig();
-        config.setTokenName("token");               // token 名称（同时也是 cookie 名称）
+        config.setTokenName("power-mall-token");               // token 名称（同时也是 cookie 名称）
         config.setTimeout(30 * 24 * 60 * 60);       // token 有效期（单位：秒），默认30天，-1代表永不过期
         config.setActiveTimeout(-1);                // token 最低活跃频率（单位：秒），如果 token 超过此时间没有访问系统就会被冻结，默认-1 代表不限制，永不冻结
         config.setIsConcurrent(true);               // 是否允许同一账号多地同时登录（为 true 时允许一起登录，为 false 时新登录挤掉旧登录）

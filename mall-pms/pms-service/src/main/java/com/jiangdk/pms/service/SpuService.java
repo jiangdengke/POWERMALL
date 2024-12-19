@@ -8,6 +8,7 @@ import com.jiangdk.pms.pojo.query.SpuPageQuery;
 import com.jiangdk.pms.pojo.vo.SpuVO;
 
 public interface SpuService extends IService<Spu>{
+
     /**
      * 根据spuId获取商品详情
      * @param spuId

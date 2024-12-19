@@ -1,9 +1,10 @@
 package com.jiangdk.pms.controller.admin;
 
-import cn.hutool.core.lang.tree.Tree;
 import com.jiangdk.common.result.Result;
 import com.jiangdk.pms.pojo.form.CategoryForm;
+import com.jiangdk.pms.pojo.vo.CategoryVO;
 import com.jiangdk.pms.service.CategoryService;
+import com.jiangdk.pms.service.SkuService;
 import com.jiangdk.pms.service.impl.CategoryServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -19,14 +20,24 @@ import java.util.List;
 public class CategoryController {
     @Autowired
     private CategoryService categoryService;
+    @Autowired
+    private CategoryServiceImpl categoryServiceImpl;
+    @Autowired
+    private SkuService skuService;
+    @GetMapping
+    public Result<List<CategoryVO>> list() {
+        List<CategoryVO> categoryTree = categoryServiceImpl.getCategoryList();
+        return Result.success(categoryTree);
+    }
+
     /**
      * 商品分类列表
      * @return
      */
-    @GetMapping
-    public Result<List<Tree<Long>>> tree() {
-        return Result.success(categoryService.tree());
-    }
+//    @GetMapping
+//    public Result<List<Tree<Long>>> tree() {
+//        return Result.success(categoryService.tree());
+//    }
 
     /**
      * 新增商品分类
@@ -68,5 +79,4 @@ public class CategoryController {
         categoryService.deleteCategoryById(categoryId);
         return Result.success();
     }
-
 }

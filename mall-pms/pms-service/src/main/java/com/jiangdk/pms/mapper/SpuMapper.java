@@ -21,4 +21,5 @@ public interface SpuMapper extends BaseMapper<Spu> {
      * @return
      */
     IPage<SpuVO> selectSpuPage(IPage<SpuVO> page, @Param("param") SpuPageQuery query);
+
 }

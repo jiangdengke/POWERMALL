@@ -1,19 +1,21 @@
 package com.jiangdk.pms.service.impl;
 
 import cn.hutool.http.HttpStatus;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.jiangdk.common.exception.BizException;
-import com.jiangdk.common.result.Result;
 import com.jiangdk.pms.dto.SkuDTO;
 import com.jiangdk.pms.dto.StockDTO;
+import com.jiangdk.pms.mapper.SkuMapper;
+import com.jiangdk.pms.pojo.entity.Sku;
+import com.jiangdk.pms.pojo.form.SkuForm;
+import com.jiangdk.pms.pojo.vo.SkuVO;
+import com.jiangdk.pms.service.SkuService;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.jiangdk.pms.mapper.SkuMapper;
-import com.jiangdk.pms.pojo.entity.Sku;
-import com.jiangdk.pms.service.SkuService;
 
 import java.time.Duration;
 import java.util.List;
@@ -95,4 +97,48 @@ public class SkuServiceImpl extends ServiceImpl<SkuMapper, Sku> implements SkuSe
         // 从redis删除对应缓存
         redisTemplate.delete("order:"+orderSn);
     }
+
+    /**
+     * 更新商品状态
+     *
+     * @param skuId
+     * @param status
+     */
+    @Override
+    public void updateStatus(Long skuId, Integer status) {
+        Sku sku = baseMapper.selectById(skuId);
+        if (sku == null){
+            throw new BizException(HttpStatus.HTTP_NOT_FOUND,"商品信息不存在");
+        }
+        sku.setStatus(status);
+        baseMapper.updateById(sku);
+    }
+
+    @Override
+    public void updateSkuById(SkuForm skuForm) {
+        Long id = skuForm.getId();
+        Sku oldSku = baseMapper.selectById(id);
+        if (oldSku == null){
+            throw new BizException(HttpStatus.HTTP_NOT_FOUND,"该商品详情未找到");
+        }
+        BeanUtils.copyProperties(skuForm,oldSku);
+        this.baseMapper.updateById(oldSku);
+    }
+
+    /**
+     * 获取商品详情
+     * @param skuId
+     */
+    @Override
+    public SkuVO getSkuDetailById(Long skuId) {
+        Sku sku = baseMapper.selectById(skuId);
+        if (sku == null){
+            throw new BizException(HttpStatus.HTTP_NOT_FOUND,"商品信息不存在");
+        }
+        SkuVO skuVO = new SkuVO();
+        BeanUtils.copyProperties(sku,skuVO);
+        return skuVO;
+    }
+
+
 }

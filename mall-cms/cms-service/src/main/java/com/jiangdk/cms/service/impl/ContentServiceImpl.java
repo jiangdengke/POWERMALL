@@ -5,19 +5,18 @@ import cn.hutool.http.HttpStatus;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.jiangdk.cms.mapper.ContentMapper;
+import com.jiangdk.cms.pojo.entity.Content;
 import com.jiangdk.cms.pojo.form.ContentForm;
 import com.jiangdk.cms.pojo.query.ContentPageQuery;
+import com.jiangdk.cms.service.ContentService;
 import com.jiangdk.common.exception.BizException;
 import org.springframework.beans.BeanUtils;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.jiangdk.cms.pojo.entity.Content;
-import com.jiangdk.cms.mapper.ContentMapper;
-import com.jiangdk.cms.service.ContentService;
 
-import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -44,7 +43,7 @@ public class ContentServiceImpl extends ServiceImpl<ContentMapper, Content> impl
      * @param contentForm
      */
     @Override
-    @CacheEvict(cacheNames = "contentGroup",key = "#content.groupCode")
+    @CacheEvict(cacheNames = "contentGroup",key = "#contentForm.groupCode")
     public void addContent(ContentForm contentForm) {
         Content content = new Content();
         BeanUtils.copyProperties(contentForm,content);

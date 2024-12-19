@@ -26,7 +26,9 @@ public class MinioController {
      */
     @PostMapping("/upload")
     public Result upload(String bucket, MultipartFile file) throws Exception {
-        return Result.success(minioService.upload(bucket, file));
+        MinioService.FileInfo upload = minioService.upload(bucket, file);
+        System.out.println(upload);
+        return Result.success(upload);
     }
 
     /**
