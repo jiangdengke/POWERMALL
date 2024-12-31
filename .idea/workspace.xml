@@ -4,62 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="修改隐私信息">
-      <change beforePath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/power_mall.DhFFGg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6fd402ab-20bb-48b9-8158-7e52ac8f7727.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6fd402ab-20bb-48b9-8158-7e52ac8f7727.xml" afterDir="false" />
+    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="feat(api):新增用户邮箱登录和获取邮箱验证码接口&#10;fix(api):管理员登录接入数据库">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/cms-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/cms-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/com/jiangdk/cms/service/impl/ContentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/com/jiangdk/cms/service/impl/ContentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/target/test-classes/com/jiangdk/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/oms-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/oms-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/form/SpuForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/form/SpuForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/test-classes/com/jiangdk/pms/mapper/SkuMapperTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/test-classes/com/jiangdk/pms/redis/RedisLockTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/test-classes/com/jiangdk/pms/service/CategoryServiceImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/test-classes/com/jiangdk/pms/service/impl/CartServiceImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/test-classes/com/jiangdk/pms/service/impl/SpuServiceImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-search/search-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-search/search-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/search-service/target/classes/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-search/search-service/target/test-classes/com/jiangdk/search/service/impl/GoodsServiceImplTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/app/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/app/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/pojo/entity/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/pojo/entity/AppUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/AppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/AppUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/impl/AppUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/controller/app/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/controller/app/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/pojo/entity/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/pojo/entity/AppUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/service/AppUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/service/AppUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/service/impl/AppUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/service/impl/AppUserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oss-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/oss-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pms-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pms-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/common-auth/target/test-classes/com/jiangdk/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/common-core/target/test-classes/com/jiangdk/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/common-rabbitmq/target/test-classes/com/jiangdk/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/common-redis/target/test-classes/com/jiangdk/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/power-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/power-gateway.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/GatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/GatewayApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/config/SaTokenConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/config/SaTokenConfigure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/target/test-classes/com/jiangdk/gateway/PasswordDemoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-oss/oss-api/target/classes/com/jiangdk/oss/feign/MinioFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/power-oss/oss-api/target/classes/com/jiangdk/oss/feign/MinioFeignClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-oss/oss-service/target/classes/com/jiangdk/oss/controller/admin/MinioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/power-oss/oss-service/target/classes/com/jiangdk/oss/controller/admin/MinioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-oss/oss-service/target/test-classes/com/jiangdk/oss/MinioTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/search-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/search-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ums-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ums-service.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,12 +37,12 @@
     &quot;assignee&quot;: &quot;jiangdengke&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/jiangdengke/POWERMALL.git&quot;,
-    &quot;accountId&quot;: &quot;18b24cae-de67-4e6d-b189-d9d25b10409e&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jiangdengke/POWERMALL.git",
+    "accountId": "25b88602-366d-4428-b2d2-33217593e994"
   }
-}</component>
+}]]></component>
   <component name="HttpClientSelectedEnvironments">
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
   </component>
@@ -116,81 +63,81 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Batch.copy.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;HTTP 请求.generated-requests | #3.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP 请求.generated-requests | #5.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.add.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.checked.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.getAll.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.updateCount.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CategoryServiceTest.page.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FZPayTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GoodsServiceImplTest.save.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MinioTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MinioTest.test02.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MinioTest.test03.executor&quot;: &quot;JRebel Debug&quot;,
-    &quot;JUnit.MinioTest.test04.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PasswordDemoTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PayTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RedisLockTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SkuMapperTest.testDemo.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SpuServiceImplTest.getSpuById.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.power-mall [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.power-mall [package].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.CMSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OMSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OSSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PMSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SearchApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SysApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.UMSApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL-Insert-Multirow.sql.groovy&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jdk/code/power-mall/POWERMALL&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.itangcent.idea.plugin.configurable.AccountConfigurable.apifox&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.AlipayTradePagePay.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.IdGenerator.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.SMSTest.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Batch.copy.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "HTTP 请求.generated-requests | #3.executor": "Run",
+    "HTTP 请求.generated-requests | #5.executor": "Run",
+    "JUnit.CartServiceImplTest.add.executor": "Run",
+    "JUnit.CartServiceImplTest.checked.executor": "Run",
+    "JUnit.CartServiceImplTest.getAll.executor": "Run",
+    "JUnit.CartServiceImplTest.updateCount.executor": "Run",
+    "JUnit.CategoryServiceTest.page.executor": "Run",
+    "JUnit.FZPayTest.test.executor": "Run",
+    "JUnit.GoodsServiceImplTest.save.executor": "Run",
+    "JUnit.MinioTest.test.executor": "Run",
+    "JUnit.MinioTest.test02.executor": "Run",
+    "JUnit.MinioTest.test03.executor": "JRebel Debug",
+    "JUnit.MinioTest.test04.executor": "Run",
+    "JUnit.PasswordDemoTest.test.executor": "Run",
+    "JUnit.PayTest.test.executor": "Run",
+    "JUnit.RedisLockTest.test.executor": "Run",
+    "JUnit.SkuMapperTest.testDemo.executor": "Run",
+    "JUnit.SpuServiceImplTest.getSpuById.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.power-mall [clean].executor": "Run",
+    "Maven.power-mall [package].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CMSApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.OMSApplication.executor": "Run",
+    "Spring Boot.OSSApplication.executor": "Run",
+    "Spring Boot.PMSApplication.executor": "Run",
+    "Spring Boot.SearchApplication.executor": "Run",
+    "Spring Boot.SysApplication.executor": "Debug",
+    "Spring Boot.UMSApplication.executor": "Debug",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "database.data.extractors.current.export.id": "SQL-Insert-Multirow.sql.groovy",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/jdk/code/power-mall/POWERMALL",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "application.passwordSafe",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.AlipayTradePagePay.executor": "Run",
+    "应用程序.IdGenerator.executor": "Run",
+    "应用程序.SMSTest.executor": "Run"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;module&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module"
     ],
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+    "DatabaseDriversLRU": [
+      "mysql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言&quot;: [
-      &quot;MySQL&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言": [
+      "MySQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
     <option name="stackFrameCustomizationEnabled" value="false" />
@@ -448,7 +395,7 @@
       <workItem from="1735623922944" duration="521000" />
       <workItem from="1735635423011" duration="2333000" />
       <workItem from="1735637812543" duration="4506000" />
-      <workItem from="1735656482205" duration="787000" />
+      <workItem from="1735656482205" duration="2080000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
@@ -698,7 +645,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734497497545</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="feat(api):新增用户邮箱登录和获取邮箱验证码接口&#10;fix(api):管理员登录接入数据库">
+      <option name="closed" value="true" />
+      <created>1735657764565</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1735657764565</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -728,7 +683,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="设计开发商品分类树，编写商品分类列表接口" />
     <MESSAGE value="商品分类接口开发完成" />
     <MESSAGE value="完成商品增删改查" />
     <MESSAGE value="完成oss-service接口开发，并向外提供oss-api。完成pms-service通过feign对oss服务进行调用" />
@@ -753,7 +707,8 @@
     <MESSAGE value="增加ums模块的bootstrap.yml" />
     <MESSAGE value="接入支付宝支付。新增使用docker-compose上线项目" />
     <MESSAGE value="修改隐私信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改隐私信息" />
+    <MESSAGE value="feat(api):新增用户邮箱登录和获取邮箱验证码接口&#10;fix(api):管理员登录接入数据库" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(api):新增用户邮箱登录和获取邮箱验证码接口&#10;fix(api):管理员登录接入数据库" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
