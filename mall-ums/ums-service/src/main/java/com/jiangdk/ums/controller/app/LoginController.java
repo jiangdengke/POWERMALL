@@ -5,11 +5,12 @@ import cn.dev33.satoken.stp.SaTokenInfo;
 import cn.dev33.satoken.stp.StpUtil;
 import cn.dev33.satoken.util.SaResult;
 import com.jiangdk.common.result.Result;
-import com.jiangdk.ums.dto.AppUserDTO;
 import com.jiangdk.ums.pojo.entity.AppUser;
 import com.jiangdk.ums.service.AppUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.mail.MessagingException;
 
 /**
  * 应用端/用户
@@ -19,6 +20,30 @@ import org.springframework.web.bind.annotation.*;
 public class LoginController {
     @Autowired
     private AppUserService appUserService;
+
+    /**
+     * 邮箱验证码登录/注册
+     */
+    @PostMapping("/loginByMail")
+    public Result<SaTokenInfo> loginByMail(
+            @RequestParam("mail") String mail,
+            @RequestParam("code") String code){
+        AppUser appUser = appUserService.loginByMail(mail, code);
+        // 登录系统
+        StpUtil.login(appUser.getId());
+        return Result.success("登录成功",StpUtil.getTokenInfo());
+    }
+
+    /**
+     * 获取邮箱验证码
+     * @param mail
+     * @return
+     */
+    @GetMapping("/getCodeByMail")
+    public Result sendCodeByMail(String mail) throws MessagingException {
+        String code = appUserService.sendCodeByMail(mail, appUserService.generateVerificationCode());
+        return Result.success(code);
+    }
     /**
      * 手机验证码登录
      * @param mobile 手机号
@@ -36,7 +61,7 @@ public class LoginController {
     }
 
     /**
-     * 获取验证码
+     * 获取手机验证码
      * @param mobile
      * @return
      */

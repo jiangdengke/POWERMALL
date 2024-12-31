@@ -1,6 +1,16 @@
 server:
   port: 8005
 spring:
+  mail:
+    host: smtp.qq.com
+    username: 1728439852@qq.com
+    password: tyyvgvaulzfobjcg
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver

@@ -5,58 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="修改隐私信息">
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/admin/SkuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/dto/SkuStatusDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/vo/CategoryVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyBatisCodeHelperDatasource.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/power_mall.DhFFGg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/54eeed2d-1cc5-4358-8b12-a097f75dddea/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6fd402ab-20bb-48b9-8158-7e52ac8f7727.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6fd402ab-20bb-48b9-8158-7e52ac8f7727.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/service/impl/ContentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/service/impl/ContentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/cms-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/cms-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/com/jiangdk/cms/service/impl/ContentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/target/classes/com/jiangdk/cms/service/impl/ContentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/target/test-classes/com/jiangdk/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/oms-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/oms-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/bootstrap-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/target/classes/com/jiangdk/oms/service/impl/OrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/admin/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/admin/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/admin/SpuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/admin/SpuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/mapper/SpuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/mapper/SpuMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/vo/SpuVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/vo/SpuVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/SkuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/SkuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/SpuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/SpuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SkuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SkuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/mapper/SpuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/mapper/SpuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/admin/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/admin/CategoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/admin/SpuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/controller/admin/SpuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/pojo/vo/SpuVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/pojo/vo/SpuVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/SkuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/SkuService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/CategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/CategoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/SkuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/SkuServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/SpuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/com/jiangdk/pms/service/impl/SpuServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/mapper/SpuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/target/classes/mapper/SpuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/admin/AdminUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/admin/AdminUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/form/SpuForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/pojo/form/SpuForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/test-classes/com/jiangdk/pms/mapper/SkuMapperTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/test-classes/com/jiangdk/pms/redis/RedisLockTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/test-classes/com/jiangdk/pms/service/CategoryServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/test-classes/com/jiangdk/pms/service/impl/CartServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/target/test-classes/com/jiangdk/pms/service/impl/SpuServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-search/search-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-search/search-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/search-service/target/classes/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-search/search-service/target/test-classes/com/jiangdk/search/service/impl/GoodsServiceImplTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/app/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/app/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/pojo/entity/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/pojo/entity/AppUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/AppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/AppUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/impl/AppUserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/controller/admin/AdminUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/controller/admin/AdminUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/common-auth/src/main/java/com/jiangdk/common/auth/config/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/common-auth/src/main/java/com/jiangdk/common/auth/config/SaTokenConfigure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/common-auth/target/classes/com/jiangdk/common/auth/config/SaTokenConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/common-auth/target/classes/com/jiangdk/common/auth/config/SaTokenConfigure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/GateConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/target/classes/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/config/GateConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-oss/oss-api/src/main/java/com/jiangdk/oss/feign/MinioFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-oss/oss-api/src/main/java/com/jiangdk/oss/feign/MinioFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-oss/oss-service/src/main/java/com/jiangdk/oss/controller/admin/MinioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-oss/oss-service/src/main/java/com/jiangdk/oss/controller/admin/MinioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-oss/oss-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-oss/oss-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-oss/oss-service/target/classes/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-oss/oss-service/target/classes/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/controller/app/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/controller/app/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/pojo/entity/AppUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/pojo/entity/AppUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/service/AppUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/service/AppUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/service/impl/AppUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/service/impl/AppUserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oss-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/oss-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pms-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pms-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-common/common-auth/target/test-classes/com/jiangdk/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-common/common-core/target/test-classes/com/jiangdk/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-common/common-rabbitmq/target/test-classes/com/jiangdk/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-common/common-redis/target/test-classes/com/jiangdk/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/power-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/power-gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/GatewayApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/GatewayApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/config/SaTokenConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/config/SaTokenConfigure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/target/test-classes/com/jiangdk/gateway/PasswordDemoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-oss/oss-api/target/classes/com/jiangdk/oss/feign/MinioFeignClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/power-oss/oss-api/target/classes/com/jiangdk/oss/feign/MinioFeignClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-oss/oss-service/target/classes/com/jiangdk/oss/controller/admin/MinioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/power-oss/oss-service/target/classes/com/jiangdk/oss/controller/admin/MinioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-oss/oss-service/target/test-classes/com/jiangdk/oss/MinioTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/search-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/search-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ums-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ums-service.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,9 +68,6 @@
   </component>
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -100,7 +100,6 @@
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
   </component>
   <component name="JRebelWorkspace">
-    <option name="jrebelEnabledAutocompile" value="true" />
     <option name="hasSeenReactiveStreamsDisablingDialog" value="true" />
   </component>
   <component name="MavenRunner">
@@ -117,79 +116,81 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Batch.copy.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "HTTP 请求.generated-requests | #3.executor": "Run",
-    "HTTP 请求.generated-requests | #5.executor": "Run",
-    "JUnit.CartServiceImplTest.add.executor": "Run",
-    "JUnit.CartServiceImplTest.checked.executor": "Run",
-    "JUnit.CartServiceImplTest.getAll.executor": "Run",
-    "JUnit.CartServiceImplTest.updateCount.executor": "Run",
-    "JUnit.CategoryServiceTest.page.executor": "Run",
-    "JUnit.FZPayTest.test.executor": "Run",
-    "JUnit.GoodsServiceImplTest.save.executor": "Run",
-    "JUnit.MinioTest.test.executor": "Run",
-    "JUnit.MinioTest.test02.executor": "Run",
-    "JUnit.MinioTest.test03.executor": "JRebel Debug",
-    "JUnit.MinioTest.test04.executor": "Run",
-    "JUnit.PasswordDemoTest.test.executor": "Run",
-    "JUnit.PayTest.test.executor": "Run",
-    "JUnit.RedisLockTest.test.executor": "Run",
-    "JUnit.SkuMapperTest.testDemo.executor": "Run",
-    "JUnit.SpuServiceImplTest.getSpuById.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.power-mall [clean].executor": "Run",
-    "Maven.power-mall [package].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.CMSApplication.executor": "Debug",
-    "Spring Boot.GatewayApplication.executor": "Run",
-    "Spring Boot.OMSApplication.executor": "Run",
-    "Spring Boot.OSSApplication.executor": "Run",
-    "Spring Boot.PMSApplication.executor": "Debug",
-    "Spring Boot.SearchApplication.executor": "JRebel Debug",
-    "Spring Boot.SysApplication.executor": "Debug",
-    "Spring Boot.UMSApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jdk/Desktop/dbfirst-mysql",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.AlipayTradePagePay.executor": "Run",
-    "应用程序.IdGenerator.executor": "Run",
-    "应用程序.SMSTest.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Batch.copy.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;HTTP 请求.generated-requests | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP 请求.generated-requests | #5.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartServiceImplTest.add.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartServiceImplTest.checked.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartServiceImplTest.getAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartServiceImplTest.updateCount.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoryServiceTest.page.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FZPayTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GoodsServiceImplTest.save.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MinioTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MinioTest.test02.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MinioTest.test03.executor&quot;: &quot;JRebel Debug&quot;,
+    &quot;JUnit.MinioTest.test04.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PasswordDemoTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PayTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisLockTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SkuMapperTest.testDemo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpuServiceImplTest.getSpuById.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.power-mall [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.power-mall [package].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CMSApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OMSApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OSSApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PMSApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SearchApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SysApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.UMSApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL-Insert-Multirow.sql.groovy&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jdk/code/power-mall/POWERMALL&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.itangcent.idea.plugin.configurable.AccountConfigurable.apifox&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.AlipayTradePagePay.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.IdGenerator.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.SMSTest.executor&quot;: &quot;Run&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;module&quot;
     ],
-    "DatabaseDriversLRU": [
-      "mysql"
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言": [
-      "MySQL"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言&quot;: [
+      &quot;MySQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
     <option name="stackFrameCustomizationEnabled" value="false" />
@@ -210,6 +211,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/impl" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.jiangdk.pms.mapper" />
@@ -252,7 +256,7 @@
     <configuration name="copy" type="BatchConfigurationType" factoryName="Batch" temporary="true">
       <module name="power-mall" />
       <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../power-mall/docker" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/power-mall/docker" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SCRIPT_NAME" value="copy.cmd" />
       <option name="PARAMETERS" value="" />
@@ -327,32 +331,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Batch.copy" />
-      <item itemvalue="Spring Boot.CMSApplication" />
-      <item itemvalue="Spring Boot.OSSApplication" />
-      <item itemvalue="Spring Boot.SearchApplication" />
-      <item itemvalue="Spring Boot.UMSApplication" />
-      <item itemvalue="Spring Boot.OMSApplication" />
-      <item itemvalue="Spring Boot.GatewayApplication" />
-      <item itemvalue="Spring Boot.PMSApplication" />
-      <item itemvalue="应用程序.AlipayTradePagePay" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.PMSApplication" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
-        <item itemvalue="Spring Boot.OMSApplication" />
-        <item itemvalue="Batch.copy" />
-        <item itemvalue="应用程序.AlipayTradePagePay" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -422,6 +406,49 @@
       <workItem from="1734527347176" duration="11592000" />
       <workItem from="1734577617991" duration="3742000" />
       <workItem from="1734581488321" duration="9784000" />
+      <workItem from="1734835709815" duration="4373000" />
+      <workItem from="1734841193189" duration="353000" />
+      <workItem from="1734843949103" duration="17000" />
+      <workItem from="1734848154213" duration="30000" />
+      <workItem from="1734848288251" duration="94000" />
+      <workItem from="1734883514882" duration="329000" />
+      <workItem from="1734883852035" duration="331000" />
+      <workItem from="1734924626732" duration="26000" />
+      <workItem from="1734924672360" duration="359000" />
+      <workItem from="1734925137577" duration="467000" />
+      <workItem from="1734925926957" duration="184000" />
+      <workItem from="1734931877092" duration="158000" />
+      <workItem from="1734937354274" duration="11000" />
+      <workItem from="1734948953218" duration="594000" />
+      <workItem from="1735053210834" duration="1063000" />
+      <workItem from="1735054286652" duration="2240000" />
+      <workItem from="1735448747007" duration="10769000" />
+      <workItem from="1735460013006" duration="4639000" />
+      <workItem from="1735464666324" duration="308000" />
+      <workItem from="1735465164165" duration="28000" />
+      <workItem from="1735480972082" duration="757000" />
+      <workItem from="1735482511460" duration="2530000" />
+      <workItem from="1735485152292" duration="482000" />
+      <workItem from="1735485643826" duration="1004000" />
+      <workItem from="1735486653864" duration="72000" />
+      <workItem from="1735486735606" duration="3000" />
+      <workItem from="1735486952724" duration="166000" />
+      <workItem from="1735487128125" duration="1460000" />
+      <workItem from="1735489169537" duration="118000" />
+      <workItem from="1735489296414" duration="113000" />
+      <workItem from="1735489417663" duration="100000" />
+      <workItem from="1735489528184" duration="535000" />
+      <workItem from="1735490075055" duration="233000" />
+      <workItem from="1735490319193" duration="38000" />
+      <workItem from="1735542256876" duration="333000" />
+      <workItem from="1735542600780" duration="148000" />
+      <workItem from="1735542757531" duration="52000" />
+      <workItem from="1735542815349" duration="54000" />
+      <workItem from="1735544977155" duration="22000" />
+      <workItem from="1735623922944" duration="521000" />
+      <workItem from="1735635423011" duration="2333000" />
+      <workItem from="1735637812543" duration="4506000" />
+      <workItem from="1735656482205" duration="787000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
@@ -729,100 +756,16 @@
     <option name="LAST_COMMIT_MESSAGE" value="修改隐私信息" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/service/impl/GoodsServiceImpl.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/service/impl/GoodsServiceImpl.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java</url>
-          <line>139</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java</url>
-          <line>143</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java</url>
-          <line>119</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/power-oss/oss-service/src/main/java/com/jiangdk/oss/service/impl/MinioServiceImpl.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/service/impl/GoodsServiceImpl.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/service/impl/GoodsServiceImpl.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-search/search-service/src/main/java/com/jiangdk/search/listener/GoodsMQListener.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/PayServiceImpl.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/controller/app/AppOrderController.java</url>
-          <line>152</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/PayServiceImpl.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/controller/admin/ContentController.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/service/impl/ContentServiceImpl.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/service/impl/ContentServiceImpl.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="com.jiangdk.pms.pojo.entity.Spu" memberName="imgList" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="52@qq.com" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

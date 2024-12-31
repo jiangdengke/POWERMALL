@@ -1,10 +1,12 @@
 package com.jiangdk.ums.service;
 
-import com.jiangdk.ums.dto.AppUserDTO;
-import com.jiangdk.ums.pojo.entity.AppUser;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.jiangdk.ums.pojo.entity.AppUser;
+
+import javax.mail.MessagingException;
 
 public interface AppUserService extends IService<AppUser>{
+
 
     /**
      * 用户名密码登录
@@ -27,4 +29,21 @@ public interface AppUserService extends IService<AppUser>{
      * @return
      */
     AppUser loginByMobile(String mobile,String code);
+    /**
+     * 发送邮箱验证码
+     * @param mail
+     */
+    String sendCodeByMail(String mail,String code) throws MessagingException;
+    /**
+     * 生成随机6位验证码
+     */
+    String generateVerificationCode();
+
+    /**
+     * 邮箱验证码登录
+     * @param mail
+     * @param code
+     * @return
+     */
+    AppUser loginByMail(String mail, String code);
 }

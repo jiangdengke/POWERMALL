@@ -1,6 +1,5 @@
 package com.jiangdk.pms.pojo.form;
 
-import com.jiangdk.pms.pojo.entity.Sku;
 import lombok.Data;
 
 import java.util.List;
@@ -8,7 +7,7 @@ import java.util.List;
 /**
  * @author: JiangDk
  * @date: 2024/11/30 16:10
- * @description:
+ * @description: 
  */
 @Data
 public class SpuForm {
@@ -30,7 +29,7 @@ public class SpuForm {
     private String detail;
     // 商品状态  0:下架 1:上架
     private Integer status;
-    // 商品规格
+    // 商品规格 
     private List<?> specList;
     // 商品库存
     private List<SkuForm> skuList;

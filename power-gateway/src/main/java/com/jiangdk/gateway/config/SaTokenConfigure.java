@@ -30,11 +30,13 @@ public class SaTokenConfigure {
                         .notMatch("/api/ums/loginByUsername")
                         .notMatch("/api/ums/loginCode")
                         .notMatch("/api/ums/loginByMobile")
-
+                        .notMatch("/api/ums/getCodeByMail")
+                        .notMatch("/api/ums/loginByMail")
                         .check(r->StpUtil.checkLogin());
                 // 管理端认证规则
                 SaRouter.match("/api-admin/**")
                         .notMatch("/api-admin/ums/login")
+
                         .check(r-> StpAdminUtil.checkLogin());
             })
             // 异常处理方法：每次setAuth函数出现异常时进入 
