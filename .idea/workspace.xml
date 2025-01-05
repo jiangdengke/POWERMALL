@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="feat(add)：增加管理员登录">
-      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/mapper/AdminUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/pojo/entity/AdminUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/AdminUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/impl/AdminUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/mapper/AdminUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/bootstrap-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/mapper/AdminUserMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/pojo/entity/AdminUser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/service/AdminUserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/com/jiangdk/ums/service/impl/AdminUserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/target/classes/mapper/AdminUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="feat(docker)：集成Docker和Docker Compose&#10;- 添加Dockerfile，支持容器化部署&#10;- 添加Docker-Compose.yml，实现多服务的编排和管理" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,12 +34,12 @@
     &quot;assignee&quot;: &quot;jiangdengke&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/jiangdengke/POWERMALL.git&quot;,
-    &quot;accountId&quot;: &quot;25b88602-366d-4428-b2d2-33217593e994&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/jiangdengke/POWERMALL.git",
+    "accountId": "d23a9235-21f0-421d-93e3-d5d15d885063"
   }
-}</component>
+}]]></component>
   <component name="HttpClientSelectedEnvironments">
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
   </component>
@@ -74,84 +60,85 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Batch.copy.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "HTTP 请求.generated-requests | #3.executor": "Run",
-    "HTTP 请求.generated-requests | #5.executor": "Run",
-    "JUnit.CartServiceImplTest.add.executor": "Run",
-    "JUnit.CartServiceImplTest.checked.executor": "Run",
-    "JUnit.CartServiceImplTest.getAll.executor": "Run",
-    "JUnit.CartServiceImplTest.updateCount.executor": "Run",
-    "JUnit.CategoryServiceTest.page.executor": "Run",
-    "JUnit.FZPayTest.test.executor": "Run",
-    "JUnit.GoodsServiceImplTest.save.executor": "Run",
-    "JUnit.MinioTest.test.executor": "Run",
-    "JUnit.MinioTest.test02.executor": "Run",
-    "JUnit.MinioTest.test03.executor": "JRebel Debug",
-    "JUnit.MinioTest.test04.executor": "Run",
-    "JUnit.PasswordDemoTest.test.executor": "Run",
-    "JUnit.PayTest.test.executor": "Run",
-    "JUnit.RedisLockTest.test.executor": "Run",
-    "JUnit.SkuMapperTest.testDemo.executor": "Run",
-    "JUnit.SpuServiceImplTest.getSpuById.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.power-mall [clean].executor": "Run",
-    "Maven.power-mall [package].executor": "Run",
-    "Notification.DisplayName-DoNotAsk-Database detector": "数据库检测器",
-    "Notification.DoNotAsk-Database detector": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.CMSApplication.executor": "Run",
-    "Spring Boot.GatewayApplication.executor": "Run",
-    "Spring Boot.OMSApplication.executor": "Run",
-    "Spring Boot.OSSApplication.executor": "Run",
-    "Spring Boot.PMSApplication.executor": "Run",
-    "Spring Boot.SearchApplication.executor": "Run",
-    "Spring Boot.SysApplication.executor": "Debug",
-    "Spring Boot.UMSApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "database.data.extractors.current.export.id": "SQL-Insert-Multirow.sql.groovy",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jiangdk/Desktop/workspace/code/POWERMALL",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "com.ccnode.codegenerator.I.b",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.AlipayTradePagePay.executor": "Run",
-    "应用程序.IdGenerator.executor": "Run",
-    "应用程序.SMSTest.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Batch.copy (1).executor&quot;: &quot;Run&quot;,
+    &quot;Batch.copy.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;HTTP 请求.generated-requests | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP 请求.generated-requests | #5.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartServiceImplTest.add.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartServiceImplTest.checked.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartServiceImplTest.getAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CartServiceImplTest.updateCount.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CategoryServiceTest.page.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FZPayTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GoodsServiceImplTest.save.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MinioTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MinioTest.test02.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MinioTest.test03.executor&quot;: &quot;JRebel Debug&quot;,
+    &quot;JUnit.MinioTest.test04.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PasswordDemoTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PayTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisLockTest.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SkuMapperTest.testDemo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SpuServiceImplTest.getSpuById.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.power-mall [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.power-mall [package].executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Database detector&quot;: &quot;数据库检测器&quot;,
+    &quot;Notification.DoNotAsk-Database detector&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CMSApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OMSApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OSSApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PMSApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SearchApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.SysApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.UMSApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL-Insert-Multirow.sql.groovy&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jiangdk/Desktop/workspace/code/power-mall/POWERMALL&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.AlipayTradePagePay.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.IdGenerator.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.SMSTest.executor&quot;: &quot;Run&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;module&quot;
     ],
-    "DatabaseDriversLRU": [
-      "mysql"
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言": [
-      "MySQL"
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言&quot;: [
+      &quot;MySQL&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
     <option name="stackFrameCustomizationEnabled" value="false" />
@@ -200,7 +187,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UMSApplication">
+  <component name="RunManager" selected="Batch.copy (1)">
     <configuration name="AlipayTradePagePay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jiangdk.oms.AlipayTradePagePay" />
       <module name="oms-service" />
@@ -214,10 +201,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="copy" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+    <configuration name="copy (1)" type="BatchConfigurationType" factoryName="Batch" temporary="true">
       <module name="power-mall" />
       <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/power-mall/docker" />
+      <option name="WORKING_DIRECTORY" value="./docker" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SCRIPT_NAME" value="copy.cmd" />
       <option name="PARAMETERS" value="" />
@@ -292,6 +279,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Batch.copy (1)" />
+        <item itemvalue="Spring Boot.OMSApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.PMSApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -414,6 +409,14 @@
       <workItem from="1736001992262" duration="214000" />
       <workItem from="1736002212839" duration="238000" />
       <workItem from="1736002460743" duration="328000" />
+      <workItem from="1736002798079" duration="231000" />
+      <workItem from="1736003742756" duration="1659000" />
+      <workItem from="1736082079192" duration="22000" />
+      <workItem from="1736082111925" duration="19000" />
+      <workItem from="1736082137282" duration="20000" />
+      <workItem from="1736082163019" duration="12000" />
+      <workItem from="1736082210302" duration="1742000" />
+      <workItem from="1736085035256" duration="330000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
@@ -679,7 +682,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735658695941</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="feat(add)：增加管理员登录">
+      <option name="closed" value="true" />
+      <created>1736002875337</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1736002875337</updated>
+    </task>
+    <task id="LOCAL-00035" summary="feat(docker)：集成Docker和Docker Compose&#10;- 添加Dockerfile，支持容器化部署&#10;- 添加Docker-Compose.yml，实现多服务的编排和管理">
+      <option name="closed" value="true" />
+      <created>1736085290616</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1736085290616</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -713,8 +732,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="完成oss-service接口开发，并向外提供oss-api。完成pms-service通过feign对oss服务进行调用" />
-    <MESSAGE value="搭建微服务网关" />
     <MESSAGE value="完成内容微服务接口的开发" />
     <MESSAGE value="对接微信小程序前端-更改后端路径" />
     <MESSAGE value="对内容和商品通过SpringCache增加缓存。" />
@@ -738,7 +755,9 @@
     <MESSAGE value="feat(api):新增用户邮箱登录和获取邮箱验证码接口&#10;fix(api):管理员登录接入数据库" />
     <MESSAGE value="docs(readme): 添加项目README" />
     <MESSAGE value="feat(add)：增加管理员登录" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(add)：增加管理员登录" />
+    <MESSAGE value="feat(docker)：集成Docker和Docker Compose" />
+    <MESSAGE value="feat(docker)：集成Docker和Docker Compose&#10;- 添加Dockerfile，支持容器化部署&#10;- 添加Docker-Compose.yml，实现多服务的编排和管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(docker)：集成Docker和Docker Compose&#10;- 添加Dockerfile，支持容器化部署&#10;- 添加Docker-Compose.yml，实现多服务的编排和管理" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
