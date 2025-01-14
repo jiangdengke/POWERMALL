@@ -8,6 +8,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.jiangdk.common.exception.BizException;
 import com.jiangdk.common.sms.util.AliyunSMSUtil;
 import com.jiangdk.ums.mapper.AppUserMapper;
+import com.jiangdk.ums.pojo.dto.RegisterRequest;
 import com.jiangdk.ums.pojo.entity.AppUser;
 import com.jiangdk.ums.service.AppUserService;
 import lombok.extern.slf4j.Slf4j;
@@ -67,6 +68,38 @@ public class AppUserServiceImpl extends ServiceImpl<AppUserMapper, AppUser> impl
             throw new BizException(HttpStatus.HTTP_UNAUTHORIZED,"该邮箱未注册");
         }
         return appUser;
+    }
+    /**
+     * 注册用户
+     * @param registerRequest
+     */
+    @Override
+    public void registerUser(RegisterRequest registerRequest) {
+        // todo 这里的验证码应该和登录的验证码分开
+        // 获取redis中的验证码,Key格式： login:appUser:邮箱
+        String redisCode = stringRedisTemplate.opsForValue().get("login:appUser:" + registerRequest.getEmail());
+
+        String code = registerRequest.getCode();
+        if (redisCode.equals(code) || redisCode == null){
+            throw new BizException(HttpStatus.HTTP_NOT_FOUND,"验证码错误或已过期");
+        }
+        // 通过用户名查看用户是否存在
+        AppUser appUser = this.getOne(new LambdaQueryWrapper<AppUser>().eq(AppUser::getUsername, registerRequest.getUsername()));
+        if (appUser != null){
+            throw new BizException(HttpStatus.HTTP_UNAUTHORIZED,"该用户名已存在");
+        }
+        // 通过邮箱查看用户是否存在
+        appUser = this.getOne(new LambdaQueryWrapper<AppUser>().eq(AppUser::getMail, registerRequest.getEmail()));
+        if (appUser != null){
+            throw new BizException(HttpStatus.HTTP_UNAUTHORIZED,"该邮箱已注册");
+        }
+        // 密码加密
+        String password = BCrypt.hashpw(registerRequest.getPassword());
+        appUser = new AppUser();
+        appUser.setUsername(registerRequest.getUsername());
+        appUser.setPassword(password);
+        appUser.setMail(registerRequest.getEmail());
+        this.save(appUser);
     }
 
     /**

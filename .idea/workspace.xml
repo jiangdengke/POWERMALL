@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="feat(docker)：集成Docker和Docker Compose&#10;- 添加Dockerfile，支持容器化部署&#10;- 添加Docker-Compose.yml，实现多服务的编排和管理" />
+    <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="feat(docker)：集成Docker和Docker Compose&#10;- 添加Dockerfile，支持容器化部署&#10;- 添加Docker-Compose.yml，实现多服务的编排和管理">
+      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/app/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/pojo/dto/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6fd402ab-20bb-48b9-8158-7e52ac8f7727.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6fd402ab-20bb-48b9-8158-7e52ac8f7727.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/app/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/app/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/AppUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/AppUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/impl/AppUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/config/SaTokenConfigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/target/classes/com/jiangdk/gateway/config/SaTokenConfigure.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,12 +45,12 @@
     &quot;assignee&quot;: &quot;jiangdengke&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jiangdengke/POWERMALL.git",
-    "accountId": "d23a9235-21f0-421d-93e3-d5d15d885063"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jiangdengke/POWERMALL.git&quot;,
+    &quot;accountId&quot;: &quot;d23a9235-21f0-421d-93e3-d5d15d885063&quot;
   }
-}]]></component>
+}</component>
   <component name="HttpClientSelectedEnvironments">
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
   </component>
@@ -111,17 +122,17 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jiangdk/Desktop/workspace/code/power-mall/POWERMALL&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jdk/workspace/power-mall/POWERMALL&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;application.passwordSafe&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
     &quot;应用程序.AlipayTradePagePay.executor&quot;: &quot;Run&quot;,
     &quot;应用程序.IdGenerator.executor&quot;: &quot;Run&quot;,
@@ -187,7 +198,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Batch.copy (1)">
+  <component name="RunManager" selected="Spring Boot.CMSApplication">
     <configuration name="AlipayTradePagePay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jiangdk.oms.AlipayTradePagePay" />
       <module name="oms-service" />
@@ -279,14 +290,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Batch.copy (1)" />
-        <item itemvalue="Spring Boot.OMSApplication" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
-        <item itemvalue="Spring Boot.PMSApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -417,6 +420,16 @@
       <workItem from="1736082163019" duration="12000" />
       <workItem from="1736082210302" duration="1742000" />
       <workItem from="1736085035256" duration="330000" />
+      <workItem from="1736730471282" duration="13000" />
+      <workItem from="1736730489481" duration="159000" />
+      <workItem from="1736730655181" duration="30000" />
+      <workItem from="1736730691849" duration="40000" />
+      <workItem from="1736730737557" duration="6417000" />
+      <workItem from="1736747588471" duration="2390000" />
+      <workItem from="1736756542398" duration="777000" />
+      <workItem from="1736777317992" duration="29000" />
+      <workItem from="1736855924166" duration="404000" />
+      <workItem from="1736856347897" duration="7360000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />

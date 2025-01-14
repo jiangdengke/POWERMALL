@@ -1,9 +1,11 @@
 package com.jiangdk.ums.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.jiangdk.ums.pojo.dto.RegisterRequest;
 import com.jiangdk.ums.pojo.entity.AppUser;
 
 import javax.mail.MessagingException;
+import javax.validation.Valid;
 
 public interface AppUserService extends IService<AppUser>{
 
@@ -46,4 +48,10 @@ public interface AppUserService extends IService<AppUser>{
      * @return
      */
     AppUser loginByMail(String mail, String code);
+
+    /**
+     * 注册用户
+     * @param registerRequest
+     */
+    void registerUser(@Valid RegisterRequest registerRequest);
 }

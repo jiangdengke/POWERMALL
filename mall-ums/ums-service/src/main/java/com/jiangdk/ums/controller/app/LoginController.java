@@ -22,7 +22,7 @@ public class LoginController {
     private AppUserService appUserService;
 
     /**
-     * 邮箱验证码登录/注册
+     * 邮箱验证码登录
      */
     @PostMapping("/loginByMail")
     public Result<SaTokenInfo> loginByMail(
