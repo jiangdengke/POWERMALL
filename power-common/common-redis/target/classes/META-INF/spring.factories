@@ -1,3 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-    com.jiangdk.common.redis.config.RedisConfig,\
-    com.jiangdk.common.redis.config.RedisCacheConfig

@@ -1,3 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.jiangdk.common.sms.config.AliyunSMSConfig,\
-  com.jiangdk.common.sms.util.AliyunSMSUtil
