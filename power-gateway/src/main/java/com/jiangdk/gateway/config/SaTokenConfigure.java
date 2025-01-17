@@ -33,6 +33,7 @@ public class SaTokenConfigure {
                         .notMatch("/api/ums/getCodeByMail")
                         .notMatch("/api/ums/loginByMail")
                         .notMatch("/api/ums/registerByMail")
+                        .notMatch("/api/pms/**")
                         .check(r->StpUtil.checkLogin());
                 // 管理端认证规则
                 SaRouter.match("/api-admin/**")

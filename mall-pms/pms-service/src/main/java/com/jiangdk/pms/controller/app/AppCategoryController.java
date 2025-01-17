@@ -1,7 +1,7 @@
 package com.jiangdk.pms.controller.app;
 
-import cn.hutool.core.lang.tree.Tree;
 import com.jiangdk.common.result.Result;
+import com.jiangdk.pms.pojo.vo.CategoryVO;
 import com.jiangdk.pms.service.impl.CategoryServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,9 +22,14 @@ public class AppCategoryController {
      * 商品分类列表
      * @return
      */
+//    @GetMapping
+//    public Result<List<Tree<Long>>> tree() {
+//        return Result.success(categoryServiceImpl.tree());
+//    }
     @GetMapping
-    public Result<List<Tree<Long>>> tree() {
-        return Result.success(categoryServiceImpl.tree());
+    public Result<List<CategoryVO>> list() {
+        List<CategoryVO> categoryTree = categoryServiceImpl.getCategoryList();
+        return Result.success(categoryTree);
     }
 
 }
