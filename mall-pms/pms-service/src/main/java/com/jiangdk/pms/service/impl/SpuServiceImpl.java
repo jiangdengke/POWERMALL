@@ -2,18 +2,23 @@ package com.jiangdk.pms.service.impl;
 
 import cn.hutool.http.HttpStatus;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.jiangdk.common.exception.BizException;
 import com.jiangdk.oss.feign.MinioFeignClient;
 import com.jiangdk.pms.dto.GoodsDTO;
+import com.jiangdk.pms.mapper.SpuMapper;
 import com.jiangdk.pms.pojo.entity.Category;
 import com.jiangdk.pms.pojo.entity.Sku;
+import com.jiangdk.pms.pojo.entity.Spu;
 import com.jiangdk.pms.pojo.form.SpuForm;
 import com.jiangdk.pms.pojo.query.SpuPageQuery;
 import com.jiangdk.pms.pojo.vo.SpuVO;
 import com.jiangdk.pms.service.CategoryService;
 import com.jiangdk.pms.service.SkuService;
+import com.jiangdk.pms.service.SpuService;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
@@ -22,10 +27,6 @@ import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.jiangdk.pms.pojo.entity.Spu;
-import com.jiangdk.pms.mapper.SpuMapper;
-import com.jiangdk.pms.service.SpuService;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -173,5 +174,42 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper, Spu> implements SpuSe
         // 将商品id发送到mq
         rabbitTemplate.convertAndSend("pms.goods","pms.goods.del",spuId,
                 new CorrelationData(String.valueOf(spu.getId())));
+    }
+
+    /**
+     * 根据分类id获取对应商品
+     * @param categoryId
+     * @return
+     */
+    @Override
+    public List<SpuVO> getSpuListByCategoryId(Long categoryId) {
+        QueryWrapper<Spu> spuQueryWrapper = new QueryWrapper<>();
+        spuQueryWrapper.eq("category_id",categoryId);
+        List<Spu> spuList = this.list(spuQueryWrapper);
+        if (spuList == null || spuList.isEmpty()){
+            throw new BizException(HttpStatus.HTTP_NOT_FOUND,"该分类下没有商品");
+        }
+        List<SpuVO> spuVOList = spuList.stream().map(spu -> {
+            SpuVO spuVO = new SpuVO();
+            BeanUtils.copyProperties(spu, spuVO);
+            return spuVO;
+        }).collect(Collectors.toList());
+        return spuVOList;
+    }
+
+    /**
+     * 获取所有商品
+     * @param o
+     * @return
+     */
+    @Override
+    public List<SpuVO> getSpuList() {
+        List<Spu> list = this.list();
+        List<SpuVO> spuVOList = list.stream().map(spu -> {
+            SpuVO spuVO = new SpuVO();
+            BeanUtils.copyProperties(spu, spuVO);
+            return spuVO;
+        }).collect(Collectors.toList());
+        return spuVOList;
     }
 }

@@ -31,5 +31,4 @@ public class AppCategoryController {
         List<CategoryVO> categoryTree = categoryServiceImpl.getCategoryList();
         return Result.success(categoryTree);
     }
-
 }

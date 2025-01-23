@@ -7,6 +7,8 @@ import com.jiangdk.pms.pojo.form.SpuForm;
 import com.jiangdk.pms.pojo.query.SpuPageQuery;
 import com.jiangdk.pms.pojo.vo.SpuVO;
 
+import java.util.List;
+
 public interface SpuService extends IService<Spu>{
 
     /**
@@ -38,4 +40,15 @@ public interface SpuService extends IService<Spu>{
      * 删除商品
      */
     void deleteSpuById(Long spuId);
+    /**
+     * 通过分类id获取所有商品
+     */
+    List<SpuVO> getSpuListByCategoryId(Long categoryId);
+
+    /**
+     * 获取所有商品
+     * @param
+     * @return
+     */
+    List<SpuVO> getSpuList();
 }

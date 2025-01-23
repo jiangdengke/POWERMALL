@@ -4,11 +4,9 @@ import com.jiangdk.common.result.Result;
 import com.jiangdk.pms.pojo.vo.SpuVO;
 import com.jiangdk.pms.service.SpuService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * 应用端/商品
@@ -27,5 +25,22 @@ public class AppSpuController {
     public Result<SpuVO> getSpuDetail(
              @PathVariable("id") Long spuId) {
         return Result.success(spuService.getSpuById(spuId));
+    }
+    /**
+     * 根据分类id获取对应商品
+     */
+    @GetMapping("/list")
+    public Result<List<SpuVO>> getSpuList
+    (
+            @RequestParam("categoryId") Long categoryId
+    ) {
+        return Result.success(spuService.getSpuListByCategoryId(categoryId));
+    }
+    /**
+     * 获取所有商品
+     */
+    @GetMapping("/all")
+    public Result<List<SpuVO>> getAllSpu() {
+        return Result.success(spuService.getSpuList());
     }
 }
