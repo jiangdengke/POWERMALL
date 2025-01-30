@@ -7,13 +7,23 @@ spring:
     url: jdbc:mysql://128.1.132.86:3306/power_mall?useSSL=false&serverTimezone=Asia/Shanghai
     username: root
     password: bieshanwoku
+#  redis:
+#    host: 128.1.132.86
+#    port: 6379
+#    password: bieshanwoku
+#    lettuce:
+#      pool:
+#        enabled: true
   redis:
     host: 128.1.132.86
     port: 6379
     password: bieshanwoku
-    lettuce:
+    timeout: 2000 # 毫秒
+    jedis:
       pool:
-        enabled: true
+        max-active: 50
+        max-idle: 30
+        min-idle: 10
   cache:
     # 指定使用的缓存产品
     type: redis

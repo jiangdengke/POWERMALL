@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="feat(docker)：集成Docker和Docker Compose&#10;- 添加Dockerfile，支持容器化部署&#10;- 添加Docker-Compose.yml，实现多服务的编排和管理">
-      <change beforePath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppSpuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppSpuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/SpuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/SpuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/common-redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/common-redis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-common/common-redis/src/main/java/com/jiangdk/common/redis/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-common/common-redis/src/main/java/com/jiangdk/common/redis/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +118,7 @@
     &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.OMSApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.OSSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PMSApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.PMSApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.SearchApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.SysApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.UMSApplication.executor&quot;: &quot;Run&quot;,
@@ -143,11 +135,11 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.itangcent.idea.plugin.configurable.AccountConfigurable.apifox&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
     &quot;应用程序.AlipayTradePagePay.executor&quot;: &quot;Run&quot;,
     &quot;应用程序.IdGenerator.executor&quot;: &quot;Run&quot;,
@@ -309,8 +301,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.117" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.117" />
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.153" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.153" />
       </set>
     </attachedChunks>
   </component>
@@ -451,7 +443,9 @@
       <workItem from="1737097879942" duration="5105000" />
       <workItem from="1737113567502" duration="1263000" />
       <workItem from="1737616110854" duration="1000000" />
-      <workItem from="1737617138422" duration="9297000" />
+      <workItem from="1737617138422" duration="10548000" />
+      <workItem from="1737649943547" duration="377000" />
+      <workItem from="1738221144346" duration="5383000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />
