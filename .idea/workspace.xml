@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="feat(docker)：集成Docker和Docker Compose&#10;- 添加Dockerfile，支持容器化部署&#10;- 添加Docker-Compose.yml，实现多服务的编排和管理">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6fd402ab-20bb-48b9-8158-7e52ac8f7727.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6fd402ab-20bb-48b9-8158-7e52ac8f7727.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/app/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/controller/app/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/impl/AppUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/service/impl/AppUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,85 +81,85 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Batch.copy (1).executor&quot;: &quot;Run&quot;,
-    &quot;Batch.copy.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;HTTP 请求.generated-requests | #3.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP 请求.generated-requests | #5.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.add.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.checked.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.getAll.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CartServiceImplTest.updateCount.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CategoryServiceTest.page.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.FZPayTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GoodsServiceImplTest.save.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MinioTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MinioTest.test02.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MinioTest.test03.executor&quot;: &quot;JRebel Debug&quot;,
-    &quot;JUnit.MinioTest.test04.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PasswordDemoTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PayTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RedisLockTest.test.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SkuMapperTest.testDemo.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SpuServiceImplTest.getSpuById.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.power-mall [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.power-mall [package].executor&quot;: &quot;Run&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-Database detector&quot;: &quot;数据库检测器&quot;,
-    &quot;Notification.DoNotAsk-Database detector&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenDatabaseViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.CMSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OMSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OSSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PMSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SearchApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.SysApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.UMSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;SQL-Insert-Multirow.sql.groovy&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jdk/workspace/power-mall/POWERMALL&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.AlipayTradePagePay.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.IdGenerator.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.SMSTest.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Batch.copy (1).executor": "Run",
+    "Batch.copy.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "HTTP 请求.generated-requests | #3.executor": "Run",
+    "HTTP 请求.generated-requests | #5.executor": "Run",
+    "JUnit.CartServiceImplTest.add.executor": "Run",
+    "JUnit.CartServiceImplTest.checked.executor": "Run",
+    "JUnit.CartServiceImplTest.getAll.executor": "Run",
+    "JUnit.CartServiceImplTest.updateCount.executor": "Run",
+    "JUnit.CategoryServiceTest.page.executor": "Run",
+    "JUnit.FZPayTest.test.executor": "Run",
+    "JUnit.GoodsServiceImplTest.save.executor": "Run",
+    "JUnit.MinioTest.test.executor": "Run",
+    "JUnit.MinioTest.test02.executor": "Run",
+    "JUnit.MinioTest.test03.executor": "JRebel Debug",
+    "JUnit.MinioTest.test04.executor": "Run",
+    "JUnit.PasswordDemoTest.test.executor": "Run",
+    "JUnit.PayTest.test.executor": "Run",
+    "JUnit.RedisLockTest.test.executor": "Run",
+    "JUnit.SkuMapperTest.testDemo.executor": "Run",
+    "JUnit.SpuServiceImplTest.getSpuById.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.power-mall [clean].executor": "Run",
+    "Maven.power-mall [package].executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Database detector": "数据库检测器",
+    "Notification.DoNotAsk-Database detector": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CMSApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.OMSApplication.executor": "Run",
+    "Spring Boot.OSSApplication.executor": "Run",
+    "Spring Boot.PMSApplication.executor": "Run",
+    "Spring Boot.SearchApplication.executor": "Run",
+    "Spring Boot.SysApplication.executor": "Debug",
+    "Spring Boot.UMSApplication.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "database.data.extractors.current.export.id": "SQL-Insert-Multirow.sql.groovy",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/jdk/workspace/power-mall/POWERMALL",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.AlipayTradePagePay.executor": "Run",
+    "应用程序.IdGenerator.executor": "Run",
+    "应用程序.SMSTest.executor": "Run"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;module&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module"
     ],
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+    "DatabaseDriversLRU": [
+      "mysql"
     ],
-    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言&quot;: [
-      &quot;MySQL&quot;
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL 方言": [
+      "MySQL"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
     <option name="stackFrameCustomizationEnabled" value="false" />
@@ -297,6 +300,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.PMSApplication" />
+        <item itemvalue="Spring Boot.CMSApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -445,7 +455,14 @@
       <workItem from="1737616110854" duration="1000000" />
       <workItem from="1737617138422" duration="10548000" />
       <workItem from="1737649943547" duration="377000" />
-      <workItem from="1738221144346" duration="5383000" />
+      <workItem from="1738221144346" duration="6248000" />
+      <workItem from="1738315744512" duration="54000" />
+      <workItem from="1738494455131" duration="1404000" />
+      <workItem from="1738495948342" duration="1490000" />
+      <workItem from="1738499547760" duration="170000" />
+      <workItem from="1738499785111" duration="692000" />
+      <workItem from="1738507993262" duration="952000" />
+      <workItem from="1738509371738" duration="341000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />

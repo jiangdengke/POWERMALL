@@ -1,6 +1,7 @@
 package com.jiangdk.ums.controller.app;
 
 
+import com.jiangdk.common.result.Result;
 import com.jiangdk.ums.pojo.dto.RegisterRequest;
 import com.jiangdk.ums.service.AppUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,12 +24,12 @@ public class RegisterController {
      * 用户名密码注册
      */
     @PostMapping("/registerByPassword")
-    public String registerByPassword
+    public Result registerByPassword
     (
             @Valid @RequestBody RegisterRequest registerRequest
     )
     {
         appUserService.registerUser(registerRequest);
-        return "registerByPassword";
+        return Result.success();
     }
 }

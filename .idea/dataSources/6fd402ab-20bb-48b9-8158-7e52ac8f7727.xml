@@ -2689,6 +2689,7 @@ status</ColNames>
     </column>
     <column id="583" parent="319" name="mail">
       <Comment>邮箱</Comment>
+      <DefaultExpression>(now())</DefaultExpression>
       <Position>9</Position>
       <StoredType>varchar(128)|0s</StoredType>
     </column>

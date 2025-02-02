@@ -24,6 +24,7 @@ import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 import java.security.SecureRandom;
 import java.time.Duration;
+import java.util.Date;
 
 @Service
 @Slf4j
@@ -80,7 +81,7 @@ public class AppUserServiceImpl extends ServiceImpl<AppUserMapper, AppUser> impl
         String redisCode = stringRedisTemplate.opsForValue().get("login:appUser:" + registerRequest.getEmail());
 
         String code = registerRequest.getCode();
-        if (redisCode.equals(code) || redisCode == null){
+        if (!redisCode.equals(code) || redisCode == null){
             throw new BizException(HttpStatus.HTTP_NOT_FOUND,"验证码错误或已过期");
         }
         // 通过用户名查看用户是否存在
@@ -95,10 +96,16 @@ public class AppUserServiceImpl extends ServiceImpl<AppUserMapper, AppUser> impl
         }
         // 密码加密
         String password = BCrypt.hashpw(registerRequest.getPassword());
+        String email = registerRequest.getEmail();
+        String[] split = email.split("@");
         appUser = new AppUser();
         appUser.setUsername(registerRequest.getUsername());
+        appUser.setMobile(split[0]);
+        appUser.setNickname(split[0]);
         appUser.setPassword(password);
         appUser.setMail(registerRequest.getEmail());
+        appUser.setCreateTime(new Date(System.currentTimeMillis()));
+        appUser.setUpdateTime(new Date(System.currentTimeMillis()));
         this.save(appUser);
     }
 
