@@ -5,6 +5,7 @@ import cn.dev33.satoken.stp.SaTokenInfo;
 import cn.dev33.satoken.stp.StpUtil;
 import cn.dev33.satoken.util.SaResult;
 import com.jiangdk.common.result.Result;
+import com.jiangdk.ums.pojo.dto.LoginResponse;
 import com.jiangdk.ums.pojo.entity.AppUser;
 import com.jiangdk.ums.service.AppUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,13 +26,20 @@ public class LoginController {
      * 邮箱验证码登录
      */
     @PostMapping("/loginByMail")
-    public Result<SaTokenInfo> loginByMail(
+    public Result<LoginResponse> loginByMail(
             @RequestParam("mail") String mail,
             @RequestParam("code") String code){
         AppUser appUser = appUserService.loginByMail(mail, code);
         // 登录系统
         StpUtil.login(appUser.getId());
-        return Result.success("登录成功",StpUtil.getTokenInfo());
+
+        // 构建响应数据
+        LoginResponse response = new LoginResponse();
+        response.setSaTokenInfo(StpUtil.getTokenInfo());
+        response.setUsername(appUser.getUsername());
+        response.setAvatar(appUser.getAvatar());
+        response.setMail(appUser.getMail());
+        return Result.success(response);
     }
 
     /**
@@ -77,14 +85,22 @@ public class LoginController {
      * @return
      */
     @PostMapping("/loginByUsername")
-    Result<SaTokenInfo> loginByUsername(
+    Result<LoginResponse> loginByUsername(
             @RequestParam("username") String username,
             @RequestParam("password") String password
     ){
         AppUser appUser = appUserService.loginByUsername(username, password);
         // 登录系统
         StpUtil.login(appUser.getId());
-        return Result.success("登录成功",StpUtil.getTokenInfo());
+
+        // 构建响应数据
+        LoginResponse response = new LoginResponse();
+        response.setSaTokenInfo(StpUtil.getTokenInfo());
+        response.setUsername(appUser.getUsername());
+        response.setAvatar(appUser.getAvatar());
+        response.setMail(appUser.getMail());
+//        return Result.success("登录成功",StpUtil.getTokenInfo());
+        return Result.success(response);
     }
     /**
      * 用户退出
