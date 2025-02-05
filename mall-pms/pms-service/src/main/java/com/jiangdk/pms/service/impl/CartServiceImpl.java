@@ -7,16 +7,14 @@ import com.jiangdk.common.exception.BizException;
 import com.jiangdk.pms.mapper.SkuMapper;
 import com.jiangdk.pms.mapper.SpuMapper;
 import com.jiangdk.pms.pojo.entity.Sku;
-import com.jiangdk.pms.pojo.entity.Spu;
 import com.jiangdk.pms.pojo.vo.CartItemVO;
 import com.jiangdk.pms.service.CartService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.stereotype.Service;
+
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * @author: JiangDk
@@ -31,7 +29,7 @@ public class CartServiceImpl implements CartService {
     private SkuMapper skuMapper;
     @Autowired
     private SpuMapper spuMapper;
-    // 购物车的key，这里先写死
+    // 购物车的key，通过sa-token的方法拿到登录id，以区分不同的购物车
     private String key() {
         Long userId = StpUtil.getLoginIdAsLong();
         return "cart:" + userId;

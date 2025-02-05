@@ -18,6 +18,12 @@
     </properties>
 
     <dependencies>
+        <!--  redis 缓存  -->
+        <dependency>
+            <groupId>com.jiangdk</groupId>
+            <artifactId>common-redis</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!-- Spring Boot Starter Mail -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
