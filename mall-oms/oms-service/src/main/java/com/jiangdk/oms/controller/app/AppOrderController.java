@@ -91,12 +91,12 @@ public class AppOrderController {
     /**
      * 取消订单
      *
-     * @param orderId
+     * @param orderSn
      * @return
      */
     @PutMapping("/cancel")
-    public Result cancelOrder(Long orderId) {
-        orderService.orderCancel(orderId);
+    public Result cancelOrder(String orderSn) {
+        orderService.orderCancel(orderSn);
         return Result.success();
     }
 

@@ -217,19 +217,27 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     /**
      * 取消订单
      *
-     * @param orderId
+     * @param orderSn
      */
     @Override
-    public void orderCancel(Long orderId) {
-        // 查到订单
-        Order order = this.getById(orderId);
-        // 订单存在，并且是待付款状态
+    public void orderCancel(String orderSn) {
+        QueryWrapper<Order> orderQueryWrapper = new QueryWrapper<>();
+        orderQueryWrapper.eq("order_sn", orderSn);
+        Order order = orderMapper.selectOne(orderQueryWrapper);
         if (order != null && order.getStatus() == 1) {
             order.setStatus(5);
-            this.updateById(order);
-            //  释放库存的占用
+            orderMapper.updateById(order);
             skuFeignClient.unlockStock(order.getOrderSn());
         }
+//        // 查到订单
+//        Order order = this.getById(orderId);
+//        // 订单存在，并且是待付款状态
+//        if (order != null && order.getStatus() == 1) {
+//            order.setStatus(5);
+//            this.updateById(order);
+//            //  释放库存的占用
+//            skuFeignClient.unlockStock(order.getOrderSn());
+//        }
     }
 
     //    @Override

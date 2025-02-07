@@ -27,7 +27,7 @@ public class OrderMQListener {
             exchange = @Exchange(name = "oms.order", delayed = "true"),
             key = {"order.cancel"}
     ))
-    public void cancelOrder(Long orderId){
+    public void cancelOrder(String orderId){
         orderService.orderCancel(orderId);
     }
 }

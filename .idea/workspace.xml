@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="feat(docker)：集成Docker和Docker Compose&#10;- 添加Dockerfile，支持容器化部署&#10;- 添加Docker-Compose.yml，实现多服务的编排和管理">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.cache/.Apifox_Helper/.toolWindow.db" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.cache/.Apifox_Helper/.toolWindow.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/controller/admin/ContentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/controller/admin/ContentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/controller/app/AppContentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/controller/app/AppContentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/controller/app/AppOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/controller/app/AppOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/pojo/vo/OrderVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/pojo/vo/OrderVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/listener/OrderMQListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/listener/OrderMQListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/UMSApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/UMSApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +209,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.OMSApplication">
     <configuration name="AlipayTradePagePay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jiangdk.oms.AlipayTradePagePay" />
       <module name="oms-service" />
@@ -500,7 +489,7 @@
       <workItem from="1738918094050" duration="210000" />
       <workItem from="1738918312455" duration="236000" />
       <workItem from="1738923471141" duration="1084000" />
-      <workItem from="1738924565390" duration="3084000" />
+      <workItem from="1738924565390" duration="5318000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />

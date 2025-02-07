@@ -31,9 +31,9 @@ public interface OrderService extends IService<Order>{
     void orderSubmit(OrderForm orderForm);
     /**
      * 取消订单
-     * @param orderId
+     * @param orderSn
      */
-    void orderCancel(Long orderId);
+    void orderCancel(String orderSn);
 
     /**
      * 获取全部订单
