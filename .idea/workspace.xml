@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="feat(docker)：集成Docker和Docker Compose&#10;- 添加Dockerfile，支持容器化部署&#10;- 添加Docker-Compose.yml，实现多服务的编排和管理">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.cache/.Apifox_Helper/.toolWindow.db" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.cache/.Apifox_Helper/.toolWindow.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApifoxUploaderProjectSetting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/controller/admin/ContentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/controller/admin/ContentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/controller/app/AppContentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/src/main/java/com/jiangdk/cms/controller/app/AppContentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/controller/app/AppOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/controller/app/AppOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/pojo/vo/OrderVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/pojo/vo/OrderVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/service/impl/OrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/CartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/UMSApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/java/com/jiangdk/ums/UMSApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +58,9 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/cn/dev33/sa-token-core/1.35.0.RC/sa-token-core-1.35.0.RC-sources.jar!/cn/dev33/satoken/stp/StpUtil.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.5.2/mybatis-plus-extension-3.5.2-sources.jar!/com/baomidou/mybatisplus/extension/service/IService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/mall-oms/oms-service/src/main/java/com/jiangdk/oms/controller/app/AppOrderController.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="HttpClientSelectedEnvironments">
     <file url="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" environment="test" />
@@ -116,12 +131,12 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Spring Boot.CMSApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OMSApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.OMSApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.OSSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PMSApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.PMSApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.SearchApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.SysApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.UMSApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.UMSApplication.executor&quot;: &quot;Run&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;SQL-Insert-Multirow.sql.groovy&quot;,
@@ -139,7 +154,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.itangcent.idea.plugin.configurable.AccountConfigurable.apifox&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
     &quot;应用程序.AlipayTradePagePay.executor&quot;: &quot;Run&quot;,
     &quot;应用程序.IdGenerator.executor&quot;: &quot;Run&quot;,
@@ -205,7 +220,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OMSApplication">
+  <component name="RunManager">
     <configuration name="AlipayTradePagePay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jiangdk.oms.AlipayTradePagePay" />
       <module name="oms-service" />
@@ -467,6 +482,25 @@
       <workItem from="1738751425634" duration="25000" />
       <workItem from="1738752461451" duration="566000" />
       <workItem from="1738753034649" duration="8543000" />
+      <workItem from="1738763794978" duration="359000" />
+      <workItem from="1738823935836" duration="2553000" />
+      <workItem from="1738852274952" duration="327000" />
+      <workItem from="1738905378239" duration="285000" />
+      <workItem from="1738905671117" duration="63000" />
+      <workItem from="1738905741913" duration="2984000" />
+      <workItem from="1738910153734" duration="64000" />
+      <workItem from="1738910314184" duration="2453000" />
+      <workItem from="1738912777269" duration="1584000" />
+      <workItem from="1738915279720" duration="1737000" />
+      <workItem from="1738917141754" duration="62000" />
+      <workItem from="1738917219583" duration="268000" />
+      <workItem from="1738917560066" duration="248000" />
+      <workItem from="1738917818626" duration="69000" />
+      <workItem from="1738917894364" duration="193000" />
+      <workItem from="1738918094050" duration="210000" />
+      <workItem from="1738918312455" duration="236000" />
+      <workItem from="1738923471141" duration="1084000" />
+      <workItem from="1738924565390" duration="3084000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />

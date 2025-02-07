@@ -1,9 +1,11 @@
 package com.jiangdk.oms.service;
 
-import com.jiangdk.oms.pojo.entity.Order;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.jiangdk.oms.pojo.entity.Order;
 import com.jiangdk.oms.pojo.form.OrderForm;
 import com.jiangdk.oms.pojo.vo.OrderVO;
+
+import java.util.List;
 
 public interface OrderService extends IService<Order>{
 
@@ -32,4 +34,10 @@ public interface OrderService extends IService<Order>{
      * @param orderId
      */
     void orderCancel(Long orderId);
+
+    /**
+     * 获取全部订单
+     * @return
+     */
+    List<OrderVO> getOrders();
 }

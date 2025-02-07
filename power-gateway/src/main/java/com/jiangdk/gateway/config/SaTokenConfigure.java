@@ -1,5 +1,6 @@
 package com.jiangdk.gateway.config;
 
+import cn.dev33.satoken.context.SaHolder;
 import cn.dev33.satoken.exception.NotLoginException;
 import cn.dev33.satoken.exception.NotPermissionException;
 import cn.dev33.satoken.exception.NotRoleException;
@@ -35,6 +36,7 @@ public class SaTokenConfigure {
                         .notMatch("/api/ums/registerByMail")
                         .notMatch("/api/ums/registerByPassword")
                         .notMatch("/api/pms/**")
+                        .notMatch("/api/oms/**")
                         .check(r->StpUtil.checkLogin());
                 // 管理端认证规则
                 SaRouter.match("/api-admin/**")
@@ -43,16 +45,24 @@ public class SaTokenConfigure {
                         .check(r-> StpAdminUtil.checkLogin());
             })
             // 异常处理方法：每次setAuth函数出现异常时进入 
-            .setError(e -> {
-                if (e instanceof NotLoginException){
-                    return SaResult.error("token无效或过期").setCode(401);
-                } else if (e instanceof NotRoleException) {
-                    return SaResult.error("你没有访问该资源的权限").setCode(403);
-                } else if (e instanceof NotPermissionException) {
-                    return SaResult.error("你没有访问该资源的权限").setCode(403);
-                }else {
-                    return SaResult.error(e.getMessage());
-                }
-            });
+                .setError(e -> {
+                    // 先添加跨域响应头
+                    SaHolder.getResponse()
+                            .setHeader("Access-Control-Allow-Origin", "*")
+                            .setHeader("Access-Control-Allow-Methods", "*")
+                            .setHeader("Access-Control-Allow-Headers", "*")
+                            .setHeader("Access-Control-Expose-Headers", "*");
+
+                    // 再处理不同类型的异常
+                    if (e instanceof NotLoginException) {
+                        return SaResult.error("token无效或过期").setCode(401);
+                    } else if (e instanceof NotRoleException) {
+                        return SaResult.error("你没有访问该资源的权限").setCode(403);
+                    } else if (e instanceof NotPermissionException) {
+                        return SaResult.error("你没有访问该资源的权限").setCode(403);
+                    } else {
+                        return SaResult.error(e.getMessage());
+                    }
+                });
     }
 }

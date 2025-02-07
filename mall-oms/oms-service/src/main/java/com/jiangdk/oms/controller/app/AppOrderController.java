@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -45,7 +46,15 @@ public class AppOrderController {
     private String notifyUrl;
 
     /**
-     * 确认订单【从商品详情页下单】
+     * 获取全部订单
+     */
+    @GetMapping("/list")
+    public Result<List<OrderVO>> listOrders() {
+        List<OrderVO> orders = orderService.getOrders();
+        return Result.success(orders);
+    }
+    /**
+     * 确认订单【从商品详情页下单】   
      *
      * @return
      */
@@ -65,46 +74,49 @@ public class AppOrderController {
     public Result<OrderVO> confirmOrder() {
         return Result.success(orderService.orderConfirm());
     }
+
     /**
      * 提交订单
      *
-     * @return
+      * @return
      */
     @PostMapping("/submit")
     public Result submitOrder(
             @RequestBody @Validated OrderForm orderForm
-            ) {
+    ) {
         orderService.orderSubmit(orderForm);
         return Result.success();
     }
 
     /**
      * 取消订单
+     *
      * @param orderId
      * @return
      */
     @PutMapping("/cancel")
-    public Result cancelOrder(Long orderId){
+    public Result cancelOrder(Long orderId) {
         orderService.orderCancel(orderId);
         return Result.success();
     }
 
     /**
      * 支付接口
+     *
      * @param orderSn
      * @param
      * @throws AlipayApiException
      * @throws IOException
      */
-    @GetMapping( "/toPay")
+    @GetMapping("/toPay")
     public void toPay
     (
-        @RequestParam String orderSn,
-        HttpServletResponse httpServletResponse
+            @RequestParam String orderSn,
+            HttpServletResponse httpServletResponse
     ) throws AlipayApiException, IOException {
         // 根据订单编号获取订单信息
         Order order = orderMapper.selectOne(new LambdaQueryWrapper<Order>().eq(Order::getOrderSn, orderSn));
-        if (order == null || !order.getStatus().equals(1) ) {
+        if (order == null || !order.getStatus().equals(1)) {
             throw new BizException(HttpStatus.HTTP_BAD_REQUEST, "订单不存在或已支付");
         }
         // 构造请求参数以调用接口
@@ -117,24 +129,25 @@ public class AppOrderController {
         // 设置商户订单号
         model.setOutTradeNo(orderSn);
         // 设置订单总金额
-        model.setTotalAmount(String.valueOf(order.getPayAmount()/1000));
+        model.setTotalAmount(String.valueOf(order.getPayAmount() / 1000));
         // 设置订单标题
         model.setSubject("测试订单");
         // 设置产品类型编码（电脑网站支付）
         model.setProductCode("FAST_INSTANT_TRADE_PAY");
         request.setBizModel(model);
-        AlipayTradePagePayResponse response = alipayClient.pageExecute(request,"POST");
+        AlipayTradePagePayResponse response = alipayClient.pageExecute(request, "POST");
         httpServletResponse.setContentType("text/html;charset=UTF-8");
         httpServletResponse.getWriter().write(response.getBody());
     }
 
     /**
      * 支付成功后的同步回调
+     *
      * @param
      * @return
      */
     @GetMapping("/paySuccess")
-    public void paySuccess(HttpServletResponse response){
+    public void paySuccess(HttpServletResponse response) {
         // 重定向到订单列表页面
         try {
             response.sendRedirect("https://www.baidu.com");
@@ -143,13 +156,15 @@ public class AppOrderController {
             throw new RuntimeException(e);
         }
     }
+
     /**
      * 支付成功后的异步回调--两个回调都可以验签，这里我在这里验签
+     *
      * @param
      * @return
      */
     @PostMapping("/payResult")
-    public void payResult(@RequestParam Map<String,String> params){
+    public void payResult(@RequestParam Map<String, String> params) {
         payService.payResult(params);
     }
 

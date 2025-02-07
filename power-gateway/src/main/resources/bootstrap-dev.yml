@@ -15,6 +15,13 @@ spring:
         namespace: cd4facc0-2daf-499e-9dd2-8d2ab747803b
         group: MALL_GROUP
     gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+            exposedHeaders: "*"
       routes:
         - id: pms-service
           uri: lb://pms-service

@@ -77,7 +77,7 @@ public class CartServiceImpl implements CartService {
 
     /**
      * 查看购物车
-     *
+     * 从redis中拿到购物车数据，并赋值到购物车实体，按照score值降序返回
      * @return
      */
     @Override

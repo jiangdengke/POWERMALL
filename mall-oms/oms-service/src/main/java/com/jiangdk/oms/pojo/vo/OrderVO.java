@@ -18,6 +18,8 @@ public class OrderVO {
     private String orderSn;
     // 订单商品总金额
     private Integer totalAmount;
+    //订单状态 1-待付款;2-待发货;3-已发货;4-已完成;;5-已取消;
+    private Integer status;
     // 应付款金额
     private Integer payAmount;
     // 订单明细

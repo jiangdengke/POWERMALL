@@ -1,6 +1,5 @@
 package com.jiangdk.cms.controller.app;
 
-import com.jiangdk.cms.pojo.entity.Content;
 import com.jiangdk.cms.pojo.enums.ContentGroup;
 import com.jiangdk.cms.pojo.vo.AdvertVO;
 import com.jiangdk.cms.pojo.vo.NavigationVO;
@@ -26,7 +25,7 @@ public class AppContentController {
     private ContentService contentService;
 
     /**
-     * 首页轮播图
+     *跳转到动作搜索首页轮播图
      * @return
      */
     @GetMapping("/swiper")
