@@ -16,6 +16,15 @@ import java.util.List;
 public class AppSpuController {
     @Autowired
     private SpuService spuService;
+
+    /**
+     * 商品搜索
+     */
+    @GetMapping("/search")
+    public Result<List<SpuVO>> search(@RequestParam String name){
+        List<SpuVO> spuVOList = spuService.searchByName(name);
+        return Result.success(spuVOList);
+    }
     /**
      * 商品详情
      * @param spuId

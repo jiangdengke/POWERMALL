@@ -51,4 +51,6 @@ public interface SpuService extends IService<Spu>{
      * @return
      */
     List<SpuVO> getSpuList();
+
+    List<SpuVO> searchByName(String name);
 }

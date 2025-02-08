@@ -212,4 +212,18 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper, Spu> implements SpuSe
         }).collect(Collectors.toList());
         return spuVOList;
     }
+
+    @Override
+    public List<SpuVO> searchByName(String name) {
+        QueryWrapper<Spu> spuQueryWrapper = new QueryWrapper<>();
+        spuQueryWrapper.like("name", name);
+        List<Spu> spuList = this.baseMapper.selectList(spuQueryWrapper);
+        List<SpuVO> spuVOList = spuList.stream()
+                .map(spu -> {
+                    SpuVO spuVO = new SpuVO();
+                    BeanUtils.copyProperties(spu, spuVO);
+                    return spuVO;
+                }).collect(Collectors.toList());
+        return spuVOList;
+    }
 }
