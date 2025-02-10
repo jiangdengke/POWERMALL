@@ -1,4 +1,5 @@
-set DIR=C:\Users\jiangdk\Desktop\workspace\code\power-mall\POWERMALL
+set DIR=/home/jdk/workspace/power-mall/POWERMALL
+@REM set DIR=C:\Users\jiangdk\Desktop\workspace\code\power-mall\POWERMALL
 copy %DIR%\mall-cms\cms-service\target\app.jar %DIR%\docker\cms-service\app.jar
 copy %DIR%\mall-oms\oms-service\target\app.jar %DIR%\docker\oms-service\app.jar
 copy %DIR%\mall-pms\pms-service\target\app.jar %DIR%\docker\pms-service\app.jar

@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="feat(docker)：集成Docker和Docker Compose&#10;- 添加Dockerfile，支持容器化部署&#10;- 添加Docker-Compose.yml，实现多服务的编排和管理">
+      <change afterPath="$PROJECT_DIR$/docker/copy.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppSpuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/controller/app/AppSpuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/SpuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/SpuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/java/com/jiangdk/pms/service/impl/SpuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/cms-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/cms-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/copy.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/copy.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/oms-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/oms-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/oss-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/oss-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/pms-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/pms-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/power-gateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/power-gateway/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/search-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/search-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/ums-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/ums-service/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +217,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.OMSApplication">
     <configuration name="AlipayTradePagePay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jiangdk.oms.AlipayTradePagePay" />
       <module name="oms-service" />
@@ -497,7 +502,8 @@
       <workItem from="1738944936439" duration="20000" />
       <workItem from="1738945232195" duration="37000" />
       <workItem from="1738945286553" duration="210000" />
-      <workItem from="1738992144296" duration="10505000" />
+      <workItem from="1738992144296" duration="10768000" />
+      <workItem from="1739162180661" duration="3753000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />

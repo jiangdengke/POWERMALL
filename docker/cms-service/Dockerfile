@@ -1,5 +1,5 @@
 # 基础镜像
-FROM java:8-alpine
+FROM openjdk:8-jdk-alpine
 
 # 复制主机文件至镜像
 COPY ./app.jar /mall/app.jar
