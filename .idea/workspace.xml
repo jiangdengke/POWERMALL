@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c7ca4d5-1f58-4834-88a7-14e853a1359a" name="更改" comment="feat(docker)：集成Docker和Docker Compose&#10;- 添加Dockerfile，支持容器化部署&#10;- 添加Docker-Compose.yml，实现多服务的编排和管理">
-      <change afterPath="$PROJECT_DIR$/docker/copy.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/cms-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/cms-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/copy.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/copy.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/oms-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/oms-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/oss-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/oss-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/pms-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/pms-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/power-gateway/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/power-gateway/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/search-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/search-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/ums-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/ums-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-cms/cms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-cms/cms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-oms/oms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-pms/pms-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-search/search-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-search/search-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mall-ums/ums-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/component/StpInterfaceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/component/StpInterfaceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/java/com/jiangdk/gateway/config/SaTokenConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-gateway/src/main/resources/bootstrap-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/power-oss/oss-service/src/main/resources/bootstrap-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/power-oss/oss-service/src/main/resources/bootstrap-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +129,7 @@
     &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.OMSApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.OSSApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.PMSApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.PMSApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.SearchApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.SysApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Spring Boot.UMSApplication.executor&quot;: &quot;Run&quot;,
@@ -150,7 +151,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
     &quot;应用程序.AlipayTradePagePay.executor&quot;: &quot;Run&quot;,
     &quot;应用程序.IdGenerator.executor&quot;: &quot;Run&quot;,
@@ -309,6 +310,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.PMSApplication" />
+        <item itemvalue="Spring Boot.CMSApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -504,6 +512,10 @@
       <workItem from="1738945286553" duration="210000" />
       <workItem from="1738992144296" duration="10768000" />
       <workItem from="1739162180661" duration="3753000" />
+      <workItem from="1739281245671" duration="89000" />
+      <workItem from="1739281473827" duration="1018000" />
+      <workItem from="1739282727092" duration="2694000" />
+      <workItem from="1739285505114" duration="5086000" />
     </task>
     <task id="LOCAL-00001" summary="1、公共模块搭建。2、增加统一响应和统一异常处理">
       <option name="closed" value="true" />

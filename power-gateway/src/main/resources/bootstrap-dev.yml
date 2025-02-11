@@ -12,16 +12,31 @@ spring:
     nacos:
       discovery:
         server-addr: http://128.1.132.86:8848
-        namespace: cd4facc0-2daf-499e-9dd2-8d2ab747803b
-        group: MALL_GROUP
+#        namespace: cd4facc0-2daf-499e-9dd2-8d2ab747803b
+#        group: MALL_GROUP
     gateway:
       globalcors:
-        cors-configurations:
-          '[/**]':
-            allowedOrigins: "*"
-            allowedMethods: "*"
-            allowedHeaders: "*"
-            exposedHeaders: "*"
+        corsConfigurations:
+          "[/**]":
+            allowedOrigins:
+              - "http://localhost:8080"  # Vue2 前端的地址
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+
+      #      globalcors:
+#        cors-configurations:
+#          '[/**]':
+#            allowedOrigins: "*"
+#            allowedMethods: "*"
+#            allowedHeaders: "*"
+#            exposedHeaders: "*"
       routes:
         - id: pms-service
           uri: lb://pms-service
