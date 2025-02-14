@@ -11,7 +11,7 @@ spring:
     host: 128.1.132.86
     port: 6379
     password: bieshanwoku
-    timeout: 2000 # 毫秒
+    timeout: 100000 # 毫秒
     jedis:
       pool:
         max-active: 50

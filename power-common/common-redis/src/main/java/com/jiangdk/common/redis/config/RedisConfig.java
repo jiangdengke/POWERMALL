@@ -60,12 +60,15 @@ import org.redisson.config.Config;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.RedisPassword;
 import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
 import org.springframework.data.redis.connection.jedis.JedisClientConfiguration;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.RedisSerializer;
 import redis.clients.jedis.JedisPoolConfig;
+
+import java.time.Duration;
 
 @Configuration
 public class RedisConfig {
@@ -90,19 +93,25 @@ public class RedisConfig {
 
     @Value("${spring.redis.jedis.pool.min-idle}")
     private int minIdle;
+
     // 配置 RedissonClient
     @Bean(destroyMethod = "shutdown")
     public RedissonClient redissonClient(){
         Config config = new Config();
-        config.useSingleServer().setAddress("redis://"+host+":"+port).setPassword(password);
+        config.useSingleServer()
+                .setAddress("redis://" + host + ":" + port)
+                .setPassword(password)
+                .setConnectTimeout((int) timeout) // 设置连接超时,单位为毫秒
+                .setTimeout((int) timeout);       // 设置响应超时,单位为毫秒
         return Redisson.create(config);
     }
+
     @Bean
     public JedisConnectionFactory jedisConnectionFactory() {
         RedisStandaloneConfiguration redisConfig = new RedisStandaloneConfiguration();
         redisConfig.setHostName(host);
         redisConfig.setPort(port);
-        redisConfig.setPassword(password);
+        redisConfig.setPassword(RedisPassword.of(password));
 
         JedisPoolConfig poolConfig = new JedisPoolConfig();
         poolConfig.setMaxTotal(maxActive);
@@ -113,6 +122,8 @@ public class RedisConfig {
                 .usePooling()
                 .poolConfig(poolConfig)
                 .and()
+                .connectTimeout(Duration.ofMillis(timeout)) // 设置连接超时
+                .readTimeout(Duration.ofMillis(timeout))    // 设置读取超时
                 .build();
 
         return new JedisConnectionFactory(redisConfig, clientConfig);

@@ -15,28 +15,21 @@ spring:
 #        namespace: cd4facc0-2daf-499e-9dd2-8d2ab747803b
 #        group: MALL_GROUP
     gateway:
-      globalcors:
-        corsConfigurations:
-          "[/**]":
-            allowedOrigins:
-              - "http://localhost:8080"  # Vue2 前端的地址
-            allowedMethods:
-              - GET
-              - POST
-              - PUT
-              - DELETE
-              - OPTIONS
-            allowedHeaders:
-              - "*"
-            allowCredentials: true
+#      globalcors:
+#        corsConfigurations:
+#          "[/**]":
+#            allowedOrigins:
+#              - "http://localhost:8080"  # Vue2 前端的地址
+#            allowedMethods:
+#              - GET
+#              - POST
+#              - PUT
+#              - DELETE
+#              - OPTIONS
+#            allowedHeaders:
+#              - "*"
+#            allowCredentials: true
 
-      #      globalcors:
-#        cors-configurations:
-#          '[/**]':
-#            allowedOrigins: "*"
-#            allowedMethods: "*"
-#            allowedHeaders: "*"
-#            exposedHeaders: "*"
       routes:
         - id: pms-service
           uri: lb://pms-service
